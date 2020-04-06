@@ -15,16 +15,14 @@ class Home {
     var firstName: String
     var lastName: String
     var fullName: String
-    var greeting: String
     
     init() {
         
-        self.profileImage = "happy"
+        self.profileImage = "profilePic"
         self.phraseOfTheDay = "Tente de novo. Fracasse de novo. Mas fracasse melhor - Samuel Beckett"
         self.firstName = "Alcides"
         self.lastName = "Junior"
         self.fullName = self.firstName+" "+self.lastName
-        self.greeting = "Bom dia, "+self.firstName
     }
     
 }

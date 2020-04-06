@@ -22,9 +22,33 @@ class HomeViewModel {
         return self.home.profileImage
     }
     
+    fileprivate func greetingString()->String {
+        let date = NSDate()
+        var greeting = ""
+        let calendar = NSCalendar.current
+        let currentHour = calendar.component(.hour, from: date as Date)
+        let hourInt = Int(currentHour.description)!
+
+        if hourInt >= 12 && hourInt <= 16 {
+            greeting = "Bom dia"
+        }
+        else if hourInt >= 7 && hourInt <= 12 {
+            greeting = "Boa tarde"
+        }
+        else if hourInt >= 16 && hourInt <= 20 {
+            greeting = "Boa noite"
+        }
+        else if hourInt >= 20 && hourInt <= 24 {
+            greeting = "Boa noite"
+        }
+        
+        return greeting
+        
+    }
+    
     func getGreeting()->String {
         
-        return self.home.greeting
+        return greetingString()+", "+getFirstName()+"!"
     }
     
     func getPhraseOfTheDay()->String {

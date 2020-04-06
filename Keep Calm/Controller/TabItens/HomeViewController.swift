@@ -8,6 +8,11 @@
 
 import UIKit
 
+extension UINavigationController{
+    
+    
+}
+
 class HomeViewController: UIViewController, ControllerProtocol {
     
     var home: Home!
@@ -19,14 +24,13 @@ class HomeViewController: UIViewController, ControllerProtocol {
         self.homeViewModel = HomeViewModel(home: home)
         self.homeView = HomeView(homeViewModel: homeViewModel)
         self.view = homeView
-        self.view.backgroundColor = .white
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navbarSettings()
-        
+        self.view.backgroundColor = .systemBackground
     }
     
     override func viewDidLayoutSubviews() {
@@ -35,6 +39,9 @@ class HomeViewController: UIViewController, ControllerProtocol {
     
     func navbarSettings() {
         title = "Início"
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "customBlue")
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.title,.foregroundColor: UIColor.white]
     }
 
 }
