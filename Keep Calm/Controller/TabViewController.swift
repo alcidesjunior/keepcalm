@@ -22,11 +22,11 @@ class TabViewController: UITabBarController {
         let foodViewController = UINavigationController(rootViewController: FoodViewController())
         let anxietyViewController = UINavigationController(rootViewController: AnxietyViewController())
         
-        homeViewController.tabBarItem = UITabBarItem(title: "Início", image: nil, selectedImage: nil)
-        routinesViewController.tabBarItem = UITabBarItem(title: "Rotina", image: nil, selectedImage: nil)
-        exercisesViewController.tabBarItem = UITabBarItem(title: "Exercícios", image: nil, selectedImage: nil)
-        foodViewController.tabBarItem = UITabBarItem(title: "Alimentação", image: nil, selectedImage: nil)
-        anxietyViewController.tabBarItem = UITabBarItem(title: "Ansiedade", image: nil, selectedImage: nil)
+        homeViewController.tabBarItem = UITabBarItem(title: "Início", image: UIImage(named: "home"), selectedImage: UIImage(named: "home.fill"))
+        routinesViewController.tabBarItem = UITabBarItem(title: "Rotina", image: UIImage(named: "routine"), selectedImage: UIImage(named: "routine.fill"))
+        exercisesViewController.tabBarItem = UITabBarItem(title: "Exercícios", image: UIImage(named: "exercise"), selectedImage: UIImage(named: "exercise.fill"))
+        foodViewController.tabBarItem = UITabBarItem(title: "Alimentação", image: UIImage(named: "food"), selectedImage: UIImage(named: "food.fill"))
+        anxietyViewController.tabBarItem = UITabBarItem(title: "Ansiedade", image: UIImage(named: "anxiety"), selectedImage: UIImage(named: "anxiety.fill"))
 
 
         let controllers = [homeViewController, routinesViewController, exercisesViewController, foodViewController, anxietyViewController]

@@ -11,4 +11,5 @@ import UIKit
 extension UIFont {
     static var greeting = UIFont.systemFont(ofSize: 40, weight: UIFont.Weight(rawValue: 0))
     static var phrase = UIFont.systemFont(ofSize: 20, weight: UIFont.Weight(rawValue: 0))
+    static var title = UIFont.systemFont(ofSize: 26, weight: UIFont.Weight(rawValue: 0))
 }

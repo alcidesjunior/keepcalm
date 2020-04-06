@@ -14,9 +14,13 @@ class AnxietyViewController: UIViewController, ControllerProtocol {
         super.viewDidLoad()
 
         navbarSettings()
+        self.view.backgroundColor = .systemBackground
     }
 
     func navbarSettings() {
         title = "Ansiedade"
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.barTintColor = UIColor(named: "customBlue")
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.title,.foregroundColor: UIColor.white]
     }
 }

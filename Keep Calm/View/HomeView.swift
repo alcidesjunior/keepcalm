@@ -14,7 +14,7 @@ class HomeView: UIView {
     lazy var profileImage: UIImageView = {
         
         let view = UIImageView(frame: .zero)
-        view.contentMode = .scaleAspectFit
+        view.contentMode = .scaleToFill
         return view
     }()
     
@@ -70,10 +70,10 @@ extension HomeView: ViewCodeProtocol {
         
         profileImage.snp.makeConstraints { (make) in
             
+            make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
+            make.top.equalTo(safeAreaLayoutGuide.snp.top).inset(60)
             make.width.equalTo(146)
             make.height.equalTo(146)
-            make.top.equalToSuperview().inset(80)
-            make.centerX.equalToSuperview()
             
         }
         
@@ -86,12 +86,9 @@ extension HomeView: ViewCodeProtocol {
         
         motivationalPhrase.snp.makeConstraints { (make) in
             
-            make.top.equalTo(greetingPhrase.snp.bottom).offset(16)
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
-            make.height.equalTo(14)
-            make.leading.equalToSuperview().inset(8)
-            make.trailing.equalToSuperview().offset(8)
+            make.top.equalTo(greetingPhrase.snp.bottom).offset(40)
+            make.centerX.equalTo(safeAreaLayoutGuide.snp.centerX)
+            make.leading.equalToSuperview().inset(16)
         }
         
         
