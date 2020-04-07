@@ -41,6 +41,9 @@ class HomeViewModel {
         else if hourInt >= 20 && hourInt <= 24 {
             greeting = "Boa noite"
         }
+        else if hourInt >= 0 && hourInt <= 7 {
+            greeting = "Boa noite"
+        }
         
         return greeting
         

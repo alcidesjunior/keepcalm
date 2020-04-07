@@ -1,43 +1,37 @@
 //
-//  HomeViewController.swift
+//  ExerciseDetailsViewController.swift
 //  Keep Calm
 //
-//  Created by Alcides Junior on 05/04/20.
+//  Created by Alcides Junior on 06/04/20.
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController, ControllerProtocol {
+class ExerciseDetailsViewController: UIViewController, ControllerProtocol {
     
-    var home: Home!
-    var homeViewModel: HomeViewModel!
-    var homeView: HomeView!
+    var exerciseDetailsView: ExerciseDetailsView!
+    var activity: Activity? = nil
     
     override func loadView() {
-        self.home = Home()
-        self.homeViewModel = HomeViewModel(home: home)
-        self.homeView = HomeView(homeViewModel: homeViewModel)
-        self.view = homeView
+        self.exerciseDetailsView = ExerciseDetailsView()
+        self.exerciseDetailsView.setup(activity: activity!)
+        self.view = exerciseDetailsView
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navbarSettings()
         self.view.backgroundColor = .systemBackground
     }
     
-    override func viewDidLayoutSubviews() {
-        self.homeView.profileImage.makeRounded()
-    }
-    
     func navbarSettings() {
-        title = "Início"
+        
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(named: "customBlue")
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.title,.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.tintColor = .white
     }
 
 }
-
