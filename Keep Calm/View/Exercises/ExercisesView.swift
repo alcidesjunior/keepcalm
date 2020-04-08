@@ -65,7 +65,7 @@ class ExercisesView: UIView {
     
     fileprivate func registerCell(){
         
-        collectionView.register(ExerciseCollectionViewCell.self, forCellWithReuseIdentifier: cellID)
+        collectionView.register(ExerciseCell.self, forCellWithReuseIdentifier: cellID)
     }
 }
 
