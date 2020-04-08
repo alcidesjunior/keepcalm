@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ExerciseCollectionViewCell: UICollectionViewCell {
+class ExerciseCell: UICollectionViewCell {
     
     lazy var itemView: UIView = {
         
@@ -41,7 +41,7 @@ class ExerciseCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension ExerciseCollectionViewCell: ViewCodeProtocol {
+extension ExerciseCell: ViewCodeProtocol {
     
     func buildViews() {
         addSubview(itemView)
