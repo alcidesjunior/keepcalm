@@ -49,7 +49,7 @@ extension ExercisesViewController: UICollectionViewDelegateFlowLayout, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = exerciseView.collectionView.dequeueReusableCell(withReuseIdentifier: exerciseView.cellID, for: indexPath) as! ExerciseCollectionViewCell
+        let cell = exerciseView.collectionView.dequeueReusableCell(withReuseIdentifier: exerciseView.cellID, for: indexPath) as! ExerciseCell
         let activity = exerciseCellViewModel.getActivity(index: indexPath.item)
         cell.setup(activity: activity, viewColor: activity.color)
         
