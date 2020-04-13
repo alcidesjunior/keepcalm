@@ -10,6 +10,18 @@ import UIKit
 
 class RoutinesViewController: UIViewController, ControllerProtocol {
     
+    var routine: Routine!
+    var routineViewModel: RoutineViewModel!
+    var routineView: RoutineView!
+    
+    override func loadView() {
+        self.routine = Routine()
+        self.routineViewModel = RoutineViewModel(routine: routine)
+        self.routineView = RoutineView()
+        self.routineView.setup(routineViewModel: routineViewModel)
+        self.view = routineView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -1,17 +1,16 @@
 //
-//  ExercisesView.swift
+//  BreatheView.swift
 //  Keep Calm
 //
-//  Created by Alcides Junior on 05/04/20.
+//  Created by Alcides Junior on 12/04/20.
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
 import UIKit
 import SnapKit
+import YoutubePlayerView
 
-class ExercisesView: UIView {
-    
-    let cellID = "exerciseCollectionID"
+class BreatheView: UIView {
     
     lazy var scrollView: UIScrollView = {
         
@@ -25,8 +24,7 @@ class ExercisesView: UIView {
         return view
     }()
     
-    
-    lazy var exerciseLabel: UILabel = {
+    lazy var breathDescription: UILabel = {
         
         let view = UILabel()
         view.font = UIFont.phrase
@@ -35,47 +33,40 @@ class ExercisesView: UIView {
         return view
     }()
     
-    lazy var collectionView: UICollectionView = {
+    lazy var videoPlayerView: YoutubePlayerView = {
         
-        let layout = UICollectionViewFlowLayout()
-        let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        layout.scrollDirection = .vertical
-        layout.minimumLineSpacing = 4
-        layout.minimumInteritemSpacing = 4
-        layout.sectionInset = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
-        view.backgroundColor = .systemBackground
+        let view = YoutubePlayerView()
+        view.backgroundColor = .black
         return view
     }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViews()
-        
-    }
-    
-    convenience init(exerciseMotivation: String) {
-        self.init()
-        self.exerciseLabel.text = exerciseMotivation
-        
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    fileprivate func registerCell(){
+    func setup(breatheViewModel: AnxietyViewModel) {
         
-        collectionView.register(ExerciseCell.self, forCellWithReuseIdentifier: cellID)
+        videoPlayerView.loadWithVideoId(breatheViewModel.getMovieUrl())
+        videoPlayerView.seek(to: 30, allowSeekAhead: true)
+        
+        breathDescription.text = breatheViewModel.getDescription()
     }
+    
 }
 
-extension ExercisesView: ViewCodeProtocol {
+extension BreatheView: ViewCodeProtocol {
     func buildViews() {
         
         addSubview(scrollView)
         scrollView.addSubview(containerView)
-        containerView.addSubview(exerciseLabel)
-        containerView.addSubview(collectionView)
+        containerView.addSubview(breathDescription)
+        containerView.addSubview(videoPlayerView)
     }
     
     func setConstraints() {
@@ -93,23 +84,24 @@ extension ExercisesView: ViewCodeProtocol {
             make.height.equalToSuperview().priority(.low)
         }
         
-        exerciseLabel.snp.makeConstraints { (make) in
+        breathDescription.snp.makeConstraints { (make) in
             make.top.equalTo(containerView.snp.top).inset(16)
             make.leading.equalTo(containerView.snp.leading).inset(16)
             make.trailing.equalTo(containerView.snp.trailing).inset(16)
            
         }
         
-        collectionView.snp.makeConstraints { (make) in
-            make.top.equalTo(exerciseLabel.snp.bottom)
-            make.leading.equalTo(safeAreaLayoutGuide.snp.leading)
-            make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing)
+        videoPlayerView.snp.makeConstraints { (make) in
+            make.top.equalTo(breathDescription.snp.bottom).offset(8)
+            make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(8)
+            make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(8)
+            make.height.equalTo(190)
             make.bottom.equalTo(containerView.snp.bottom)
-            make.width.equalTo(containerView.snp.width)        }
+        }
     }
     
     func extraSettings() {
-        registerCell()
+        
     }
     
     
