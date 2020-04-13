@@ -65,8 +65,10 @@ extension ExercisesViewController: UICollectionViewDelegateFlowLayout, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+       
         let width = view.frame.size.width * 0.46
-        let heigth = view.frame.size.height * 0.22
+        
+        let heigth = view.frame.size.height * 0.13//22
 
         return CGSize(width: width, height: heigth)
     }

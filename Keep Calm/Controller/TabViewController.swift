@@ -31,6 +31,6 @@ class TabViewController: UITabBarController {
 
         let controllers = [homeViewController, routinesViewController, exercisesViewController, foodViewController, anxietyViewController]
         self.viewControllers = controllers
-        self.selectedIndex = 3
+        self.selectedIndex = 4
     }
 }

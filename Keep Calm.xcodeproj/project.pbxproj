@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A420DE5243EA6F90030250D /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE4243EA6F90030250D /* AnxietyView.swift */; };
+		1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */; };
+		1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE8243EA72A0030250D /* AnxietyCell.swift */; };
+		1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DEA243EA7B60030250D /* Anxiety.swift */; };
+		1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */; };
+		1A420DF0243EBBC70030250D /* burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A420DEF243EBBC70030250D /* burpee.gif */; };
 		1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */; };
 		1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -36,9 +42,23 @@
 		1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */; };
 		1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */; };
 		1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */; };
+		1AF048FF24439867005AA516 /* YoutubePlayerView in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF048FE24439867005AA516 /* YoutubePlayerView */; };
+		1AF04902244398B9005AA516 /* BreatheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04901244398B9005AA516 /* BreatheView.swift */; };
+		1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490524439E70005AA516 /* BreatheViewController.swift */; };
+		1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049082443AADB005AA516 /* BreatheViewModel.swift */; };
+		1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490B2443CC35005AA516 /* TeaView.swift */; };
+		1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490D2443DCF0005AA516 /* TeaViewController.swift */; };
+		1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049102443E5C6005AA516 /* MusicsView.swift */; };
+		1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049122443EF0D005AA516 /* MusicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A420DE4243EA6F90030250D /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
+		1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyDetailsView.swift; sourceTree = "<group>"; };
+		1A420DE8243EA72A0030250D /* AnxietyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCell.swift; sourceTree = "<group>"; };
+		1A420DEA243EA7B60030250D /* Anxiety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anxiety.swift; sourceTree = "<group>"; };
+		1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCellViewModel.swift; sourceTree = "<group>"; };
+		1A420DEF243EBBC70030250D /* burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = burpee.gif; sourceTree = "<group>"; };
 		1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsView.swift; sourceTree = "<group>"; };
 		1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewController.swift; sourceTree = "<group>"; };
 		1AD84F59243A7B93008173BB /* Keep Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep Calm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +89,13 @@
 		1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
+		1AF04901244398B9005AA516 /* BreatheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheView.swift; sourceTree = "<group>"; };
+		1AF0490524439E70005AA516 /* BreatheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewController.swift; sourceTree = "<group>"; };
+		1AF049082443AADB005AA516 /* BreatheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewModel.swift; sourceTree = "<group>"; };
+		1AF0490B2443CC35005AA516 /* TeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaView.swift; sourceTree = "<group>"; };
+		1AF0490D2443DCF0005AA516 /* TeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewController.swift; sourceTree = "<group>"; };
+		1AF049102443E5C6005AA516 /* MusicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsView.swift; sourceTree = "<group>"; };
+		1AF049122443EF0D005AA516 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AF048FF24439867005AA516 /* YoutubePlayerView in Frameworks */,
 				1AD84F8D243A83AC008173BB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +111,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A420DE2243EA6910030250D /* Anxiety */ = {
+			isa = PBXGroup;
+			children = (
+				1AF0490F2443E5A9005AA516 /* Musics */,
+				1AF0490A2443CC29005AA516 /* Teas */,
+				1AF04900244398A4005AA516 /* Breathe */,
+				1A420DE3243EA69E0030250D /* Cell */,
+				1A420DE4243EA6F90030250D /* AnxietyView.swift */,
+				1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */,
+			);
+			path = Anxiety;
+			sourceTree = "<group>";
+		};
+		1A420DE3243EA69E0030250D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1A420DE8243EA72A0030250D /* AnxietyCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1A420DEE243EBBB80030250D /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				1A420DEF243EBBC70030250D /* burpee.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
 		1AD84F50243A7B92008173BB = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +159,7 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
+				1A420DEE243EBBB80030250D /* Gifs */,
 				1AD84F94243AA0C8008173BB /* Extensions */,
 				1AD84F92243AA03D008173BB /* External Fonts */,
 				1AD84F77243A7D4D008173BB /* Protocols */,
@@ -125,6 +183,7 @@
 				1AD84F8E243A89E3008173BB /* Home.swift */,
 				1AD84FA1243AC5E5008173BB /* Exercise.swift */,
 				1AEF8BA2243D255100DAAAC4 /* Food.swift */,
+				1A420DEA243EA7B60030250D /* Anxiety.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -132,6 +191,7 @@
 		1AD84F74243A7D35008173BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A420DE2243EA6910030250D /* Anxiety */,
 				1AEF8BA4243D36E900DAAAC4 /* Food */,
 				1AD84F9B243ABF6A008173BB /* Exercises */,
 				1AD84F9A243ABF62008173BB /* Home */,
@@ -142,6 +202,7 @@
 		1AD84F75243A7D3B008173BB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1AF049072443AAC1005AA516 /* Anxiety */,
 				1AD84F90243A8AF8008173BB /* HomeViewModel.swift */,
 				1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */,
 				1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */,
@@ -170,12 +231,12 @@
 		1AD84F80243A7FFD008173BB /* TabItens */ = {
 			isa = PBXGroup;
 			children = (
+				1AF0490324439E3D005AA516 /* Anxiety */,
 				1AD84F60243A7B93008173BB /* HomeViewController.swift */,
 				1AD84F7C243A7F20008173BB /* RoutinesViewController.swift */,
 				1AD84F81243A8110008173BB /* ExercisesViewController.swift */,
 				1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */,
 				1AD84F85243A82B4008173BB /* FoodViewController.swift */,
-				1AD84F83243A815B008173BB /* AnxietyViewController.swift */,
 			);
 			path = TabItens;
 			sourceTree = "<group>";
@@ -239,6 +300,50 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		1AF04900244398A4005AA516 /* Breathe */ = {
+			isa = PBXGroup;
+			children = (
+				1AF04901244398B9005AA516 /* BreatheView.swift */,
+			);
+			path = Breathe;
+			sourceTree = "<group>";
+		};
+		1AF0490324439E3D005AA516 /* Anxiety */ = {
+			isa = PBXGroup;
+			children = (
+				1AD84F83243A815B008173BB /* AnxietyViewController.swift */,
+				1AF0490524439E70005AA516 /* BreatheViewController.swift */,
+				1AF0490D2443DCF0005AA516 /* TeaViewController.swift */,
+				1AF049122443EF0D005AA516 /* MusicViewController.swift */,
+			);
+			path = Anxiety;
+			sourceTree = "<group>";
+		};
+		1AF049072443AAC1005AA516 /* Anxiety */ = {
+			isa = PBXGroup;
+			children = (
+				1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */,
+				1AF049082443AADB005AA516 /* BreatheViewModel.swift */,
+			);
+			path = Anxiety;
+			sourceTree = "<group>";
+		};
+		1AF0490A2443CC29005AA516 /* Teas */ = {
+			isa = PBXGroup;
+			children = (
+				1AF0490B2443CC35005AA516 /* TeaView.swift */,
+			);
+			path = Teas;
+			sourceTree = "<group>";
+		};
+		1AF0490F2443E5A9005AA516 /* Musics */ = {
+			isa = PBXGroup;
+			children = (
+				1AF049102443E5C6005AA516 /* MusicsView.swift */,
+			);
+			path = Musics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -257,6 +362,7 @@
 			name = "Keep Calm";
 			packageProductDependencies = (
 				1AD84F8C243A83AC008173BB /* SnapKit */,
+				1AF048FE24439867005AA516 /* YoutubePlayerView */,
 			);
 			productName = "Keep Calm";
 			productReference = 1AD84F59243A7B93008173BB /* Keep Calm.app */;
@@ -288,6 +394,7 @@
 			mainGroup = 1AD84F50243A7B92008173BB;
 			packageReferences = (
 				1AD84F8B243A83AC008173BB /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1AF048FD24439867005AA516 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */,
 			);
 			productRefGroup = 1AD84F5A243A7B93008173BB /* Products */;
 			projectDirPath = "";
@@ -304,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */,
+				1A420DF0243EBBC70030250D /* burpee.gif in Resources */,
 				1AD84F6C243A7B97008173BB /* LaunchScreen.storyboard in Resources */,
 				1AD84F69243A7B97008173BB /* Assets.xcassets in Resources */,
 			);
@@ -321,6 +429,7 @@
 				1AD84F84243A815B008173BB /* AnxietyViewController.swift in Sources */,
 				1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */,
 				1AD84F9E243AC285008173BB /* ExerciseCell.swift in Sources */,
+				1AF04902244398B9005AA516 /* BreatheView.swift in Sources */,
 				1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */,
 				1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */,
 				1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */,
@@ -328,18 +437,29 @@
 				1AD84F82243A8110008173BB /* ExercisesViewController.swift in Sources */,
 				1AD84F7D243A7F20008173BB /* RoutinesViewController.swift in Sources */,
 				1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */,
+				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
+				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
+				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
+				1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */,
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
+				1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */,
 				1AD84F86243A82B4008173BB /* FoodViewController.swift in Sources */,
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */,
 				1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */,
+				1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */,
 				1AD84F91243A8AF8008173BB /* HomeViewModel.swift in Sources */,
 				1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */,
+				1A420DE5243EA6F90030250D /* AnxietyView.swift in Sources */,
+				1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */,
 				1AD84F8A243A8379008173BB /* HomeView.swift in Sources */,
 				1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */,
 				1AD84F7B243A7DE4008173BB /* TabViewController.swift in Sources */,
+				1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */,
+				1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */,
+				1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */,
 				1AD84F67243A7B93008173BB /* Keep_Calm.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -540,6 +660,14 @@
 				minimumVersion = 5.0.1;
 			};
 		};
+		1AF048FD24439867005AA516 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mukeshydv/YoutubePlayerView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -547,6 +675,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1AD84F8B243A83AC008173BB /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		1AF048FE24439867005AA516 /* YoutubePlayerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AF048FD24439867005AA516 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */;
+			productName = YoutubePlayerView;
 		};
 /* End XCSwiftPackageProductDependency section */
 
