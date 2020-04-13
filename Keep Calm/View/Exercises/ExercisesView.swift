@@ -101,7 +101,7 @@ extension ExercisesView: ViewCodeProtocol {
         }
         
         collectionView.snp.makeConstraints { (make) in
-            make.top.equalTo(exerciseLabel.snp.bottom)
+            make.top.equalTo(exerciseLabel.snp.bottom).offset(48)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing)
             make.bottom.equalTo(containerView.snp.bottom)
