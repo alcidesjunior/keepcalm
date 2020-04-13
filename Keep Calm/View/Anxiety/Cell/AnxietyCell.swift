@@ -1,14 +1,14 @@
 //
-//  ExerciseCollectionViewCell.swift
+//  AnxietyCell.swift
 //  Keep Calm
 //
-//  Created by Alcides Junior on 05/04/20.
+//  Created by Alcides Junior on 08/04/20.
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
 import UIKit
 
-class ExerciseCell: UICollectionViewCell {
+class AnxietyCell: UICollectionViewCell {
     
     lazy var itemView: UIView = {
         
@@ -30,7 +30,7 @@ class ExerciseCell: UICollectionViewCell {
         setupViews()
     }
     
-    func setup(activity: Activity, viewColor: UIColor) {
+    func setup(activity: AnxietyActivity, viewColor: UIColor) {
         
         itemLabel.text = activity.activityName
         itemView.backgroundColor = viewColor
@@ -41,7 +41,7 @@ class ExerciseCell: UICollectionViewCell {
     }
 }
 
-extension ExerciseCell: ViewCodeProtocol {
+extension AnxietyCell: ViewCodeProtocol {
     
     func buildViews() {
         addSubview(itemView)
@@ -52,8 +52,8 @@ extension ExerciseCell: ViewCodeProtocol {
         
         itemView.snp.makeConstraints { (make) in
             make.top.equalToSuperview()
-            make.leading.equalTo(safeAreaLayoutGuide.snp.leading)
-            make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing)
+            make.leading.equalToSuperview()
+            make.trailing.equalToSuperview()
             make.bottom.equalToSuperview()
         }
         
