@@ -50,6 +50,9 @@
 		1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490D2443DCF0005AA516 /* TeaViewController.swift */; };
 		1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049102443E5C6005AA516 /* MusicsView.swift */; };
 		1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049122443EF0D005AA516 /* MusicViewController.swift */; };
+		1AF0491624440169005AA516 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491524440169005AA516 /* RoutineView.swift */; };
+		1AF049182444084C005AA516 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049172444084C005AA516 /* Routine.swift */; };
+		1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04919244408DF005AA516 /* RoutineViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +99,9 @@
 		1AF0490D2443DCF0005AA516 /* TeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewController.swift; sourceTree = "<group>"; };
 		1AF049102443E5C6005AA516 /* MusicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsView.swift; sourceTree = "<group>"; };
 		1AF049122443EF0D005AA516 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		1AF0491524440169005AA516 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		1AF049172444084C005AA516 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
+		1AF04919244408DF005AA516 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,7 @@
 				1AD84FA1243AC5E5008173BB /* Exercise.swift */,
 				1AEF8BA2243D255100DAAAC4 /* Food.swift */,
 				1A420DEA243EA7B60030250D /* Anxiety.swift */,
+				1AF049172444084C005AA516 /* Routine.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 		1AD84F74243A7D35008173BB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1AF049142444015B005AA516 /* Routines */,
 				1A420DE2243EA6910030250D /* Anxiety */,
 				1AEF8BA4243D36E900DAAAC4 /* Food */,
 				1AD84F9B243ABF6A008173BB /* Exercises */,
@@ -206,6 +214,7 @@
 				1AD84F90243A8AF8008173BB /* HomeViewModel.swift */,
 				1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */,
 				1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */,
+				1AF04919244408DF005AA516 /* RoutineViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,6 +353,14 @@
 			path = Musics;
 			sourceTree = "<group>";
 		};
+		1AF049142444015B005AA516 /* Routines */ = {
+			isa = PBXGroup;
+			children = (
+				1AF0491524440169005AA516 /* RoutineView.swift */,
+			);
+			path = Routines;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -438,6 +455,7 @@
 				1AD84F7D243A7F20008173BB /* RoutinesViewController.swift in Sources */,
 				1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */,
 				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
+				1AF049182444084C005AA516 /* Routine.swift in Sources */,
 				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
 				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
@@ -449,6 +467,7 @@
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */,
 				1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */,
+				1AF0491624440169005AA516 /* RoutineView.swift in Sources */,
 				1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */,
 				1AD84F91243A8AF8008173BB /* HomeViewModel.swift in Sources */,
 				1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */,
@@ -457,6 +476,7 @@
 				1AD84F8A243A8379008173BB /* HomeView.swift in Sources */,
 				1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */,
 				1AD84F7B243A7DE4008173BB /* TabViewController.swift in Sources */,
+				1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */,
 				1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */,
 				1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */,
 				1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */,

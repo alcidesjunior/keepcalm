@@ -1,17 +1,17 @@
 //
-//  ExercisesView.swift
+//  AnxietyView.swift
 //  Keep Calm
 //
-//  Created by Alcides Junior on 05/04/20.
+//  Created by Alcides Junior on 08/04/20.
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
 import UIKit
 import SnapKit
 
-class ExercisesView: UIView {
+class AnxietyView: UIView {
     
-    let cellID = "exerciseCollectionID"
+    let cellID = "anxietyCollectionID"
     
     lazy var scrollView: UIScrollView = {
         
@@ -26,7 +26,7 @@ class ExercisesView: UIView {
     }()
     
     
-    lazy var exerciseLabel: UILabel = {
+    lazy var anxietyLabel: UILabel = {
         
         let view = UILabel()
         view.font = UIFont.phrase
@@ -53,9 +53,9 @@ class ExercisesView: UIView {
         
     }
     
-    convenience init(exerciseMotivation: String) {
+    convenience init(anxietyMotivation: String) {
         self.init()
-        self.exerciseLabel.text = exerciseMotivation
+        self.anxietyLabel.text = anxietyMotivation
         
     }
     
@@ -65,16 +65,16 @@ class ExercisesView: UIView {
     
     fileprivate func registerCell(){
         
-        collectionView.register(ExerciseCell.self, forCellWithReuseIdentifier: cellID)
+        collectionView.register(AnxietyCell.self, forCellWithReuseIdentifier: cellID)
     }
 }
 
-extension ExercisesView: ViewCodeProtocol {
+extension AnxietyView: ViewCodeProtocol {
     func buildViews() {
         
         addSubview(scrollView)
         scrollView.addSubview(containerView)
-        containerView.addSubview(exerciseLabel)
+        containerView.addSubview(anxietyLabel)
         containerView.addSubview(collectionView)
     }
     
@@ -93,7 +93,7 @@ extension ExercisesView: ViewCodeProtocol {
             make.height.equalToSuperview().priority(.low)
         }
         
-        exerciseLabel.snp.makeConstraints { (make) in
+        anxietyLabel.snp.makeConstraints { (make) in
             make.top.equalTo(containerView.snp.top).inset(16)
             make.leading.equalTo(containerView.snp.leading).inset(16)
             make.trailing.equalTo(containerView.snp.trailing).inset(16)
@@ -101,7 +101,7 @@ extension ExercisesView: ViewCodeProtocol {
         }
         
         collectionView.snp.makeConstraints { (make) in
-            make.top.equalTo(exerciseLabel.snp.bottom)
+            make.top.equalTo(anxietyLabel.snp.bottom)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing)
             make.bottom.equalTo(containerView.snp.bottom)
