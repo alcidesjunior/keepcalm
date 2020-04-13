@@ -28,7 +28,8 @@ class FoodView: UIView {
     lazy var motivationalText: UILabel = {
         
         let view = UILabel()
-        view.textAlignment = .left
+        view.textAlignment = .justified
+        view.font = UIFont.phrase
         view.numberOfLines = 0
         return view
     }()
