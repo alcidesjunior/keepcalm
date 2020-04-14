@@ -15,6 +15,7 @@
 		1A420DF0243EBBC70030250D /* burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A420DEF243EBBC70030250D /* burpee.gif */; };
 		1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */; };
 		1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */; };
+		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
 		1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5E243A7B93008173BB /* SceneDelegate.swift */; };
 		1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F60243A7B93008173BB /* HomeViewController.swift */; };
@@ -53,6 +54,8 @@
 		1AF0491624440169005AA516 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491524440169005AA516 /* RoutineView.swift */; };
 		1AF049182444084C005AA516 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049172444084C005AA516 /* Routine.swift */; };
 		1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04919244408DF005AA516 /* RoutineViewModel.swift */; };
+		1AF0491C244416F7005AA516 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491B244416F7005AA516 /* ProfileView.swift */; };
+		1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491D24441B90005AA516 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,7 @@
 		1A420DEF243EBBC70030250D /* burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = burpee.gif; sourceTree = "<group>"; };
 		1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsView.swift; sourceTree = "<group>"; };
 		1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewController.swift; sourceTree = "<group>"; };
+		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
 		1AD84F59243A7B93008173BB /* Keep Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep Calm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD84F5C243A7B93008173BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD84F5E243A7B93008173BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 		1AF0491524440169005AA516 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
 		1AF049172444084C005AA516 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		1AF04919244408DF005AA516 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
+		1AF0491B244416F7005AA516 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1AF0491D24441B90005AA516 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +239,7 @@
 			children = (
 				1AD84F7E243A7F4A008173BB /* ControllerProtocol.swift */,
 				1AD84F87243A832C008173BB /* ViewCodeProtocol.swift */,
+				1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -246,6 +253,7 @@
 				1AD84F81243A8110008173BB /* ExercisesViewController.swift */,
 				1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */,
 				1AD84F85243A82B4008173BB /* FoodViewController.swift */,
+				1AF0491D24441B90005AA516 /* ProfileViewController.swift */,
 			);
 			path = TabItens;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD84F89243A8379008173BB /* HomeView.swift */,
+				1AF0491B244416F7005AA516 /* ProfileView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -442,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */,
+				1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */,
 				1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */,
 				1AD84F84243A815B008173BB /* AnxietyViewController.swift in Sources */,
 				1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */,
@@ -454,10 +464,12 @@
 				1AD84F82243A8110008173BB /* ExercisesViewController.swift in Sources */,
 				1AD84F7D243A7F20008173BB /* RoutinesViewController.swift in Sources */,
 				1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */,
+				1AF0491C244416F7005AA516 /* ProfileView.swift in Sources */,
 				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
 				1AF049182444084C005AA516 /* Routine.swift in Sources */,
 				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
+				1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */,
 				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
 				1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */,

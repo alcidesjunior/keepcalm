@@ -6,22 +6,32 @@
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Home {
     
     var profileImage: String
     var phraseOfTheDay: String
-    var firstName: String
-    var lastName: String
+    var firstName: String = ""
+    var lastName: String = ""
     var fullName: String
     
     init() {
         
-        self.profileImage = "profilePic"
+        if (UserDefaults.standard.value(forKey: "userProfileImage") != nil) {
+            let imageData = UserDefaults.standard.value(forKey: "userProfileImage") as! String
+            self.profileImage = imageData
+        }else{
+            
+            self.profileImage = "profileDefault"
+        }
+        
         self.phraseOfTheDay = "Tente de novo. Fracasse de novo. Mas fracasse melhor - Samuel Beckett"
-        self.firstName = "Alcides"
-        self.lastName = "Junior"
+        if UserDefaults.standard.value(forKey: "firstName") != nil {
+            
+            self.firstName = UserDefaults.standard.value(forKey: "firstName") as! String
+        }
+        
         self.fullName = self.firstName+" "+self.lastName
     }
     
