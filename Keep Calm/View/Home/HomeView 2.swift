@@ -18,20 +18,10 @@ class HomeView: UIView {
         return view
     }()
     
-    lazy var editProfileButton: UIButton = {
-        
-        let view = UIButton()
-        view.setTitleColor(UIColor(named: "customBlue"), for: .normal)
-        view.isEnabled = true
-        return view
-    }()
-    
     lazy var greetingPhrase: UILabel = {
         
         let view = UILabel()
         view.font = .greeting
-        view.textAlignment = .center
-        view.numberOfLines = 0
         return view
     }()
     
@@ -52,14 +42,8 @@ class HomeView: UIView {
     
     convenience init(homeViewModel: HomeViewModel) {
         self.init()
-        if UserDefaults.standard.value(forKey: "userProfileImage") != nil {
-            
-            profileImage.image = UIImage(contentsOfFile: homeViewModel.getProfileImage())
-        }else {
-            
-            profileImage.image = UIImage(named: homeViewModel.getProfileImage())
-        }
-        editProfileButton.setTitle("Editar Perfil", for: .normal)
+        
+        profileImage.image = UIImage(named: homeViewModel.getProfileImage())
         greetingPhrase.text = homeViewModel.getGreeting()
         motivationalPhrase.text = homeViewModel.getPhraseOfTheDay()
         
@@ -76,7 +60,7 @@ class HomeView: UIView {
 extension HomeView: ViewCodeProtocol {
     func buildViews() {
         
-        let components = [profileImage, editProfileButton, greetingPhrase, motivationalPhrase]
+        let components = [profileImage, greetingPhrase, motivationalPhrase]
         components.forEach { (component) in
             addSubview(component)
         }
@@ -93,19 +77,11 @@ extension HomeView: ViewCodeProtocol {
             
         }
         
-        editProfileButton.snp.makeConstraints { (make) in
-            make.top.equalTo(profileImage.snp.bottom).offset(8)
-            make.width.equalTo(146)
-            make.centerX.equalTo(profileImage.snp.centerX)
-        }
-        
         greetingPhrase.snp.makeConstraints { (make) in
             
-            make.top.equalTo(editProfileButton.snp.bottom).offset(16)
+            make.top.equalTo(profileImage.snp.bottom).offset(16)
             make.centerX.equalToSuperview()
-            make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
-            make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-//            make.height.equalTo(40)
+            make.height.equalTo(40)
         }
         
         motivationalPhrase.snp.makeConstraints { (make) in

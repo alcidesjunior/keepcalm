@@ -25,7 +25,19 @@ class HomeViewController: UIViewController, ControllerProtocol {
         super.viewDidLoad()
         
         navbarSettings()
+        homeView.editProfileButton.addTarget(self, action: #selector(editProfileAction), for: .touchUpInside)
         self.view.backgroundColor = .systemBackground
+//        let profile = ProfileViewController()
+//        profile.delegate = self
+//        self.present(profile, animated: true, completion: nil)
+    }
+    
+    @objc func editProfileAction() {
+        
+        let profile = ProfileViewController()
+        profile.delegate = self
+        profile.modalPresentationStyle = .fullScreen
+        self.present(profile, animated: true, completion: nil)
     }
     
     override func viewDidLayoutSubviews() {
@@ -41,3 +53,14 @@ class HomeViewController: UIViewController, ControllerProtocol {
 
 }
 
+extension HomeViewController: SavedDataProtocol {
+    func didUpdateData() {
+        DispatchQueue.main.async {
+
+            self.loadView()
+            self.viewDidLoad()
+        }
+    }
+    
+    
+}

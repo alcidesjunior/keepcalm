@@ -6,7 +6,7 @@
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class HomeViewModel {
     
