@@ -55,8 +55,9 @@ class HomeViewModel {
     }
     
     func getPhraseOfTheDay()->String {
-        
-        return "\""+self.home.phraseOfTheDay+"\""
+        let qtd = self.home.phraseOfTheDay.count-1
+        let today = Int.random(in: 0...qtd)
+        return self.home.phraseOfTheDay[today]
     }
     
     func getFirstName()->String {
