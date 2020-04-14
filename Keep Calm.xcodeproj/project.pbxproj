@@ -12,7 +12,6 @@
 		1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE8243EA72A0030250D /* AnxietyCell.swift */; };
 		1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DEA243EA7B60030250D /* Anxiety.swift */; };
 		1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */; };
-		1A420DF0243EBBC70030250D /* burpee.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1A420DEF243EBBC70030250D /* burpee.gif */; };
 		1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */; };
 		1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */; };
 		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
@@ -64,7 +63,6 @@
 		1A420DE8243EA72A0030250D /* AnxietyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCell.swift; sourceTree = "<group>"; };
 		1A420DEA243EA7B60030250D /* Anxiety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anxiety.swift; sourceTree = "<group>"; };
 		1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCellViewModel.swift; sourceTree = "<group>"; };
-		1A420DEF243EBBC70030250D /* burpee.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = burpee.gif; sourceTree = "<group>"; };
 		1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsView.swift; sourceTree = "<group>"; };
 		1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewController.swift; sourceTree = "<group>"; };
 		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
@@ -144,14 +142,6 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		1A420DEE243EBBB80030250D /* Gifs */ = {
-			isa = PBXGroup;
-			children = (
-				1A420DEF243EBBC70030250D /* burpee.gif */,
-			);
-			path = Gifs;
-			sourceTree = "<group>";
-		};
 		1AD84F50243A7B92008173BB = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +161,6 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
-				1A420DEE243EBBB80030250D /* Gifs */,
 				1AD84F94243AA0C8008173BB /* Extensions */,
 				1AD84F92243AA03D008173BB /* External Fonts */,
 				1AD84F77243A7D4D008173BB /* Protocols */,
@@ -437,7 +426,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */,
-				1A420DF0243EBBC70030250D /* burpee.gif in Resources */,
 				1AD84F6C243A7B97008173BB /* LaunchScreen.storyboard in Resources */,
 				1AD84F69243A7B97008173BB /* Assets.xcassets in Resources */,
 			);
