@@ -73,7 +73,17 @@ class ProfileView: UIView {
         setupViews()
         let home = Home()
         let homeViewModel = HomeViewModel(home: home)
-        self.profileImage.image = UIImage(named: homeViewModel.getProfileImage())
+        if UserDefaults.standard.value(forKey: "userProfileImage") != nil {
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: homeViewModel.getProfileImage()) {
+                profileImage.image = UIImage(contentsOfFile: homeViewModel.getProfileImage())
+            }else {
+                profileImage.image = UIImage(named: "profileDefault")
+            }
+        }else {
+            
+            profileImage.image = UIImage(named: homeViewModel.getProfileImage())
+        }
         self.userNameInput.text = homeViewModel.getFirstName()
     }
     

@@ -53,8 +53,12 @@ class HomeView: UIView {
     convenience init(homeViewModel: HomeViewModel) {
         self.init()
         if UserDefaults.standard.value(forKey: "userProfileImage") != nil {
-            
-            profileImage.image = UIImage(contentsOfFile: homeViewModel.getProfileImage())
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: homeViewModel.getProfileImage()) {
+                profileImage.image = UIImage(contentsOfFile: homeViewModel.getProfileImage())
+            }else {
+                profileImage.image = UIImage(named: "profileDefault")
+            }
         }else {
             
             profileImage.image = UIImage(named: homeViewModel.getProfileImage())

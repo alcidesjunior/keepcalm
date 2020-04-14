@@ -43,24 +43,32 @@ class ProfileViewController: UIViewController {
         delegate?.didUpdateData()
         let firstName:String = profileView.userNameInput.text!
         
-        if let imageData = profileView.profileImage.image?.pngData(){
-            let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-            let url = documents.appendingPathComponent("profileImage.png")
-            
-            do {
-                // Write to Disk
-                try imageData.write(to: url)
-                
-                // Store URL in User Defaults
-                UserDefaults.standard.set(url.relativePath, forKey: "userProfileImage")
-
-            } catch {
-                print("Unable to Write Data to Disk (\(error))")
-            }
-        }
-        UserDefaults.standard.set(firstName, forKey: "firstName")
+        if firstName.trimmingCharacters(in: .whitespacesAndNewlines) != ""{
         
-        self.dismiss(animated: true, completion: nil)
+            if let imageData = profileView.profileImage.image?.pngData(){
+                let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+                let url = documents.appendingPathComponent("profileImage.png")
+                
+                do {
+                    // Write to Disk
+                    try imageData.write(to: url)
+                    
+                    // Store URL in User Defaults
+                    UserDefaults.standard.set(url.relativePath, forKey: "userProfileImage")
+
+                } catch {
+                    print("Unable to Write Data to Disk (\(error))")
+                }
+            }
+            UserDefaults.standard.set(firstName, forKey: "firstName")
+            
+            self.dismiss(animated: true, completion: nil)
+        }else {
+            
+            let alert = UIAlertController(title: "Atenção", message: "Preencha o campo nome.", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Entendi", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {

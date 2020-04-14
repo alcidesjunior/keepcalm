@@ -12,8 +12,8 @@ class Home {
     
     var profileImage: String
     var phraseOfTheDay: String
-    var firstName: String
-    var lastName: String
+    var firstName: String = ""
+    var lastName: String = ""
     var fullName: String
     
     init() {
@@ -23,17 +23,15 @@ class Home {
             self.profileImage = imageData
         }else{
             
-            self.profileImage = "imageDefault"
+            self.profileImage = "profileDefault"
         }
+        
         self.phraseOfTheDay = "Tente de novo. Fracasse de novo. Mas fracasse melhor - Samuel Beckett"
         if UserDefaults.standard.value(forKey: "firstName") != nil {
             
             self.firstName = UserDefaults.standard.value(forKey: "firstName") as! String
-        }else {
-            
-            self.firstName = "Alcides"
         }
-        self.lastName = "Junior"
+        
         self.fullName = self.firstName+" "+self.lastName
     }
     

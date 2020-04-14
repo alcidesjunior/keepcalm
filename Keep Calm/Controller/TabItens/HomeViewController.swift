@@ -8,6 +8,20 @@
 
 import UIKit
 
+class LogginGatway {
+    static let shared = LogginGatway()
+    private init() {}
+    
+    func isLogged()->Bool {
+        let defaults = UserDefaults.standard
+        if defaults.value(forKey: "firstAccess") == nil {
+            UserDefaults.standard.set(true, forKey: "firstAccess")
+            return true
+        }
+        return false
+    }
+}
+
 class HomeViewController: UIViewController, ControllerProtocol {
     
     var home: Home!
@@ -27,9 +41,14 @@ class HomeViewController: UIViewController, ControllerProtocol {
         navbarSettings()
         homeView.editProfileButton.addTarget(self, action: #selector(editProfileAction), for: .touchUpInside)
         self.view.backgroundColor = .systemBackground
-//        let profile = ProfileViewController()
-//        profile.delegate = self
-//        self.present(profile, animated: true, completion: nil)
+        
+//        if LogginGatway.shared.isLogged() {
+//            let profile = ProfileViewController()
+//            profile.delegate = self
+//            profile.modalPresentationStyle = .fullScreen
+//            self.present(profile, animated: true, completion: nil)
+//            
+//        }
     }
     
     @objc func editProfileAction() {
