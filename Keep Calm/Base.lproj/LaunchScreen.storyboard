@@ -32,6 +32,7 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="customBlue"/>
+                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
                             <constraint firstItem="ln3-nA-Mmq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JHA-Un-zwz"/>
                             <constraint firstItem="a9W-4Z-utm" firstAttribute="top" secondItem="ln3-nA-Mmq" secondAttribute="bottom" constant="8" id="MA4-dd-pG5"/>

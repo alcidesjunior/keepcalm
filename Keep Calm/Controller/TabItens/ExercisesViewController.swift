@@ -68,7 +68,7 @@ extension ExercisesViewController: UICollectionViewDelegateFlowLayout, UICollect
        
         let width = view.frame.size.width * 0.46
         
-        let heigth = view.frame.size.height * 0.27
+        let heigth = view.frame.size.height * 0.13
 
         return CGSize(width: width, height: heigth)
     }

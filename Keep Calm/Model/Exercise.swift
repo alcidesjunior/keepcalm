@@ -24,7 +24,7 @@ class Exercise {
 //       let respiracao = Activity(activityName: "Respiração", description: "O exercício de respiração é bem simples. Puxe o ar pelo nariz devagar e em grande quantidade. Pode estufar o peito mesmo, não tem problema. Segure o suficiente para não ficar sufocado, e solte na mesma velocidade que puxou, mas com a boca. Faça por aproximadamente 10 minutos, com o tempo você vai se sentir muito mais calmo no dia a dia.", color: UIColor(named: "customBlack")!, avatar: UIImage(), source: "https://blog.beard.com.br/exercicios-matinais-comecar-o-dia/")
         
         self.activities = [naCama, alongamento]//, games]
-        self.exerciseMotivation = "É comprovado cientificamente que ao praticarmos exercícios, o nosso organismo libera várias substâncias, como a endorfina, que promovem o nosso bem-estar que aumentando nossa motivação, alegria e disposição. Esses hormônios fazem a sensação de bem-estar durar por horas após a prática de exercício. Aqui estão alguns exercícios que podem ser feitos dentro de casa."
+        self.exerciseMotivation = "É comprovado cientificamente que ao praticarmos exercícios, o nosso organismo libera várias substâncias, como a endorfina, que promovem o nosso bem-estar que aumenta nossa motivação, alegria e disposição. Esses hormônios fazem a sensação de bem-estar durar por horas após a prática de exercício. Lembrando que é muito importante praticar, mas se você não pratica com frequência não tem problema, o importante é reconhecer que precisa praticar e dar o primeiro passo! Pensando nisso, separei alguns exercícios básicos que podem serem feitos facilmente na sua casa e após criar o hábito, procure novos exercícios e vá aumentando gradativamente."
     }
     
 }

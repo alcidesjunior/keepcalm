@@ -32,12 +32,12 @@ class Anxiety {
         
         //MUSICS
         let msc1 = AnxietyMovie(title: "1.Weighless (Marconi Union)", description: "", url: "UfcAVejslrU")
-        let msc2 = AnxietyMovie(title: "2.Electra (Airstream)", description: "", url: "FTvZ8a2gHFc")
-        let msc3 = AnxietyMovie(title: "3.Mellomaniac – Chill Out Mix (DJ Shah)", description: "", url: "EcRXlM6edrM")
-        let msc4 = AnxietyMovie(title: "4.Watermark (Enya)", description: "", url: "NO5tb20qQnA")
-        let msc5 = AnxietyMovie(title: "5.Strawberry Swing (Coldplay)", description: "", url: "isH1yy8I_dc")
+//        let msc2 = AnxietyMovie(title: "2.Electra (Airstream)", description: "", url: "2KlzPHnOgHM")
+        let msc3 = AnxietyMovie(title: "2.Mellomaniac – Chill Out Mix (DJ Shah)", description: "", url: "GPFdwYlZ3DU")
+//        let msc4 = AnxietyMovie(title: "4.Watermark (Enya)", description: "", url: "JQ4nJls4Hic")
+        let msc5 = AnxietyMovie(title: "3.Strawberry Swing (Coldplay)", description: "", url: "ZW7yhS8pc7s")
         
-        let musicas = AnxietyActivity(activityName: "Músicas", color: UIColor(named: "customBlack")!, avatar: UIImage(), source: "", anxietyMovie: [msc1, msc2, msc3, msc4, msc5])
+        let musicas = AnxietyActivity(activityName: "Músicas", color: UIColor(named: "customBlack")!, avatar: UIImage(), source: "", anxietyMovie: [msc1, msc3, msc5])
         
         //MEDITATION
         let meditacao1 = AnxietyMovie(title: "", description: "A meditação é uma forma de trazer o ser humano para o agora. O grande problema de pessoas que sofrem com ansiedade é que elas sempre estão no futuro, pensando em coisas ou problemas que vão resolver futuramente e na maioria das vezes, esses problemas nem existirão, porém, o excesso de pensamentos nesses problemas prejudica as pessoas causando a ansiedade. O grande benefício de praticar a meditação, é justamente de “esvaziar” a mente e te ajudar a viver o agora. Se você se identifica com isso, te aconselho a começar a praticar meditação. Existem vários tipos de meditação.\nVeja um exemplo de meditação abaixo:", url: "Dbt2x-lWASI")
@@ -46,7 +46,7 @@ class Anxiety {
         
         self.activities = [respiracao, chas, musicas, meditacoes]
         
-        self.anxietyMotivation = "É comprovado cientificamente que ao praticarmos exercícios, o nosso organismo libera várias substâncias, como a endorfina, que promovem o nosso bem-estar que aumentando nossa motivação, alegria e disposição. Esses hormônios fazem a sensação de bem-estar durar por horas após a prática de exercício. Aqui estão alguns exercícios que podem ser feitos dentro de casa."
+        self.anxietyMotivation = "A ansiedade é um estado de preocupação intensa, excessiva e persistente onde impacta diretamente nas áreas da vida e muita das vezes acaba impedindo a pessoa de realizar coisas por estar \"travada\" a ponto de não conseguir fazer outra coisa. Existem algumas ferramentes que ajudam a amenizar os sintomas da ansiedade e assim, permitir um estado de paz e relaxamento. Algumas dessas ferramentas são a prática de respiração correta, chás, músicas e meditação. A maioria das pessoas consegue amenizar os sintomas praticando algumas ou todas essas atividades."
     }
     
 }

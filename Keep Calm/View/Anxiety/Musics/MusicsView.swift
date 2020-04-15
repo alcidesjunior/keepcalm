@@ -81,43 +81,43 @@ class MusicsView: UIView {
         return view
     }()
     
-    lazy var title4: UILabel = {
-        
-        let view = UILabel()
-        view.font = UIFont.greeting
-        view.textAlignment = .left
-        view.numberOfLines = 0
-        return view
-    }()
-    
-    lazy var videoPlayerView4: YoutubePlayerView = {
-        
-        let view = YoutubePlayerView()
-        view.backgroundColor = .black
-        return view
-    }()
-    
-    lazy var title5: UILabel = {
-        
-        let view = UILabel()
-        view.font = UIFont.greeting
-        view.textAlignment = .left
-        view.numberOfLines = 0
-        return view
-    }()
-    
-    lazy var videoPlayerView5: YoutubePlayerView = {
-        
-        let view = YoutubePlayerView()
-        view.backgroundColor = .black
-        return view
-    }()
+//    lazy var title4: UILabel = {
+//
+//        let view = UILabel()
+//        view.font = UIFont.greeting
+//        view.textAlignment = .left
+//        view.numberOfLines = 0
+//        return view
+//    }()
+//
+//    lazy var videoPlayerView4: YoutubePlayerView = {
+//
+//        let view = YoutubePlayerView()
+//        view.backgroundColor = .black
+//        return view
+//    }()
+//
+//    lazy var title5: UILabel = {
+//
+//        let view = UILabel()
+//        view.font = UIFont.greeting
+//        view.textAlignment = .left
+//        view.numberOfLines = 0
+//        return view
+//    }()
+//
+//    lazy var videoPlayerView5: YoutubePlayerView = {
+//
+//        let view = YoutubePlayerView()
+//        view.backgroundColor = .black
+//        return view
+//    }()
     
     var components: [Components] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.components = [Components(title: title1, videoPlay: videoPlayerView1), Components(title: title2, videoPlay: videoPlayerView2), Components(title: title3, videoPlay: videoPlayerView3), Components(title: title4, videoPlay: videoPlayerView4), Components(title: title5, videoPlay: videoPlayerView5)]
+        self.components = [Components(title: title1, videoPlay: videoPlayerView1), Components(title: title2, videoPlay: videoPlayerView2), Components(title: title3, videoPlay: videoPlayerView3)]
         setupViews()
     }
     
@@ -210,34 +210,35 @@ extension MusicsView: ViewCodeProtocol {
             make.leading.equalTo(containerView.snp.leading).inset(16)
             make.trailing.equalTo(containerView.snp.trailing).inset(16)
             make.height.equalTo(190)
-        }
-        
-        title4.snp.makeConstraints { (make) in
-            make.top.equalTo(videoPlayerView3.snp.bottom).offset(16)
-            make.leading.equalTo(containerView.snp.leading).inset(16)
-            make.trailing.equalTo(containerView.snp.trailing).inset(16)
-        }
-        
-        videoPlayerView4.snp.makeConstraints { (make) in
-            make.top.equalTo(title4.snp.bottom).offset(16)
-            make.leading.equalTo(containerView.snp.leading).inset(16)
-            make.trailing.equalTo(containerView.snp.trailing).inset(16)
-            make.height.equalTo(190)
-        }
-        
-        title5.snp.makeConstraints { (make) in
-            make.top.equalTo(videoPlayerView4.snp.bottom).offset(16)
-            make.leading.equalTo(containerView.snp.leading).inset(16)
-            make.trailing.equalTo(containerView.snp.trailing).inset(16)
-        }
-        
-        videoPlayerView5.snp.makeConstraints { (make) in
-            make.top.equalTo(title5.snp.bottom).offset(16)
-            make.leading.equalTo(containerView.snp.leading).inset(16)
-            make.trailing.equalTo(containerView.snp.trailing).inset(16)
-            make.height.equalTo(190)
             make.bottom.equalTo(containerView.snp.bottom)
         }
+        
+//        title4.snp.makeConstraints { (make) in
+//            make.top.equalTo(videoPlayerView3.snp.bottom).offset(16)
+//            make.leading.equalTo(containerView.snp.leading).inset(16)
+//            make.trailing.equalTo(containerView.snp.trailing).inset(16)
+//        }
+//
+//        videoPlayerView4.snp.makeConstraints { (make) in
+//            make.top.equalTo(title4.snp.bottom).offset(16)
+//            make.leading.equalTo(containerView.snp.leading).inset(16)
+//            make.trailing.equalTo(containerView.snp.trailing).inset(16)
+//            make.height.equalTo(190)
+//        }
+//
+//        title5.snp.makeConstraints { (make) in
+//            make.top.equalTo(videoPlayerView4.snp.bottom).offset(16)
+//            make.leading.equalTo(containerView.snp.leading).inset(16)
+//            make.trailing.equalTo(containerView.snp.trailing).inset(16)
+//        }
+//
+//        videoPlayerView5.snp.makeConstraints { (make) in
+//            make.top.equalTo(title5.snp.bottom).offset(16)
+//            make.leading.equalTo(containerView.snp.leading).inset(16)
+//            make.trailing.equalTo(containerView.snp.trailing).inset(16)
+//            make.height.equalTo(190)
+//            make.bottom.equalTo(containerView.snp.bottom)
+//        }
         
     }
     
