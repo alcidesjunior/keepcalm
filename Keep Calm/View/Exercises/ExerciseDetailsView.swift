@@ -33,7 +33,7 @@ class ExerciseDetailsView: UIView {
     lazy var textDescription: UILabel = {
         
         let view = UILabel()
-        view.textAlignment = .left
+        view.textAlignment = .justified
         view.numberOfLines = 0
         return view
     }()
