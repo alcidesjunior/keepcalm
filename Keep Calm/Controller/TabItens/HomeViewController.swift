@@ -42,13 +42,11 @@ class HomeViewController: UIViewController, ControllerProtocol {
         homeView.editProfileButton.addTarget(self, action: #selector(editProfileAction), for: .touchUpInside)
         self.view.backgroundColor = .systemBackground
         
-//        if LogginGatway.shared.isLogged() {
-//            let profile = ProfileViewController()
-//            profile.delegate = self
-//            profile.modalPresentationStyle = .fullScreen
-//            self.present(profile, animated: true, completion: nil)
-//            
-//        }
+        if LogginGatway.shared.isLogged() {
+            let onboarding = OnboardingViewController()
+            onboarding.modalPresentationStyle = .fullScreen
+            self.present(onboarding, animated: false, completion: nil)
+        }
     }
     
     @objc func editProfileAction() {

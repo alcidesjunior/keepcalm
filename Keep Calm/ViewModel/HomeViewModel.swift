@@ -28,20 +28,13 @@ class HomeViewModel {
         let calendar = NSCalendar.current
         let currentHour = calendar.component(.hour, from: date as Date)
         let hourInt = Int(currentHour.description)!
-
-        if hourInt >= 12 && hourInt <= 16 {
+        
+        switch hourInt {
+        case 0 ... 11:
             greeting = "Bom dia"
-        }
-        else if hourInt >= 7 && hourInt <= 12 {
+        case 12 ... 17:
             greeting = "Boa tarde"
-        }
-        else if hourInt >= 16 && hourInt <= 20 {
-            greeting = "Boa noite"
-        }
-        else if hourInt >= 20 && hourInt <= 24 {
-            greeting = "Boa noite"
-        }
-        else if hourInt >= 0 && hourInt <= 7 {
+        default:
             greeting = "Boa noite"
         }
         
@@ -50,7 +43,9 @@ class HomeViewModel {
     }
     
     func getGreeting()->String {
-        
+        if getFirstName() == "" {
+            return greetingString()+"!"
+        }
         return greetingString()+", "+getFirstName()+"!"
     }
     
