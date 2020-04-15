@@ -22,6 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         let rootView = TabViewController()
+        rootView.tabBar.tintColor = UIColor(named: "customBlue")
         window?.rootViewController = rootView
         window?.makeKeyAndVisible()
     }
