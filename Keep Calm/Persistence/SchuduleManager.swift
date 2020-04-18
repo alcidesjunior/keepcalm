@@ -54,6 +54,9 @@ public class ScheduleManager {
             let managedContext = appDelegate.persistentContainer.viewContext
             
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Schedule")
+            let sortDescriptor = NSSortDescriptor(key: "hour", ascending: true)
+            let sortDescriptors = [sortDescriptor]
+            fetchRequest.sortDescriptors = sortDescriptors
     //        fetchRequest.predicate = NSPredicate(format: "day == \(byDay)")
             
             do {
@@ -98,6 +101,9 @@ public class ScheduleManager {
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Schedule")
         fetchRequest.predicate = NSPredicate(format: "day == \(byDay)")
+        let sortDescriptor = NSSortDescriptor(key: "hour", ascending: true)
+        let sortDescriptors = [sortDescriptor]
+        fetchRequest.sortDescriptors = sortDescriptors
         
         do {
             

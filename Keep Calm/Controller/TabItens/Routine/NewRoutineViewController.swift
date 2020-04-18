@@ -42,15 +42,23 @@ class NewRoutineViewController: UIViewController, ControllerProtocol {
         toolBar.tintColor = UIColor(named: "customBlue")
         toolBar.sizeToFit()
 
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(hiddenKeyBoard))
+        let doneButton = UIBarButtonItem(title: "Feito", style: UIBarButtonItem.Style.done, target: self, action: #selector(doneAction))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(hiddenKeyBoard))
+        let cancelButton = UIBarButtonItem(title: "Cancelar", style: UIBarButtonItem.Style.plain, target: self, action: #selector(hiddenKeyBoard))
 
         toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         picker.delegate = self
         newRoutineView.hourTF.inputView = picker
         newRoutineView.hourTF.inputAccessoryView = toolBar
+    }
+    
+    @objc func doneAction() {
+        
+        newRoutineView.hourTF.text = currentTime
+        newRoutineView.activityTF.endEditing(true)
+        newRoutineView.hourTF.endEditing(true)
+        newRoutineView.descriptionTextView.endEditing(true)
     }
     
     @objc func hiddenKeyBoard(){

@@ -11,6 +11,9 @@
 		1A3954482446BFD3009D1563 /* Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3954472446BFD3009D1563 /* Screen3ViewController.swift */; };
 		1A39544A2446D464009D1563 /* ScreenView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3954492446D464009D1563 /* ScreenView4.swift */; };
 		1A39544C2446D50F009D1563 /* Screen4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39544B2446D50F009D1563 /* Screen4ViewController.swift */; };
+		1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */; };
+		1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */; };
+		1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */; };
 		1A420DE5243EA6F90030250D /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE4243EA6F90030250D /* AnxietyView.swift */; };
 		1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */; };
 		1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE8243EA72A0030250D /* AnxietyCell.swift */; };
@@ -75,6 +78,9 @@
 		1A3954472446BFD3009D1563 /* Screen3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewController.swift; sourceTree = "<group>"; };
 		1A3954492446D464009D1563 /* ScreenView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView4.swift; sourceTree = "<group>"; };
 		1A39544B2446D50F009D1563 /* Screen4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4ViewController.swift; sourceTree = "<group>"; };
+		1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDayCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsView.swift; sourceTree = "<group>"; };
+		1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsViewController.swift; sourceTree = "<group>"; };
 		1A420DE4243EA6F90030250D /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
 		1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyDetailsView.swift; sourceTree = "<group>"; };
 		1A420DE8243EA72A0030250D /* AnxietyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCell.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 			children = (
 				1AD84F7C243A7F20008173BB /* RoutinesViewController.swift */,
 				1A65339224491321003CFD17 /* NewRoutineViewController.swift */,
+				1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */,
 			);
 			path = Routine;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				1A653397244936DE003CFD17 /* NewRoutineCollectionViewCell.swift */,
+				1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -434,6 +442,7 @@
 				1A653396244936C7003CFD17 /* Cell */,
 				1AF0491524440169005AA516 /* RoutineView.swift */,
 				1A6533942449152B003CFD17 /* NewRoutineView.swift */,
+				1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */,
 			);
 			path = Routines;
 			sourceTree = "<group>";
@@ -524,6 +533,7 @@
 				1AD84F84243A815B008173BB /* AnxietyViewController.swift in Sources */,
 				1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */,
 				1A6533A02449734A003CFD17 /* Keep_Calm.xcdatamodeld in Sources */,
+				1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */,
 				1AD84F9E243AC285008173BB /* ExerciseCell.swift in Sources */,
 				1AF04902244398B9005AA516 /* BreatheView.swift in Sources */,
 				1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */,
@@ -540,6 +550,7 @@
 				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
 				1AF049182444084C005AA516 /* Routine.swift in Sources */,
 				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
+				1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
 				1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */,
 				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
@@ -550,6 +561,7 @@
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
 				1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */,
 				1AD84F86243A82B4008173BB /* FoodViewController.swift in Sources */,
+				1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */,
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A39544A2446D464009D1563 /* ScreenView4.swift in Sources */,
 				1A3954482446BFD3009D1563 /* Screen3ViewController.swift in Sources */,
