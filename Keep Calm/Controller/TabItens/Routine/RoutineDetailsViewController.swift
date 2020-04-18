@@ -1,39 +1,36 @@
 //
-//  RoutinesViewController.swift
+//  RoutineDetailsViewController.swift
 //  Keep Calm
 //
-//  Created by Alcides Junior on 05/04/20.
+//  Created by Alcides Junior on 18/04/20.
 //  Copyright © 2020 all seeds labs. All rights reserved.
 //
 
 import UIKit
+import CoreData
 
-class RoutinesViewController: UIViewController, ControllerProtocol {
+class RoutineDetailsViewController: UIViewController, ControllerProtocol {
     
-    var routine: Routine!
-    var routineViewModel: RoutineViewModel!
-    var routineView: RoutineView!
+    var routineDetails: NSManagedObject!
+    fileprivate let detailsRoutineView = RoutineDetailsView()
     
     override func loadView() {
-        self.routine = Routine()
-        self.routineViewModel = RoutineViewModel(routine: routine)
-        self.routineView = RoutineView()
-        self.routineView.setup(routineViewModel: routineViewModel)
-        self.view = routineView
+        self.detailsRoutineView.setup(routine: routineDetails)
+        self.view = detailsRoutineView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navbarSettings()
-        self.view.backgroundColor = .systemBackground
     }
     
     func navbarSettings() {
-        title = "Rotina"
+        title = "Detalhes"
+        self.view.backgroundColor = .systemBackground
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = UIColor(named: "customBlue")
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.title,.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.tintColor = .white
     }
 
 }
