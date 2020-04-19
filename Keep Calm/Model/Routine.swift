@@ -19,3 +19,14 @@ class Routine {
         self.routineImage = #imageLiteral(resourceName: "routineImage")
     }
 }
+
+struct RoutineData:Decodable {
+    
+    var activity, hour, activityDescription: String
+    var day: [WeekDay]
+}
+
+struct WeekDay:Decodable {
+    
+    var day: Int
+}
