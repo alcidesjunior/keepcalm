@@ -151,7 +151,7 @@ public class ScheduleManager {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
         let managerContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Schedule")
-        fetchRequest.predicate = NSPredicate(format: "id == \(id)")
+        fetchRequest.predicate = NSPredicate(format: "id == '\(id)'")
 
         do{
             let request = try managerContext.fetch(fetchRequest)
