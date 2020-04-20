@@ -54,11 +54,11 @@
 		1AD84F9E243AC285008173BB /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F9D243AC285008173BB /* ExerciseCell.swift */; };
 		1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */; };
 		1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84FA1243AC5E5008173BB /* Exercise.swift */; };
+		1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE559FC244CDDC000B10989 /* GlobalSettings.swift */; };
 		1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA2243D255100DAAAC4 /* Food.swift */; };
 		1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */; };
 		1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */; };
 		1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */; };
-		1AF048FF24439867005AA516 /* YoutubePlayerView in Frameworks */ = {isa = PBXBuildFile; productRef = 1AF048FE24439867005AA516 /* YoutubePlayerView */; };
 		1AF04902244398B9005AA516 /* BreatheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04901244398B9005AA516 /* BreatheView.swift */; };
 		1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490524439E70005AA516 /* BreatheViewController.swift */; };
 		1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049082443AADB005AA516 /* BreatheViewModel.swift */; };
@@ -122,6 +122,7 @@
 		1AD84F9D243AC285008173BB /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
 		1AD84FA1243AC5E5008173BB /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		1AE559FC244CDDC000B10989 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		1AEF8BA2243D255100DAAAC4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
@@ -145,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AF048FF24439867005AA516 /* YoutubePlayerView in Frameworks */,
 				1AD84F8D243A83AC008173BB /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +244,7 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
+				1AE559FB244CDDAE00B10989 /* Settings */,
 				1A65339C24496664003CFD17 /* Persistence */,
 				1AD84F94243AA0C8008173BB /* Extensions */,
 				1AD84F92243AA03D008173BB /* External Fonts */,
@@ -375,6 +376,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		1AE559FB244CDDAE00B10989 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1AE559FC244CDDC000B10989 /* GlobalSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		1AEF8BA4243D36E900DAAAC4 /* Food */ = {
 			isa = PBXGroup;
 			children = (
@@ -465,7 +474,6 @@
 			name = "Keep Calm";
 			packageProductDependencies = (
 				1AD84F8C243A83AC008173BB /* SnapKit */,
-				1AF048FE24439867005AA516 /* YoutubePlayerView */,
 			);
 			productName = "Keep Calm";
 			productReference = 1AD84F59243A7B93008173BB /* Keep Calm.app */;
@@ -579,6 +587,7 @@
 				1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */,
 				1AD84F8A243A8379008173BB /* HomeView.swift in Sources */,
 				1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */,
+				1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */,
 				1A674A332446808600E81057 /* ScreenView2.swift in Sources */,
 				1AD84F7B243A7DE4008173BB /* TabViewController.swift in Sources */,
 				1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */,
@@ -721,14 +730,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = H5762RAVC8;
 				INFOPLIST_FILE = "Keep Calm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allseedslabs.Keep-Calm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -741,14 +751,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = H5762RAVC8;
 				INFOPLIST_FILE = "Keep Calm/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.allseedslabs.Keep-Calm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -803,11 +814,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1AD84F8B243A83AC008173BB /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		1AF048FE24439867005AA516 /* YoutubePlayerView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1AF048FD24439867005AA516 /* XCRemoteSwiftPackageReference "YoutubePlayerView" */;
-			productName = YoutubePlayerView;
 		};
 /* End XCSwiftPackageProductDependency section */
 

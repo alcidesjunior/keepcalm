@@ -308,7 +308,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(monday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
         }
         
         tuesday.snp.makeConstraints { (make) in
@@ -320,7 +320,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(tuesday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
         }
         
         wednesday.snp.makeConstraints { (make) in
@@ -332,7 +332,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(wednesday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
         }
         
         thursday.snp.makeConstraints { (make) in
@@ -344,7 +344,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(thursday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
         }
         
         friday.snp.makeConstraints { (make) in
@@ -356,7 +356,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(friday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
         }
         
         saturday.snp.makeConstraints { (make) in
@@ -368,7 +368,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(saturday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
         }
         
         sunday.snp.makeConstraints { (make) in
@@ -380,7 +380,7 @@ extension RoutineView: ViewCodeProtocol {
             make.top.equalTo(sunday.snp.bottom).offset(8)
             make.leading.equalTo(safeAreaLayoutGuide.snp.leading).inset(16)
             make.trailing.equalTo(safeAreaLayoutGuide.snp.trailing).inset(16)
-            make.height.equalTo(70)
+            make.height.equalTo(80)
             make.bottom.equalToSuperview().inset(16)
         }
     }
