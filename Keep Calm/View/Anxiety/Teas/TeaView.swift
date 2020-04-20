@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import YoutubePlayerView
+import WebKit
 
 class TeaView: UIView {
     
@@ -42,9 +42,9 @@ class TeaView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView1: YoutubePlayerView = {
+    lazy var videoPlayerView1: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -67,9 +67,9 @@ class TeaView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView2: YoutubePlayerView = {
+    lazy var videoPlayerView2: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -92,9 +92,9 @@ class TeaView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView3: YoutubePlayerView = {
+    lazy var videoPlayerView3: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -106,17 +106,24 @@ class TeaView: UIView {
     
     func setup(anxietyViewModel: [AnxietyViewModel]) {
         
+        let url1 = URL(string: anxietyViewModel[0].getMovieUrl())!
+        let url2 = URL(string: anxietyViewModel[1].getMovieUrl())!
+        let url3 = URL(string: anxietyViewModel[2].getMovieUrl())!
+        let request1 = URLRequest(url: url1)
+        let request2 = URLRequest(url: url2)
+        let request3 = URLRequest(url: url3)
+        
         title1.text = anxietyViewModel[0].getTitle()
         description1.text = anxietyViewModel[0].getDescription()
-        videoPlayerView1.loadWithVideoId(anxietyViewModel[0].getMovieUrl())
+        videoPlayerView1.load(request1)//loadWithVideoId(anxietyViewModel[0].getMovieUrl())
         
         title2.text = anxietyViewModel[1].getTitle()
         description2.text = anxietyViewModel[1].getDescription()
-        videoPlayerView2.loadWithVideoId(anxietyViewModel[1].getMovieUrl())
+        videoPlayerView2.load(request2)//WithVideoId(anxietyViewModel[1].getMovieUrl())
         
         title3.text = anxietyViewModel[2].getTitle()
         description3.text = anxietyViewModel[2].getDescription()
-        videoPlayerView3.loadWithVideoId(anxietyViewModel[2].getMovieUrl())
+        videoPlayerView3.load(request3)//WithVideoId(anxietyViewModel[2].getMovieUrl())
     }
     
     required init?(coder: NSCoder) {
