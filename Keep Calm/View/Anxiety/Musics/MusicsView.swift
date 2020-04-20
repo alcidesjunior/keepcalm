@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import YoutubePlayerView
+import WebKit
 
 class MusicsView: UIView {
     
@@ -42,9 +42,9 @@ class MusicsView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView1: YoutubePlayerView = {
+    lazy var videoPlayerView1: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -58,9 +58,9 @@ class MusicsView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView2: YoutubePlayerView = {
+    lazy var videoPlayerView2: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -74,9 +74,9 @@ class MusicsView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView3: YoutubePlayerView = {
+    lazy var videoPlayerView3: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -126,8 +126,10 @@ class MusicsView: UIView {
         self.intro.text = "Se você é do tipo de pessoa que passa a maior parte do seu tempo com fones de ouvido, trago uma ótima notícia para você:\nExiste um estudo feito pela britânica Mindlab – organização focada em estudos referentes ao impacto que a comunicação exerce sobre o nosso cérebro, que criou uma playlist com uma série de músicas que, segundo eles, após vários testes com diversos sensores espalhados pelo corpo das pessoas voluntárias em seu teste, são capazes de reduzir a ansiedade em até 65%. Eles caracterizaram essas músicas com  sendo “Weighless”, ou seja, sem peso, muito leve. São músicas que realmente são capazes de te fazerem relaxar.\nConfira abaixo:"
         var count = 0
         self.components.forEach { (component) in
+            let url = URL(string: anxietyViewModel[count].getMovieUrl())!
+            let request = URLRequest(url: url)
             component.title.text = anxietyViewModel[count].getTitle()
-            component.videoPlay.loadWithVideoId(anxietyViewModel[count].getMovieUrl())
+            component.videoPlay.load(request)//WithVideoId()
             count += 1
         }
     }
@@ -251,5 +253,5 @@ extension MusicsView: ViewCodeProtocol {
 
 struct Components {
     var title: UILabel
-    var videoPlay: YoutubePlayerView
+    var videoPlay: WKWebView
 }

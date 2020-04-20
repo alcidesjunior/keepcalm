@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import YoutubePlayerView
+import WebKit
 
 class BreatheView: UIView {
     
@@ -33,9 +33,9 @@ class BreatheView: UIView {
         return view
     }()
     
-    lazy var videoPlayerView: YoutubePlayerView = {
+    lazy var videoPlayerView: WKWebView = {
         
-        let view = YoutubePlayerView()
+        let view = WKWebView()
         view.backgroundColor = .black
         return view
     }()
@@ -51,9 +51,11 @@ class BreatheView: UIView {
     }
     
     func setup(breatheViewModel: AnxietyViewModel) {
-        
-        videoPlayerView.loadWithVideoId(breatheViewModel.getMovieUrl())
-        videoPlayerView.seek(to: 30, allowSeekAhead: true)
+        let url = URL(string: breatheViewModel.getMovieUrl())!
+        let request = NSURLRequest(url: url)
+        videoPlayerView.load(request as URLRequest)
+        //videoPlayerView.loadWithVideoId(breatheViewModel.getMovieUrl())
+        //videoPlayerView.seek(to: 30, allowSeekAhead: true)
         
         breathDescription.text = breatheViewModel.getDescription()
     }
