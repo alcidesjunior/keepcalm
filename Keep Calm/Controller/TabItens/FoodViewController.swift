@@ -37,8 +37,9 @@ class FoodViewController: UIViewController, ControllerProtocol {
     func navbarSettings() {
         title = "Alimentação"
         self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.barTintColor = UIColor(named: "customBlue")
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.title,.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.barTintColor = GlobalSettings.Colors.NavColors.navColor
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont.title,.foregroundColor: GlobalSettings.Colors.NavColors.title]
+        self.navigationController?.navigationBar.tintColor = .white
     }
 }
 
