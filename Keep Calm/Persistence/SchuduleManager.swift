@@ -24,14 +24,20 @@ public class ScheduleManager {
         
         
             let _id = UUID().uuidString
-            print(_id)
-            print("dia: \(element.day)")
+            let notification = NotificationTools()
             newSchedule.setValue(_id, forKey: "id")
             newSchedule.setValue(scheduleElement.activity, forKey: "activity")
             newSchedule.setValue(scheduleElement.activityDescription, forKey: "activityDescription")
             newSchedule.setValue(scheduleElement.hour, forKey: "hour")
             newSchedule.setValue(element.day, forKey: "day")
             
+            let activity = scheduleElement.activity
+            let completeHour = scheduleElement.hour
+            let hour = Int(completeHour.split(separator: ":")[0])!
+            let minute = Int(completeHour.split(separator: ":")[1])!
+            let day = element.day
+            
+            notification.createNotification(title: "Rotina diária",subtitle: completeHour, body: activity, hour: hour, minute: minute, day: day)
             do {
                 
                 try managedContext.save()
@@ -49,7 +55,7 @@ public class ScheduleManager {
     }
     
     func getAll()->[NSManagedObject]?{
-            
+            let notification = NotificationTools()
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return nil}
             let managedContext = appDelegate.persistentContainer.viewContext
             
@@ -63,8 +69,15 @@ public class ScheduleManager {
                 
                 let results = try managedContext.fetch(fetchRequest)
                 self.data.removeAll()
+//                notification.removeNotifications()
                 for result in results as! [NSManagedObject]{
                     self.data.append(result)
+                    let activity = result.value(forKey: "activity") as! String
+                    let completeHour = result.value(forKey: "hour") as! String
+                    let hour = Int(completeHour.split(separator: ":")[0])!
+                    let minute = Int(completeHour.split(separator: ":")[1])!
+                    let day = result.value(forKey: "day") as! Int
+                    notification.createNotification(title: "Rotina diária",subtitle: completeHour, body: activity, hour: hour, minute: minute, day: day)
                 }
                 
             } catch {

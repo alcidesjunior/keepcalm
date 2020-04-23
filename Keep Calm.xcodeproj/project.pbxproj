@@ -32,6 +32,7 @@
 		1A674A36244680BA00E81057 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A35244680BA00E81057 /* Screen1ViewController.swift */; };
 		1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A37244680C700E81057 /* Screen2ViewController.swift */; };
 		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
+		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
 		1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5E243A7B93008173BB /* SceneDelegate.swift */; };
 		1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F60243A7B93008173BB /* HomeViewController.swift */; };
@@ -99,6 +100,7 @@
 		1A674A35244680BA00E81057 /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
 		1A674A37244680C700E81057 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
 		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
+		1AC2E26C2450F7AA00360018 /* NotificationTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTools.swift; sourceTree = "<group>"; };
 		1AD84F59243A7B93008173BB /* Keep Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep Calm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD84F5C243A7B93008173BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AD84F5E243A7B93008173BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -224,6 +226,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		1AC2E26B2450F79400360018 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				1AC2E26C2450F7AA00360018 /* NotificationTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		1AD84F50243A7B92008173BB = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +254,7 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
+				1AC2E26B2450F79400360018 /* Tools */,
 				1AE559FB244CDDAE00B10989 /* Settings */,
 				1A65339C24496664003CFD17 /* Persistence */,
 				1AD84F94243AA0C8008173BB /* Extensions */,
@@ -558,6 +569,7 @@
 				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
 				1AF049182444084C005AA516 /* Routine.swift in Sources */,
 				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
+				1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */,
 				1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
 				1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */,
