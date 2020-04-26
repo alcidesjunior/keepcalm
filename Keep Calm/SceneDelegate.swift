@@ -29,6 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.notification = NotificationTools()
         self.notification?.requestAuthorization()
+        let schedule = ScheduleManager()
+        schedule.getAll()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
