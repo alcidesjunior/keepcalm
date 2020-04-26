@@ -169,6 +169,14 @@ public class ScheduleManager {
         do{
             let request = try managerContext.fetch(fetchRequest)
             let objectToDelete = request.first as! NSManagedObject
+            let activity = objectToDelete.value(forKey: "activity") as! String
+            let time = (objectToDelete.value(forKey: "hour") as! String).split(separator: ":")
+            let day = objectToDelete.value(forKey: "day") as! Int
+            let hour = time[0]
+            let minute = time[1]
+            let notificationId = "\(activity)\(hour)\(minute)\(day)"
+            let notificationTools = NotificationTools()
+            notificationTools.removeNotification(id: [notificationId])
             managerContext.delete(objectToDelete)
 
             do{

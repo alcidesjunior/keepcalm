@@ -21,7 +21,7 @@ class Routine {
 }
 
 struct RoutineData:Decodable {
-    
+    var id: Int?
     var activity, hour, activityDescription: String
     var day: [WeekDay]
 }
