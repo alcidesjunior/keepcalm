@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct HomeViewTemp: View {
-    private var viewModel: ViewModel
+    @ObservedObject private(set) var viewModel: ViewModel
     @State private var showDetails: Bool = false
     @Environment(\.presentationMode) private var presentationMode
 
@@ -22,22 +22,19 @@ struct HomeViewTemp: View {
 
     @ViewBuilder
     private var profileHeader: some View {
-        KCAvatar().padding(.top, 10)
+        KCAvatar(
+            profileImage: Image(self.viewModel.getPhraseOfTheDay)
+        ).padding(.top, 10)
+
         KCButton(
             action: {
                 self.showDetails = true
             },
-            label: .init(
-                .init(
-                    text: "Editar Perfil",
-                    style: .phrase,
-                    color: .init("customBlack")
-                )
-            ),
-            options: .init(text: .phrase)
+            label: Text("Editar Perfil"),
+            options: .init(text: .phrase, color: .init("customBlack"))
         )
         .sheet(isPresented: $showDetails) {
-            HomeViewDetail(nome: "")
+            HomeViewDetail(viewModel: .init(home: self.viewModel.home))
         }
     }
 

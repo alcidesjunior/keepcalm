@@ -2,7 +2,7 @@ import SwiftUI
 
 struct KCButton: View {
     var action: () -> Void
-    var label: KCLabel
+    var label: Text
     var options: Options
 
     var body: some View {
@@ -11,7 +11,6 @@ struct KCButton: View {
             label: { label }
         )
         .buttonStyle(KCButtonStyle(options: options))
-
     }
 }
 
@@ -21,14 +20,8 @@ struct KCButton_Previews: PreviewProvider {
             action: {
                 print("oi")
             },
-            label: .init(
-                .init(
-                    text: "Botao",
-                    style: .greeting,
-                    color: .white
-                )
-            ),
-            options: .init(text: .phrase, background: .blue)
+            label: Text("Botão"),
+            options: .init(text: .phrase, background: .blue, color: .init("customBlack"))
         )
     }
 }

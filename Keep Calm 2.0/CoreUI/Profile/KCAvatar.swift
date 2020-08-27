@@ -1,7 +1,11 @@
 import SwiftUI
 
 struct KCAvatar: View {
-    @State var profileImage: Image = Image("profileDefault")
+    var profileImage: Image
+
+    init(profileImage: Image) {
+        self.profileImage = profileImage
+    }
     
     var body: some View {
         VStack {
@@ -17,6 +21,6 @@ struct KCAvatar: View {
 
 struct KCAvatar_Previews: PreviewProvider {
     static var previews: some View {
-        KCAvatar()
+        KCAvatar(profileImage: Image("profileDefault"))
     }
 }

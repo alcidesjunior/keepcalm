@@ -2,7 +2,7 @@ import Combine
 import SwiftUI
 
 extension HomeViewTemp {
-    struct ViewModel {
+    final class ViewModel: ObservableObject {
         var home: Home
 
         init(home: Home) {

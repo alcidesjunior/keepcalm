@@ -9,14 +9,9 @@ class Home {
     var fullName: String
     
     init() {
-        
-        if (UserDefaults.standard.value(forKey: "userProfileImage") != nil) {
-            let imageData = UserDefaults.standard.value(forKey: "userProfileImage") as! String
-            self.profileImage = imageData
-        }else{
-            
-            self.profileImage = "profileDefault"
-        }
+        let url = Bundle.main.url(forResource:"profileDefault", withExtension: "png")?.absoluteString
+
+        self.profileImage = url ?? ""
         
         self.phraseOfTheDay = [
             "\"Quando está suficientemente escuro, você consegue ver as estrelas.\"\n- Charles Beard",

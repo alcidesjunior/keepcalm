@@ -20,11 +20,15 @@ extension KCButton {
                 VStack {
                     configuration.label
                         .font(options.text.formatted)
-                        .foregroundColor(options.color)
                         .padding(10)
-                        .cornerRadius(20)
+                        .frame(
+                            minWidth: 0,
+                            maxWidth: .infinity
+                    )
+                        .foregroundColor(options.color)
                         .background(options.background)
                 }
+                .cornerRadius(200)
                 .kcDefaultButtonBehavior(isPressed: configuration.isPressed)
             }
         }

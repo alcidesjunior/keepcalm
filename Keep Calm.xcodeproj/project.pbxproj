@@ -32,6 +32,7 @@
 		1A674A36244680BA00E81057 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A35244680BA00E81057 /* Screen1ViewController.swift */; };
 		1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A37244680C700E81057 /* Screen2ViewController.swift */; };
 		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
+		1A92A4AC24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */; };
 		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -111,6 +112,7 @@
 		1A674A35244680BA00E81057 /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
 		1A674A37244680C700E81057 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
 		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
+		1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewDetail+ViewModel.swift"; sourceTree = "<group>"; };
 		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -250,6 +252,13 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		1A92A4AD24F81C5200AE8CE7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		1AC2E26B2450F79400360018 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +289,7 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
+				1A92A4AD24F81C5200AE8CE7 /* Images */,
 				1AC2E26B2450F79400360018 /* Tools */,
 				1AE559FB244CDDAE00B10989 /* Settings */,
 				1A65339C24496664003CFD17 /* Persistence */,
@@ -602,6 +612,7 @@
 			isa = PBXGroup;
 			children = (
 				1AF3BD9124F728FE00CD43E7 /* HomeViewDetail.swift */,
+				1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -709,6 +720,7 @@
 				1AF0491C244416F7005AA516 /* ProfileView.swift in Sources */,
 				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
 				1AF3BD7F24F6FE1000CD43E7 /* KCLabel.swift in Sources */,
+				1A92A4AC24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift in Sources */,
 				1AF049182444084C005AA516 /* Routine.swift in Sources */,
 				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
 				1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */,
