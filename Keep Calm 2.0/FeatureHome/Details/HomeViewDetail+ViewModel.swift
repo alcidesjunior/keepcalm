@@ -17,7 +17,6 @@ extension HomeViewDetail {
                 do {
                     // Write to Disk
                     try imageData.write(to: url)
-
                     // Store URL in User Defaults
                     UserDefaults.standard.set(url.relativePath, forKey: "userProfileImage")
 

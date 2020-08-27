@@ -23,7 +23,7 @@ struct HomeViewTemp: View {
     @ViewBuilder
     private var profileHeader: some View {
         KCAvatar(
-            profileImage: Image(self.viewModel.getPhraseOfTheDay)
+            profileImage: Image(uiImage: UIImage(contentsOfFile: self.viewModel.getProfileImage) ?? UIImage(named: "profileDefault")!)
         ).padding(.top, 10)
 
         KCButton(

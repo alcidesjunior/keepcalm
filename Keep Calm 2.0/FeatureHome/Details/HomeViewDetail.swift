@@ -4,6 +4,7 @@ import SwiftUI
 struct HomeViewDetail: View {
     @State var name: String = ""
     @State var isShowPicker: Bool = false
+    @State var isLoading: Bool = false
     @State var image: Image? = nil
     @State var inputImage: UIImage? = nil
     @ObservedObject private var viewModel: ViewModel
@@ -18,53 +19,59 @@ struct HomeViewDetail: View {
             return Image(uiImage: image)
         }
         
-        return Image(uiImage: UIImage(contentsOfFile: self.viewModel.home.profileImage)!)
+        return Image(uiImage: UIImage(contentsOfFile: self.viewModel.home.profileImage) ?? UIImage(named: "profileDefault")!)
     }
 
     var body: some View {
-        Form {
-            VStack(alignment: .center) {
-                profileHeader
-                TextField("Nome", text: $name)
-                    .textFieldStyle(PlainTextFieldStyle())
-            }
+        KCLoading(isShowing: $isLoading) {
+            Form {
+                VStack(alignment: .center) {
+                    self.profileHeader
+                    TextField("Nome", text: self.$name)
+                        .textFieldStyle(PlainTextFieldStyle())
+                }
 
-            HStack(alignment: .center) {
-                KCButton(
-                    action: {
-                        self.viewModel.saveData(
-                            .init(
-                                image: self.$inputImage,
-                                firstName: self.name
+                HStack(alignment: .center) {
+                    KCButton(
+                        action: {
+                            self.isLoading.toggle()
+                            self.viewModel.saveData(
+                                .init(
+                                    image: self.$inputImage,
+                                    firstName: self.name
+                                )
                             )
+                            self.presentationMode.wrappedValue.dismiss()
+                        },
+                        label: Text("Salvar"),
+                        options: .init(
+                            text: .phrase,
+                            background: .init("customGreen"),
+                            color: .init("customWhite")
                         )
-//                        self.presentationMode.wrappedValue.dismiss()
-                    },
-                    label: Text("Salvar"),
-                    options: .init(
-                        text: .phrase,
-                        background: .init("customGreen"),
-                        color: .init("customWhite")
                     )
-                )
-                .frame(minWidth: 0, maxWidth: .infinity)
+                    .frame(minWidth: 0, maxWidth: .infinity)
 
-                KCButton(
-                    action: {},
-                    label: Text("Cancelar"),
-                    options: .init(
-                        text: .phrase,
-                        background: .init("customRed"),
-                        color: .init("customWhite")
+                    KCButton(
+                        action: { self.presentationMode.wrappedValue.dismiss() },
+                        label: Text("Cancelar"),
+                        options: .init(
+                            text: .phrase,
+                            background: .init("customRed"),
+                            color: .init("customWhite")
+                        )
                     )
-                )
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                }
+                .padding()
                 .frame(minWidth: 0, maxWidth: .infinity)
             }
-            .padding()
-            .frame(minWidth: 0, maxWidth: .infinity)
-        }
-        .sheet(isPresented: $isShowPicker) {
-            ImagePicker(image: self.$inputImage)
+            .onAppear(perform: {
+                self.name = self.viewModel.home.fullName
+            })
+                .sheet(isPresented: self.$isShowPicker) {
+                ImagePicker(image: self.$inputImage)
+            }
         }
     }
 

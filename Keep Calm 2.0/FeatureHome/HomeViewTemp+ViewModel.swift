@@ -18,7 +18,7 @@ extension HomeViewTemp {
             var greeting = ""
             let calendar = NSCalendar.current
             let currentHour = calendar.component(.hour, from: date as Date)
-            let hourInt = Int(currentHour.description)!
+            let hourInt = Int(currentHour.description) ?? 00
 
             switch hourInt {
             case 0 ... 11:
@@ -47,10 +47,6 @@ extension HomeViewTemp {
 
         var getFirstName: String {
             return self.home.firstName
-        }
-
-        var getLastName: String {
-            return self.home.lastName
         }
     }
 

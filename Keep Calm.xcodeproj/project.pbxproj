@@ -33,6 +33,8 @@
 		1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A37244680C700E81057 /* Screen2ViewController.swift */; };
 		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
 		1A92A4AC24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */; };
+		1A92A4B124F82D1500AE8CE7 /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A92A4B024F82D1500AE8CE7 /* profileImage.png */; };
+		1A92A4B424F85FC000AE8CE7 /* KCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */; };
 		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -113,6 +115,8 @@
 		1A674A37244680C700E81057 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
 		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
 		1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewDetail+ViewModel.swift"; sourceTree = "<group>"; };
+		1A92A4B024F82D1500AE8CE7 /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
+		1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCLoading.swift; sourceTree = "<group>"; };
 		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -255,8 +259,17 @@
 		1A92A4AD24F81C5200AE8CE7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A92A4B024F82D1500AE8CE7 /* profileImage.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		1A92A4B224F85FAD00AE8CE7 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		1AC2E26B2450F79400360018 /* Tools */ = {
@@ -492,6 +505,7 @@
 		1AE6ED5424F6E2E300E19E8B /* CoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				1A92A4B224F85FAD00AE8CE7 /* Loading */,
 				1AF3BD8B24F71B4E00CD43E7 /* Card */,
 				1AF3BD8824F7109800CD43E7 /* Buttons */,
 				1AF3BD7D24F6FDD900CD43E7 /* Labels */,
@@ -684,6 +698,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */,
+				1A92A4B124F82D1500AE8CE7 /* profileImage.png in Resources */,
 				1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */,
 				1AD84F6C243A7B97008173BB /* LaunchScreen.storyboard in Resources */,
 				1AD84F69243A7B97008173BB /* Assets.xcassets in Resources */,
@@ -701,6 +716,7 @@
 				1A65339E244966C9003CFD17 /* SchuduleManager.swift in Sources */,
 				1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */,
 				1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */,
+				1A92A4B424F85FC000AE8CE7 /* KCLoading.swift in Sources */,
 				1AD84F84243A815B008173BB /* AnxietyViewController.swift in Sources */,
 				1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */,
 				1A6533A02449734A003CFD17 /* Keep_Calm.xcdatamodeld in Sources */,
