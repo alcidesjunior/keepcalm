@@ -35,6 +35,7 @@
 		1A92A4AC24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */; };
 		1A92A4B124F82D1500AE8CE7 /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A92A4B024F82D1500AE8CE7 /* profileImage.png */; };
 		1A92A4B424F85FC000AE8CE7 /* KCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */; };
+		1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */; };
 		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -117,6 +118,7 @@
 		1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewDetail+ViewModel.swift"; sourceTree = "<group>"; };
 		1A92A4B024F82D1500AE8CE7 /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
 		1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCLoading.swift; sourceTree = "<group>"; };
+		1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCImagePicker.swift; sourceTree = "<group>"; };
 		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -270,6 +272,14 @@
 				1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		1A92A4B524F86F8600AE8CE7 /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */,
+			);
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		1AC2E26B2450F79400360018 /* Tools */ = {
@@ -505,6 +515,7 @@
 		1AE6ED5424F6E2E300E19E8B /* CoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				1A92A4B524F86F8600AE8CE7 /* ImagePicker */,
 				1A92A4B224F85FAD00AE8CE7 /* Loading */,
 				1AF3BD8B24F71B4E00CD43E7 /* Card */,
 				1AF3BD8824F7109800CD43E7 /* Buttons */,
@@ -723,6 +734,7 @@
 				1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */,
 				1AD84F9E243AC285008173BB /* ExerciseCell.swift in Sources */,
 				1AF04902244398B9005AA516 /* BreatheView.swift in Sources */,
+				1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */,
 				1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */,
 				1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */,
 				1A653398244936DE003CFD17 /* NewRoutineCollectionViewCell.swift in Sources */,

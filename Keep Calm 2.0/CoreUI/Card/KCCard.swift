@@ -8,20 +8,11 @@ struct KCCard: View {
     }
 
     var body: some View {
-        GeometryReader { geometry in
             VStack(alignment: .leading) {
-                self.model.text
-                    .frame(
-                        minWidth: 0,
-                        maxWidth: .infinity,
-                        alignment: .topLeading
-                    )
+                self.model.text.padding(20)
             }
-            .frame(width: geometry.size.width - 60)
-            .padding(20)
             .background(self.model.background)
             .cornerRadius(10)
-        }
         .shadow(radius: 4)
     }
 }
@@ -32,7 +23,7 @@ struct KCCard_Previews: PreviewProvider {
             model: .init(
                 text: .init(
                     .init(
-                        text: "Seja muito bem-vindo!",
+                        text: "Seja muito bem-vindo! hoje teremos uma bela frase do dia para você se motivar.",
                         style: .phrase,
                         color: .white
                     )

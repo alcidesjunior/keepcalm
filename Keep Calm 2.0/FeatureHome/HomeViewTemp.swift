@@ -11,11 +11,13 @@ struct HomeViewTemp: View {
 
     var body: some View {
         NavigationView {
-            VStack(alignment: .center, spacing: 10) {
-                profileHeader
-                greeting
-                randomPhraseOfTheDay
+            VStack {
+                self.profileHeader
+                self.greeting
+                    .padding(.vertical, 40)
+                self.cardPhrase
             }
+            .padding()
             .navigationBarTitle("Início", displayMode: .large)
         }
     }
@@ -48,7 +50,7 @@ struct HomeViewTemp: View {
         )
     }
 
-    private var randomPhraseOfTheDay: some View {
+    private var cardPhrase: some View {
         KCCard(
             model: .init(
                 text: .init(
@@ -67,8 +69,8 @@ struct HomeViewTemp: View {
 struct HomeViewTemp_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HomeViewTemp(viewModel: .init(home: .init()))
-            .environment(\.colorScheme, .dark)
+//            HomeViewTemp(viewModel: .init(home: .init()))
+//            .environment(\.colorScheme, .dark)
 
             HomeViewTemp(viewModel: .init(home: .init()))
             .environment(\.colorScheme, .light)

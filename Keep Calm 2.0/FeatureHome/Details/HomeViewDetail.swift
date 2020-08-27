@@ -18,59 +18,30 @@ struct HomeViewDetail: View {
         if let image = inputImage {
             return Image(uiImage: image)
         }
-        
         return Image(uiImage: UIImage(contentsOfFile: self.viewModel.home.profileImage) ?? UIImage(named: "profileDefault")!)
     }
 
     var body: some View {
         KCLoading(isShowing: $isLoading) {
-            Form {
-                VStack(alignment: .center) {
-                    self.profileHeader
-                    TextField("Nome", text: self.$name)
-                        .textFieldStyle(PlainTextFieldStyle())
-                }
+            NavigationView {
+                Form {
+                    VStack(alignment: .center) {
+                        self.profileHeader
+                    }
 
-                HStack(alignment: .center) {
-                    KCButton(
-                        action: {
-                            self.isLoading.toggle()
-                            self.viewModel.saveData(
-                                .init(
-                                    image: self.$inputImage,
-                                    firstName: self.name
-                                )
-                            )
-                            self.presentationMode.wrappedValue.dismiss()
-                        },
-                        label: Text("Salvar"),
-                        options: .init(
-                            text: .phrase,
-                            background: .init("customGreen"),
-                            color: .init("customWhite")
-                        )
-                    )
+                    HStack(alignment: .center) {
+                        self.buttons
+                    }
+                    .padding(.vertical, 40)
                     .frame(minWidth: 0, maxWidth: .infinity)
-
-                    KCButton(
-                        action: { self.presentationMode.wrappedValue.dismiss() },
-                        label: Text("Cancelar"),
-                        options: .init(
-                            text: .phrase,
-                            background: .init("customRed"),
-                            color: .init("customWhite")
-                        )
-                    )
-                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .navigationBarTitle("Perfil", displayMode: .large)
+                    .onAppear(perform: {
+                        self.name = self.viewModel.home.fullName
+                    })
                 }
-                .padding()
-                .frame(minWidth: 0, maxWidth: .infinity)
-            }
-            .onAppear(perform: {
-                self.name = self.viewModel.home.fullName
-            })
                 .sheet(isPresented: self.$isShowPicker) {
-                ImagePicker(image: self.$inputImage)
+                    KCImagePicker(image: self.$inputImage)
+                }
             }
         }
     }
@@ -78,66 +49,56 @@ struct HomeViewDetail: View {
     @ViewBuilder
     private var profileHeader: some View {
         KCAvatar(profileImage: loadImage()).padding(.top, 10)
+
         KCButton(
             action: {
                 self.isShowPicker = true
             },
             label: Text("Escolher foto"),
-            options: .init(text: .phrase)
+            options: .init(text: .phrase, color: .init("customBlack"))
         )
-    }
-}
 
-struct ImagePicker: UIViewControllerRepresentable {
-
-    @Environment(\.presentationMode)
-    var presentationMode
-
-    @Binding var image: UIImage?
-
-    class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-
-        @Binding var presentationMode: PresentationMode
-        @Binding var image: UIImage?
-
-        init(presentationMode: Binding<PresentationMode>, image: Binding<UIImage?>) {
-            _presentationMode = presentationMode
-            _image = image
-        }
-
-        func imagePickerController(_ picker: UIImagePickerController,
-                                   didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            let uiImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
-            image = uiImage//Image(uiImage: uiImage)
-            presentationMode.dismiss()
-
-        }
-
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            presentationMode.dismiss()
-        }
-
+        TextField("Nome", text: self.$name)
+            .textFieldStyle(PlainTextFieldStyle())
     }
 
-    func makeCoordinator() -> Coordinator {
-        return Coordinator(presentationMode: presentationMode, image: $image)
+    @ViewBuilder
+    private var buttons: some View {
+            KCButton(
+                action: {
+                    self.isLoading.toggle()
+                    self.viewModel.saveData(
+                        .init(
+                            image: self.$inputImage,
+                            firstName: self.name
+                        )
+                    )
+                    self.presentationMode.wrappedValue.dismiss()
+                },
+                label: Text("Salvar"),
+                options: .init(
+                    text: .phrase,
+                    background: .init("customGreen"),
+                    color: .init("customWhite")
+                )
+            )
+            .frame(minWidth: 0, maxWidth: .infinity)
+
+            KCButton(
+                action: { self.presentationMode.wrappedValue.dismiss() },
+                label: Text("Cancelar"),
+                options: .init(
+                    text: .phrase,
+                    background: .init("customRed"),
+                    color: .init("customWhite")
+                )
+            )
+            .frame(minWidth: 0, maxWidth: .infinity)
     }
-
-    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
-        let picker = UIImagePickerController()
-        picker.delegate = context.coordinator
-        return picker
-    }
-
-    func updateUIViewController(_ uiViewController: UIImagePickerController,
-                                context: UIViewControllerRepresentableContext<ImagePicker>) {
-
-    }
-
 }
 
 struct HomeViewDetail_Previews: PreviewProvider {
     static var previews: some View {
-        HomeViewDetail(viewModel: .init(home: Home()))
+        HomeViewDetail(viewModel: .init(home: Home())).colorScheme(.light)
     }
 }

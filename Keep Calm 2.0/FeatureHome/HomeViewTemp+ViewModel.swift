@@ -13,7 +13,7 @@ extension HomeViewTemp {
             return self.home.profileImage
         }
 
-        var greetingString: String {
+        private var greetingString: String {
             let date = NSDate()
             var greeting = ""
             let calendar = NSCalendar.current
@@ -36,7 +36,7 @@ extension HomeViewTemp {
             if getFirstName == "" {
                 return greetingString+"!"
             }
-            return greetingString+", "+getFirstName+"!"
+            return greetingString+",\n"+getFirstName+"!"
         }
 
         var getPhraseOfTheDay: String {
