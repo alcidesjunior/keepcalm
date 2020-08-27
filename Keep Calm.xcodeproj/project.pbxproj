@@ -32,6 +32,7 @@
 		1A674A36244680BA00E81057 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A35244680BA00E81057 /* Screen1ViewController.swift */; };
 		1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A37244680C700E81057 /* Screen2ViewController.swift */; };
 		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
+		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
 		1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5E243A7B93008173BB /* SceneDelegate.swift */; };
@@ -48,7 +49,7 @@
 		1AD84F8A243A8379008173BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F89243A8379008173BB /* HomeView.swift */; };
 		1AD84F8D243A83AC008173BB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1AD84F8C243A83AC008173BB /* SnapKit */; };
 		1AD84F8F243A89E3008173BB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F8E243A89E3008173BB /* Home.swift */; };
-		1AD84F91243A8AF8008173BB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F90243A8AF8008173BB /* HomeViewModel.swift */; };
+		1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */; };
 		1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F95243AA0D4008173BB /* +Fonts.swift */; };
 		1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD84F93243AA04D008173BB /* caligrafia.ttf */; };
 		1AD84F99243ABF38008173BB /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F98243ABF37008173BB /* ExercisesView.swift */; };
@@ -56,6 +57,8 @@
 		1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */; };
 		1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84FA1243AC5E5008173BB /* Exercise.swift */; };
 		1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE559FC244CDDC000B10989 /* GlobalSettings.swift */; };
+		1AE6ED5324F6DFEB00E19E8B /* HomeViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */; };
+		1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */; };
 		1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA2243D255100DAAAC4 /* Food.swift */; };
 		1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */; };
 		1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */; };
@@ -72,6 +75,14 @@
 		1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04919244408DF005AA516 /* RoutineViewModel.swift */; };
 		1AF0491C244416F7005AA516 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491B244416F7005AA516 /* ProfileView.swift */; };
 		1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491D24441B90005AA516 /* ProfileViewController.swift */; };
+		1AF3BD7F24F6FE1000CD43E7 /* KCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */; };
+		1AF3BD8124F6FE2800CD43E7 /* KCLabel+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8024F6FE2800CD43E7 /* KCLabel+Model.swift */; };
+		1AF3BD8524F705A100CD43E7 /* KCLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8424F705A100CD43E7 /* KCLabel+Style.swift */; };
+		1AF3BD8724F706F800CD43E7 /* KCButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8624F706F800CD43E7 /* KCButton.swift */; };
+		1AF3BD8A24F710C900CD43E7 /* KCButton+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8924F710C900CD43E7 /* KCButton+Style.swift */; };
+		1AF3BD8D24F71B5D00CD43E7 /* KCCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8C24F71B5D00CD43E7 /* KCCard.swift */; };
+		1AF3BD8F24F71B7A00CD43E7 /* KCCard+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8E24F71B7A00CD43E7 /* KCCard+Model.swift */; };
+		1AF3BD9224F728FE00CD43E7 /* HomeViewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD9124F728FE00CD43E7 /* HomeViewDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +111,9 @@
 		1A674A35244680BA00E81057 /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
 		1A674A37244680C700E81057 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
 		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
+		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1AC2E26C2450F7AA00360018 /* NotificationTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTools.swift; sourceTree = "<group>"; };
 		1AD84F59243A7B93008173BB /* Keep Calm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keep Calm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD84F5C243A7B93008173BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +131,7 @@
 		1AD84F87243A832C008173BB /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		1AD84F89243A8379008173BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1AD84F8E243A89E3008173BB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		1AD84F90243A8AF8008173BB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
 		1AD84F93243AA04D008173BB /* caligrafia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caligrafia.ttf; sourceTree = "<group>"; };
 		1AD84F95243AA0D4008173BB /* +Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Fonts.swift"; sourceTree = "<group>"; };
 		1AD84F98243ABF37008173BB /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
@@ -125,6 +139,8 @@
 		1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
 		1AD84FA1243AC5E5008173BB /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		1AE559FC244CDDC000B10989 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
+		1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTemp.swift; sourceTree = "<group>"; };
+		1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAvatar.swift; sourceTree = "<group>"; };
 		1AEF8BA2243D255100DAAAC4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
@@ -141,6 +157,14 @@
 		1AF04919244408DF005AA516 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
 		1AF0491B244416F7005AA516 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		1AF0491D24441B90005AA516 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCLabel.swift; sourceTree = "<group>"; };
+		1AF3BD8024F6FE2800CD43E7 /* KCLabel+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCLabel+Model.swift"; sourceTree = "<group>"; };
+		1AF3BD8424F705A100CD43E7 /* KCLabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCLabel+Style.swift"; sourceTree = "<group>"; };
+		1AF3BD8624F706F800CD43E7 /* KCButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCButton.swift; sourceTree = "<group>"; };
+		1AF3BD8924F710C900CD43E7 /* KCButton+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCButton+Style.swift"; sourceTree = "<group>"; };
+		1AF3BD8C24F71B5D00CD43E7 /* KCCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCCard.swift; sourceTree = "<group>"; };
+		1AF3BD8E24F71B7A00CD43E7 /* KCCard+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCCard+Model.swift"; sourceTree = "<group>"; };
+		1AF3BD9124F728FE00CD43E7 /* HomeViewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +261,9 @@
 		1AD84F50243A7B92008173BB = {
 			isa = PBXGroup;
 			children = (
+				1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */,
 				1A65339924495D78003CFD17 /* Keep_Calm.xcdatamodeld */,
+				1AE6ED4B24F6DF0200E19E8B /* Keep Calm 2.0 */,
 				1AD84F5B243A7B93008173BB /* Keep Calm */,
 				1AD84F5A243A7B93008173BB /* Products */,
 			);
@@ -302,7 +328,6 @@
 			isa = PBXGroup;
 			children = (
 				1AF049072443AAC1005AA516 /* Anxiety */,
-				1AD84F90243A8AF8008173BB /* HomeViewModel.swift */,
 				1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */,
 				1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */,
 				1AF04919244408DF005AA516 /* RoutineViewModel.swift */,
@@ -395,6 +420,84 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		1AE6ED4B24F6DF0200E19E8B /* Keep Calm 2.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED5424F6E2E300E19E8B /* CoreUI */,
+				1AE6ED5124F6DFB100E19E8B /* FeatureOnboarding */,
+				1AE6ED5024F6DFAA00E19E8B /* FeatureHome */,
+				1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */,
+				1AE6ED4E24F6DF9500E19E8B /* FeatureFood */,
+				1AE6ED4D24F6DF8C00E19E8B /* FeatureAnxiety */,
+				1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */,
+			);
+			path = "Keep Calm 2.0";
+			sourceTree = "<group>";
+		};
+		1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeatureaRoutines;
+			sourceTree = "<group>";
+		};
+		1AE6ED4D24F6DF8C00E19E8B /* FeatureAnxiety */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeatureAnxiety;
+			sourceTree = "<group>";
+		};
+		1AE6ED4E24F6DF9500E19E8B /* FeatureFood */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeatureFood;
+			sourceTree = "<group>";
+		};
+		1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeatureExercises;
+			sourceTree = "<group>";
+		};
+		1AE6ED5024F6DFAA00E19E8B /* FeatureHome */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3BD9024F728ED00CD43E7 /* Details */,
+				1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */,
+				1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */,
+			);
+			path = FeatureHome;
+			sourceTree = "<group>";
+		};
+		1AE6ED5124F6DFB100E19E8B /* FeatureOnboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FeatureOnboarding;
+			sourceTree = "<group>";
+		};
+		1AE6ED5424F6E2E300E19E8B /* CoreUI */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3BD8B24F71B4E00CD43E7 /* Card */,
+				1AF3BD8824F7109800CD43E7 /* Buttons */,
+				1AF3BD7D24F6FDD900CD43E7 /* Labels */,
+				1AE6ED5624F6EB1A00E19E8B /* Profile */,
+			);
+			path = CoreUI;
+			sourceTree = "<group>";
+		};
+		1AE6ED5624F6EB1A00E19E8B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		1AEF8BA4243D36E900DAAAC4 /* Food */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +570,42 @@
 			path = Routines;
 			sourceTree = "<group>";
 		};
+		1AF3BD7D24F6FDD900CD43E7 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */,
+				1AF3BD8024F6FE2800CD43E7 /* KCLabel+Model.swift */,
+				1AF3BD8424F705A100CD43E7 /* KCLabel+Style.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		1AF3BD8824F7109800CD43E7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3BD8624F706F800CD43E7 /* KCButton.swift */,
+				1AF3BD8924F710C900CD43E7 /* KCButton+Style.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1AF3BD8B24F71B4E00CD43E7 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3BD8C24F71B5D00CD43E7 /* KCCard.swift */,
+				1AF3BD8E24F71B7A00CD43E7 /* KCCard+Model.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		1AF3BD9024F728ED00CD43E7 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				1AF3BD9124F728FE00CD43E7 /* HomeViewDetail.swift */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -512,6 +651,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 1AD84F50243A7B92008173BB;
 			packageReferences = (
@@ -533,6 +673,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */,
+				1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */,
 				1AD84F6C243A7B97008173BB /* LaunchScreen.storyboard in Resources */,
 				1AD84F69243A7B97008173BB /* Assets.xcassets in Resources */,
 			);
@@ -567,6 +708,7 @@
 				1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */,
 				1AF0491C244416F7005AA516 /* ProfileView.swift in Sources */,
 				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
+				1AF3BD7F24F6FE1000CD43E7 /* KCLabel.swift in Sources */,
 				1AF049182444084C005AA516 /* Routine.swift in Sources */,
 				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
 				1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */,
@@ -575,12 +717,14 @@
 				1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */,
 				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
+				1AF3BD8F24F71B7A00CD43E7 /* KCCard+Model.swift in Sources */,
 				1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */,
 				1A3954462446B872009D1563 /* ScreenView3.swift in Sources */,
 				1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */,
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
 				1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */,
 				1AD84F86243A82B4008173BB /* FoodViewController.swift in Sources */,
+				1AF3BD8724F706F800CD43E7 /* KCButton.swift in Sources */,
 				1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */,
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A39544A2446D464009D1563 /* ScreenView4.swift in Sources */,
@@ -590,8 +734,10 @@
 				1AF0491624440169005AA516 /* RoutineView.swift in Sources */,
 				1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */,
 				1A674A2F24467B4E00E81057 /* OnboardingViewController.swift in Sources */,
+				1AF3BD8124F6FE2800CD43E7 /* KCLabel+Model.swift in Sources */,
 				1A39544C2446D50F009D1563 /* Screen4ViewController.swift in Sources */,
-				1AD84F91243A8AF8008173BB /* HomeViewModel.swift in Sources */,
+				1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */,
+				1AE6ED5324F6DFEB00E19E8B /* HomeViewTemp.swift in Sources */,
 				1A674A312446807800E81057 /* ScreenView1.swift in Sources */,
 				1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */,
 				1A6533952449152B003CFD17 /* NewRoutineView.swift in Sources */,
@@ -600,9 +746,14 @@
 				1AD84F8A243A8379008173BB /* HomeView.swift in Sources */,
 				1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */,
 				1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */,
+				1AF3BD8524F705A100CD43E7 /* KCLabel+Style.swift in Sources */,
 				1A674A332446808600E81057 /* ScreenView2.swift in Sources */,
+				1AF3BD8A24F710C900CD43E7 /* KCButton+Style.swift in Sources */,
+				1AF3BD9224F728FE00CD43E7 /* HomeViewDetail.swift in Sources */,
 				1AD84F7B243A7DE4008173BB /* TabViewController.swift in Sources */,
+				1AF3BD8D24F71B5D00CD43E7 /* KCCard.swift in Sources */,
 				1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */,
+				1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */,
 				1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */,
 				1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */,
 				1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */,
@@ -612,10 +763,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1ABD0CEB2455DDFA00B22FF8 /* pt-BR */,
+				1ABD0CEF2455DEC300B22FF8 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		1AD84F6A243A7B97008173BB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1AD84F6B243A7B97008173BB /* Base */,
+				1ABD0CE92455DDE400B22FF8 /* pt-BR */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -627,6 +788,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -687,6 +849,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

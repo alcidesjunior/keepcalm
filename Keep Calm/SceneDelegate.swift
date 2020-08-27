@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -18,19 +19,32 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
-        guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        let rootView = TabViewController()
-        rootView.tabBar.tintColor = UIColor(named: "customBlue")
-        window?.rootViewController = rootView
-        window?.makeKeyAndVisible()
-        
-        self.notification = NotificationTools()
-        self.notification?.requestAuthorization()
-        let schedule = ScheduleManager()
-        schedule.getAll()
+//        guard let _ = (scene as? UIWindowScene) else { return }
+//        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        HomeView()
+//        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+//        window?.windowScene = windowScene
+//        let rootView = TabViewController()
+//        rootView.tabBar.tintColor = UIColor(named: "customBlue")
+//        window?.rootViewController = rootView
+//        window?.makeKeyAndVisible()
+//
+//        self.notification = NotificationTools()
+//        self.notification?.requestAuthorization()
+//        let schedule = ScheduleManager()
+//        schedule.getAll()
+        // Get the managed object context from the shared persistent container.
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+
+        let contentView = HomeViewTemp(viewModel: .init(home: .init())).environment(\.managedObjectContext, context)
+
+        // Use a UIHostingController as window root view controller.
+        if let windowScene = scene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            window.rootViewController = UIHostingController(rootView: contentView)
+            self.window = window
+            window.makeKeyAndVisible()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
