@@ -1,11 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Keep Calm
-//
-//  Created by Alcides Junior on 05/04/20.
-//  Copyright © 2020 all seeds labs. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
 
@@ -36,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Get the managed object context from the shared persistent container.
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
-        let contentView = HomeViewTemp(viewModel: .init(home: .init())).environment(\.managedObjectContext, context)
+        let contentView = AppView().environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {

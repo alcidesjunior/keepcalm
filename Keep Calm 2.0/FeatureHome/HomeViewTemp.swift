@@ -11,14 +11,21 @@ struct HomeViewTemp: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                self.profileHeader
-                self.greeting
-                    .padding(.vertical, 40)
-                self.cardPhrase
+            GeometryReader { geometry in
+                ScrollView {
+                    VStack {
+                        VStack {
+                            self.profileHeader
+                        }
+                        .frame(height: geometry.size.height / 1.9)
+
+                        self.greeting.padding(.bottom, 2)
+                        self.cardPhrase.padding(.horizontal, 20)
+
+                    }
+                }
             }
-            .padding()
-            .navigationBarTitle("Início", displayMode: .large)
+            .navigationBarTitle("Inicio")
         }
     }
 
@@ -26,7 +33,7 @@ struct HomeViewTemp: View {
     private var profileHeader: some View {
         KCAvatar(
             profileImage: Image(uiImage: UIImage(contentsOfFile: self.viewModel.getProfileImage) ?? UIImage(named: "profileDefault")!)
-        ).padding(.top, 10)
+        )
 
         KCButton(
             action: {
@@ -51,16 +58,11 @@ struct HomeViewTemp: View {
     }
 
     private var cardPhrase: some View {
-        KCCard(
-            model: .init(
-                text: .init(
-                    .init(
-                        text: viewModel.getPhraseOfTheDay,
-                        style: .phrase,
-                        color: .init("customWhite")
-                    )
-                ),
-                background: .init("customBlue")
+        KCLabel(
+            .init(
+                text: viewModel.getPhraseOfTheDay,
+                style: .phrase,
+                color: .init("customBlack")
             )
         )
     }

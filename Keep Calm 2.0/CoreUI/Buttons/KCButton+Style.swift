@@ -24,7 +24,7 @@ extension KCButton {
                         .frame(
                             minWidth: 0,
                             maxWidth: .infinity
-                    )
+                        )
                         .foregroundColor(options.color)
                         .background(options.background)
                 }

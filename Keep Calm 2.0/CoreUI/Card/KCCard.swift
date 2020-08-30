@@ -8,12 +8,17 @@ struct KCCard: View {
     }
 
     var body: some View {
-            VStack(alignment: .leading) {
-                self.model.text.padding(20)
+            VStack {
+                self.model.text.padding(12)
             }
+//            .edgesIgnoringSafeArea(.all)
+            .frame(
+                minWidth: 0,
+                maxWidth: .infinity
+            )
             .background(self.model.background)
             .cornerRadius(10)
-        .shadow(radius: 4)
+            .shadow(radius: 4)
     }
 }
 
