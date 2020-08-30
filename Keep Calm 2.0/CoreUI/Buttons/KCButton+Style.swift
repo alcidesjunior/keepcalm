@@ -26,9 +26,10 @@ extension KCButton {
                             maxWidth: .infinity
                         )
                         .foregroundColor(options.color)
-                        .background(options.background)
                 }
-                .cornerRadius(200)
+                .frame(height: options.height)
+                .background(options.background)
+                .cornerRadius(20)
                 .kcDefaultButtonBehavior(isPressed: configuration.isPressed)
             }
         }

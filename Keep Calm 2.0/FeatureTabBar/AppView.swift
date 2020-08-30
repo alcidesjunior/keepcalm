@@ -15,7 +15,7 @@ struct AppView: View {
                     Text("Rotina")
                 }
 
-            HomeViewTemp(viewModel: .init(home: Home()))
+            ExercisesViewTemp(viewModel: .init(exercise: .init()))
                 .tabItem {
                     Image("exercise.fill")
                     Text("Exercícios")

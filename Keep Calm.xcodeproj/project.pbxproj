@@ -67,6 +67,8 @@
 		1AE6ED5324F6DFEB00E19E8B /* HomeViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */; };
 		1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */; };
 		1AEE967E24FC22CF0089F7ED /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEE967D24FC22CF0089F7ED /* Introspect */; };
+		1AEE968024FC26A30089F7ED /* ExercisesViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */; };
+		1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */; };
 		1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA2243D255100DAAAC4 /* Food.swift */; };
 		1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */; };
 		1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */; };
@@ -156,6 +158,8 @@
 		1AE559FC244CDDC000B10989 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTemp.swift; sourceTree = "<group>"; };
 		1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAvatar.swift; sourceTree = "<group>"; };
+		1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewTemp.swift; sourceTree = "<group>"; };
+		1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercisesViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
 		1AEF8BA2243D255100DAAAC4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
@@ -510,6 +514,8 @@
 		1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */ = {
 			isa = PBXGroup;
 			children = (
+				1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */,
+				1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */,
 			);
 			path = FeatureExercises;
 			sourceTree = "<group>";
@@ -780,6 +786,7 @@
 				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
 				1AF3BD8F24F71B7A00CD43E7 /* KCCard+Model.swift in Sources */,
+				1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */,
 				1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */,
 				1A3954462446B872009D1563 /* ScreenView3.swift in Sources */,
 				1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */,
@@ -820,6 +827,7 @@
 				1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */,
 				1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */,
 				1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */,
+				1AEE968024FC26A30089F7ED /* ExercisesViewTemp.swift in Sources */,
 				1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

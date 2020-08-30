@@ -39,10 +39,12 @@ struct Options {
     let text: Style
     let color: Color
     let background: Color
+    let height: CGFloat
 
-    init(text: Style, background: Color = .clear, color: Color = .black) {
+    init(text: Style, background: Color = .clear, color: Color = .black, height: CGFloat = 50) {
         self.text = text
         self.color = color
         self.background = background
+        self.height = height
     }
 }
