@@ -1,3 +1,4 @@
+import Introspect
 import SwiftUI
 
 struct FoodViewTemp: View {
@@ -15,7 +16,14 @@ struct FoodViewTemp: View {
                     Text(self.viewModel.food.motivationalText)
                 }
 
-                Section(header: Text("Vitamina B")) {
+                Section(header: KCLabel(
+                        .init(
+                            text: self.viewModel.food.vitaminaB.foodCategory,
+                            style: .phrase,
+                            color: .init("customBlack")
+                        )
+                    )
+                ) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(self.viewModel.food.vitaminaB.foodType, id: \.id) { row in
@@ -31,7 +39,15 @@ struct FoodViewTemp: View {
                     .listRowInsets(EdgeInsets())
                 }
 
-                Section(header: Text("Triptofano")) {
+                Section(header:
+                    KCLabel(
+                        .init(
+                            text: self.viewModel.food.triptofano.foodCategory,
+                            style: .phrase,
+                            color: .init("customBlack")
+                        )
+                    )
+                ) {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(self.viewModel.food.triptofano.foodType, id: \.id) { row in
@@ -48,7 +64,10 @@ struct FoodViewTemp: View {
                 }
                     .navigationBarTitle("Alimentação", displayMode: .automatic)
             }
-        .listStyle(GroupedListStyle())
+            .introspectTableView { tableView in
+                tableView.showsVerticalScrollIndicator = false
+            }
+            .listStyle(GroupedListStyle())
         }
     }
 }

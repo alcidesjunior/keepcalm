@@ -10,11 +10,7 @@ struct KCLabel: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(model.text)
-                .frame(
-                    minWidth: 0,
-                    maxWidth: .infinity
-                )
-                .multilineTextAlignment(.center)
+                .multilineTextAlignment(model.textAlignment)
                 .fixedSize(horizontal: false, vertical: true)
                 .font(model.style.formatted)
                 .foregroundColor(model.color)
