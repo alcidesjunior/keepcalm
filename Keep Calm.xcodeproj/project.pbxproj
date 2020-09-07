@@ -39,6 +39,7 @@
 		1A92A4B424F85FC000AE8CE7 /* KCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */; };
 		1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */; };
 		1A92A4BA24F870F200AE8CE7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B924F870F200AE8CE7 /* AppView.swift */; };
+		1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493AF2506829800136278 /* ExerciseDetail.swift */; };
 		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -128,6 +129,7 @@
 		1A92A4B324F85FC000AE8CE7 /* KCLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCLoading.swift; sourceTree = "<group>"; };
 		1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCImagePicker.swift; sourceTree = "<group>"; };
 		1A92A4B924F870F200AE8CE7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		1AA493AF2506829800136278 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
 		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -300,6 +302,14 @@
 				1A92A4B924F870F200AE8CE7 /* AppView.swift */,
 			);
 			path = FeatureTabBar;
+			sourceTree = "<group>";
+		};
+		1AA493AE2506827F00136278 /* ExerciseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1AA493AF2506829800136278 /* ExerciseDetail.swift */,
+			);
+			path = ExerciseDetail;
 			sourceTree = "<group>";
 		};
 		1AC2E26B2450F79400360018 /* Tools */ = {
@@ -514,6 +524,7 @@
 		1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */ = {
 			isa = PBXGroup;
 			children = (
+				1AA493AE2506827F00136278 /* ExerciseDetail */,
 				1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */,
 				1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */,
 			);
@@ -792,6 +803,7 @@
 				1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */,
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
 				1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */,
+				1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */,
 				1AD84F86243A82B4008173BB /* FoodViewController.swift in Sources */,
 				1AF3BD8724F706F800CD43E7 /* KCButton.swift in Sources */,
 				1A5A281724F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift in Sources */,

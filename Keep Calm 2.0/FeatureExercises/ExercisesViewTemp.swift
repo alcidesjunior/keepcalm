@@ -3,6 +3,7 @@ import SwiftUI
 struct ExercisesViewTemp: View {
     let viewModel: ViewModel
     @State private var isShowDetail: Bool = false
+    @State private var selectedDetail: Activity?
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -11,71 +12,34 @@ struct ExercisesViewTemp: View {
     var body: some View {
         NavigationView {
             List {
-                VStack {
-                    KCLabel(
-                        .init(
-                            text: self.viewModel.exercise.exerciseMotivation,
-                            style: .phrase,
-                            color: .init("customBlack"),
-                            textAlignment: .leading
-                        )
+                KCLabel(
+                    .init(
+                        text: self.viewModel.exercise.exerciseMotivation,
+                        style: .phrase,
+                        color: .init("customBlack"),
+                        textAlignment: .leading
                     )
-                }
+                )
 
-                VStack {
+                ForEach(self.viewModel.exercise.activities, id: \.activityName) { activity in
                     KCButton(
                         action: {
-                            self.isShowDetail.toggle()
-                    },
-                        label: Text("Na Cama"),
+                            self.isShowDetail = true
+                            self.selectedDetail = activity
+                        },
+                        label: Text(activity.activityName),
                         options: .init(
                             text: .phrase,
                             background: .init("customBlack"),
                             color: .init("customWhite")
                         )
                     )
-                    .sheet(isPresented: $isShowDetail) {
-                        self.details(activity: self.viewModel.exercise.activities[0])
-                    }
                 }
-
-                VStack {
-                    KCButton(
-                        action: {
-                            self.isShowDetail.toggle()
-                    },
-                        label: Text("Alongamento"),
-                        options: .init(text: .phrase, background: .init("customBlack"), color: .init("customWhite"))
-                    )
-                    .sheet(isPresented: $isShowDetail) {
-                        self.details(activity: self.viewModel.exercise.activities[1])
-                    }
-                }
+            }
+            .sheet(isPresented: self.$isShowDetail) {
+                ExerciseDetail(activity: self.$selectedDetail )
             }
             .navigationBarTitle("Exercícios")
-        }
-    }
-}
-
-extension ExercisesViewTemp {
-    private func details(activity: Activity) -> some View {
-        NavigationView {
-            ScrollView {
-                VStack {
-                    Image(activity.avatar)
-                        .resizable()
-                        .scaledToFit()
-                    KCLabel(
-                        .init(
-                            text: activity.description,
-                            style: .phrase,
-                            color: .init("customBlack"),
-                            textAlignment: .leading
-                        )
-                    )
-                }.padding()
-            }
-            .navigationBarTitle(Text(activity.activityName), displayMode: .inline)
         }
     }
 }
