@@ -2,7 +2,7 @@ import Introspect
 import SwiftUI
 
 struct FoodViewTemp: View {
-    private(set) var viewModel: ViewModel
+    private var viewModel: ViewModel
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -27,14 +27,24 @@ struct FoodViewTemp: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(self.viewModel.food.vitaminaB.foodType, id: \.id) { row in
-                                VStack {
-                                    Image(row.foodImage)
-                                        .resizable()
-                                        .frame(width: 160,height: 160)
-                                    KCLabel(.init(text: row.name, style: .phrase, color: .init("customBlack")))
-                                }
+                               KCCard(
+                                   model: .init(
+                                       text: .init(
+                                           .init(
+                                               text: row.name,
+                                               style: .title,
+                                               color: .init("customWhite")
+                                           )
+                                       ),
+                                       image: row.foodImage,
+                                       background: .init("customBlue")
+                                   )
+                               )
+                               .modifier(CardEffect())
+                               .frame(width: 160, height: 160)
                             }
                         }
+                        .padding()
                     }
                     .listRowInsets(EdgeInsets())
                 }
@@ -51,14 +61,24 @@ struct FoodViewTemp: View {
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
                             ForEach(self.viewModel.food.triptofano.foodType, id: \.id) { row in
-                                VStack {
-                                    Image(row.foodImage)
-                                        .resizable()
-                                        .frame(width: 160,height: 160)
-                                    KCLabel(.init(text: row.name, style: .phrase, color: .init("customBlack")))
-                                }
+                                KCCard(
+                                    model: .init(
+                                        text: .init(
+                                            .init(
+                                                text: row.name,
+                                                style: .title,
+                                                color: .init("customWhite")
+                                            )
+                                        ),
+                                        image: row.foodImage,
+                                        background: .init("customBlue")
+                                    )
+                                )
+                                .modifier(CardEffect())
+                                .frame(width: 160, height: 160)
                             }
                         }
+                        .padding()
                     }
                     .listRowInsets(EdgeInsets())
                 }

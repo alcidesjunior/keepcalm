@@ -14,13 +14,7 @@
 		1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */; };
 		1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */; };
 		1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */; };
-		1A420DE5243EA6F90030250D /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE4243EA6F90030250D /* AnxietyView.swift */; };
-		1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */; };
-		1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DE8243EA72A0030250D /* AnxietyCell.swift */; };
 		1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DEA243EA7B60030250D /* Anxiety.swift */; };
-		1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */; };
-		1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */; };
-		1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */; };
 		1A5A281524F9DF0E007DD4B3 /* FoodViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281424F9DF0E007DD4B3 /* FoodViewTemp.swift */; };
 		1A5A281724F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A281624F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift */; };
 		1A65339324491321003CFD17 /* NewRoutineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A65339224491321003CFD17 /* NewRoutineViewController.swift */; };
@@ -40,6 +34,14 @@
 		1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */; };
 		1A92A4BA24F870F200AE8CE7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B924F870F200AE8CE7 /* AppView.swift */; };
 		1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493AF2506829800136278 /* ExerciseDetail.swift */; };
+		1AA493B22506935200136278 /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B12506935200136278 /* AnxietyView.swift */; };
+		1AA493B42506947B00136278 /* RoutineViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B32506947B00136278 /* RoutineViewTemp.swift */; };
+		1AA493B6250698D200136278 /* RoutineViewTemp+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */; };
+		1AA493B82506995900136278 /* AnxietyView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B72506995900136278 /* AnxietyView+Model.swift */; };
+		1AA493BA2506AA5100136278 /* KCCard+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B92506AA5100136278 /* KCCard+ViewModifier.swift */; };
+		1AA493BD2506B47A00136278 /* AnxietyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493BC2506B47A00136278 /* AnxietyDetail.swift */; };
+		1AA493C02506B75000136278 /* KCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493BF2506B75000136278 /* KCWebView.swift */; };
+		1AA493C42506D8B000136278 /* KCVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493C32506D8B000136278 /* KCVideoPlayer.swift */; };
 		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -51,7 +53,6 @@
 		1AD84F7D243A7F20008173BB /* RoutinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F7C243A7F20008173BB /* RoutinesViewController.swift */; };
 		1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F7E243A7F4A008173BB /* ControllerProtocol.swift */; };
 		1AD84F82243A8110008173BB /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F81243A8110008173BB /* ExercisesViewController.swift */; };
-		1AD84F84243A815B008173BB /* AnxietyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F83243A815B008173BB /* AnxietyViewController.swift */; };
 		1AD84F86243A82B4008173BB /* FoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F85243A82B4008173BB /* FoodViewController.swift */; };
 		1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F87243A832C008173BB /* ViewCodeProtocol.swift */; };
 		1AD84F8A243A8379008173BB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F89243A8379008173BB /* HomeView.swift */; };
@@ -60,8 +61,6 @@
 		1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */; };
 		1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F95243AA0D4008173BB /* +Fonts.swift */; };
 		1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD84F93243AA04D008173BB /* caligrafia.ttf */; };
-		1AD84F99243ABF38008173BB /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F98243ABF37008173BB /* ExercisesView.swift */; };
-		1AD84F9E243AC285008173BB /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F9D243AC285008173BB /* ExerciseCell.swift */; };
 		1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */; };
 		1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84FA1243AC5E5008173BB /* Exercise.swift */; };
 		1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE559FC244CDDC000B10989 /* GlobalSettings.swift */; };
@@ -74,13 +73,6 @@
 		1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */; };
 		1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */; };
 		1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */; };
-		1AF04902244398B9005AA516 /* BreatheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04901244398B9005AA516 /* BreatheView.swift */; };
-		1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490524439E70005AA516 /* BreatheViewController.swift */; };
-		1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049082443AADB005AA516 /* BreatheViewModel.swift */; };
-		1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490B2443CC35005AA516 /* TeaView.swift */; };
-		1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0490D2443DCF0005AA516 /* TeaViewController.swift */; };
-		1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049102443E5C6005AA516 /* MusicsView.swift */; };
-		1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049122443EF0D005AA516 /* MusicViewController.swift */; };
 		1AF0491624440169005AA516 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF0491524440169005AA516 /* RoutineView.swift */; };
 		1AF049182444084C005AA516 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049172444084C005AA516 /* Routine.swift */; };
 		1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04919244408DF005AA516 /* RoutineViewModel.swift */; };
@@ -104,13 +96,7 @@
 		1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsView.swift; sourceTree = "<group>"; };
 		1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsViewController.swift; sourceTree = "<group>"; };
-		1A420DE4243EA6F90030250D /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
-		1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyDetailsView.swift; sourceTree = "<group>"; };
-		1A420DE8243EA72A0030250D /* AnxietyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCell.swift; sourceTree = "<group>"; };
 		1A420DEA243EA7B60030250D /* Anxiety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anxiety.swift; sourceTree = "<group>"; };
-		1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyCellViewModel.swift; sourceTree = "<group>"; };
-		1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsView.swift; sourceTree = "<group>"; };
-		1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailsViewController.swift; sourceTree = "<group>"; };
 		1A5A281424F9DF0E007DD4B3 /* FoodViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewTemp.swift; sourceTree = "<group>"; };
 		1A5A281624F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FoodViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
 		1A65339224491321003CFD17 /* NewRoutineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoutineViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +116,14 @@
 		1A92A4B624F86F9400AE8CE7 /* KCImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCImagePicker.swift; sourceTree = "<group>"; };
 		1A92A4B924F870F200AE8CE7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		1AA493AF2506829800136278 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
+		1AA493B12506935200136278 /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
+		1AA493B32506947B00136278 /* RoutineViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewTemp.swift; sourceTree = "<group>"; };
+		1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineViewTemp+Model.swift"; sourceTree = "<group>"; };
+		1AA493B72506995900136278 /* AnxietyView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnxietyView+Model.swift"; sourceTree = "<group>"; };
+		1AA493B92506AA5100136278 /* KCCard+ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCCard+ViewModifier.swift"; sourceTree = "<group>"; };
+		1AA493BC2506B47A00136278 /* AnxietyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyDetail.swift; sourceTree = "<group>"; };
+		1AA493BF2506B75000136278 /* KCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCWebView.swift; sourceTree = "<group>"; };
+		1AA493C32506D8B000136278 /* KCVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCVideoPlayer.swift; sourceTree = "<group>"; };
 		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -145,7 +139,6 @@
 		1AD84F7C243A7F20008173BB /* RoutinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesViewController.swift; sourceTree = "<group>"; };
 		1AD84F7E243A7F4A008173BB /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 		1AD84F81243A8110008173BB /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
-		1AD84F83243A815B008173BB /* AnxietyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyViewController.swift; sourceTree = "<group>"; };
 		1AD84F85243A82B4008173BB /* FoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewController.swift; sourceTree = "<group>"; };
 		1AD84F87243A832C008173BB /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		1AD84F89243A8379008173BB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -153,8 +146,6 @@
 		1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
 		1AD84F93243AA04D008173BB /* caligrafia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caligrafia.ttf; sourceTree = "<group>"; };
 		1AD84F95243AA0D4008173BB /* +Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Fonts.swift"; sourceTree = "<group>"; };
-		1AD84F98243ABF37008173BB /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
-		1AD84F9D243AC285008173BB /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
 		1AD84FA1243AC5E5008173BB /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		1AE559FC244CDDC000B10989 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
@@ -166,13 +157,6 @@
 		1AEF8BA5243D36F900DAAAC4 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 		1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
-		1AF04901244398B9005AA516 /* BreatheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheView.swift; sourceTree = "<group>"; };
-		1AF0490524439E70005AA516 /* BreatheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewController.swift; sourceTree = "<group>"; };
-		1AF049082443AADB005AA516 /* BreatheViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreatheViewModel.swift; sourceTree = "<group>"; };
-		1AF0490B2443CC35005AA516 /* TeaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaView.swift; sourceTree = "<group>"; };
-		1AF0490D2443DCF0005AA516 /* TeaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaViewController.swift; sourceTree = "<group>"; };
-		1AF049102443E5C6005AA516 /* MusicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsView.swift; sourceTree = "<group>"; };
-		1AF049122443EF0D005AA516 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		1AF0491524440169005AA516 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
 		1AF049172444084C005AA516 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		1AF04919244408DF005AA516 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
@@ -201,27 +185,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1A420DE2243EA6910030250D /* Anxiety */ = {
-			isa = PBXGroup;
-			children = (
-				1AF0490F2443E5A9005AA516 /* Musics */,
-				1AF0490A2443CC29005AA516 /* Teas */,
-				1AF04900244398A4005AA516 /* Breathe */,
-				1A420DE3243EA69E0030250D /* Cell */,
-				1A420DE4243EA6F90030250D /* AnxietyView.swift */,
-				1A420DE6243EA71B0030250D /* AnxietyDetailsView.swift */,
-			);
-			path = Anxiety;
-			sourceTree = "<group>";
-		};
-		1A420DE3243EA69E0030250D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				1A420DE8243EA72A0030250D /* AnxietyCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		1A653391244911BA003CFD17 /* Routine */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +275,23 @@
 			path = ExerciseDetail;
 			sourceTree = "<group>";
 		};
+		1AA493BB2506B45C00136278 /* AnxietyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				1AA493BC2506B47A00136278 /* AnxietyDetail.swift */,
+			);
+			path = AnxietyDetail;
+			sourceTree = "<group>";
+		};
+		1AA493BE2506B72B00136278 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				1AA493BF2506B75000136278 /* KCWebView.swift */,
+				1AA493C32506D8B000136278 /* KCVideoPlayer.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 		1AC2E26B2450F79400360018 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,9 +359,7 @@
 			children = (
 				1A674A2D24467B1B00E81057 /* Onboarding */,
 				1AF049142444015B005AA516 /* Routines */,
-				1A420DE2243EA6910030250D /* Anxiety */,
 				1AEF8BA4243D36E900DAAAC4 /* Food */,
-				1AD84F9B243ABF6A008173BB /* Exercises */,
 				1AD84F9A243ABF62008173BB /* Home */,
 			);
 			path = View;
@@ -390,7 +368,6 @@
 		1AD84F75243A7D3B008173BB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				1AF049072443AAC1005AA516 /* Anxiety */,
 				1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */,
 				1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */,
 				1AF04919244408DF005AA516 /* RoutineViewModel.swift */,
@@ -422,10 +399,8 @@
 			children = (
 				1A653391244911BA003CFD17 /* Routine */,
 				1A674A342446809600E81057 /* Onboarding */,
-				1AF0490324439E3D005AA516 /* Anxiety */,
 				1AD84F60243A7B93008173BB /* HomeViewController.swift */,
 				1AD84F81243A8110008173BB /* ExercisesViewController.swift */,
-				1A4D8934243AE89C00746F53 /* ExerciseDetailsViewController.swift */,
 				1AD84F85243A82B4008173BB /* FoodViewController.swift */,
 				1AF0491D24441B90005AA516 /* ProfileViewController.swift */,
 			);
@@ -457,24 +432,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		1AD84F9B243ABF6A008173BB /* Exercises */ = {
-			isa = PBXGroup;
-			children = (
-				1AD84F9C243ABF72008173BB /* Cell */,
-				1AD84F98243ABF37008173BB /* ExercisesView.swift */,
-				1A4D8932243AE85F00746F53 /* ExerciseDetailsView.swift */,
-			);
-			path = Exercises;
-			sourceTree = "<group>";
-		};
-		1AD84F9C243ABF72008173BB /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				1AD84F9D243AC285008173BB /* ExerciseCell.swift */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		1AE559FB244CDDAE00B10989 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +458,8 @@
 		1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */ = {
 			isa = PBXGroup;
 			children = (
+				1AA493B32506947B00136278 /* RoutineViewTemp.swift */,
+				1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */,
 			);
 			path = FeatureaRoutines;
 			sourceTree = "<group>";
@@ -508,6 +467,9 @@
 		1AE6ED4D24F6DF8C00E19E8B /* FeatureAnxiety */ = {
 			isa = PBXGroup;
 			children = (
+				1AA493BB2506B45C00136278 /* AnxietyDetail */,
+				1AA493B12506935200136278 /* AnxietyView.swift */,
+				1AA493B72506995900136278 /* AnxietyView+Model.swift */,
 			);
 			path = FeatureAnxiety;
 			sourceTree = "<group>";
@@ -551,6 +513,7 @@
 		1AE6ED5424F6E2E300E19E8B /* CoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				1AA493BE2506B72B00136278 /* WebView */,
 				1A92A4B524F86F8600AE8CE7 /* ImagePicker */,
 				1A92A4B224F85FAD00AE8CE7 /* Loading */,
 				1AF3BD8B24F71B4E00CD43E7 /* Card */,
@@ -584,50 +547,6 @@
 				1AEF8BAD243D444800DAAAC4 /* FoodCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		1AF04900244398A4005AA516 /* Breathe */ = {
-			isa = PBXGroup;
-			children = (
-				1AF04901244398B9005AA516 /* BreatheView.swift */,
-			);
-			path = Breathe;
-			sourceTree = "<group>";
-		};
-		1AF0490324439E3D005AA516 /* Anxiety */ = {
-			isa = PBXGroup;
-			children = (
-				1AD84F83243A815B008173BB /* AnxietyViewController.swift */,
-				1AF0490524439E70005AA516 /* BreatheViewController.swift */,
-				1AF0490D2443DCF0005AA516 /* TeaViewController.swift */,
-				1AF049122443EF0D005AA516 /* MusicViewController.swift */,
-			);
-			path = Anxiety;
-			sourceTree = "<group>";
-		};
-		1AF049072443AAC1005AA516 /* Anxiety */ = {
-			isa = PBXGroup;
-			children = (
-				1A420DEC243EACF00030250D /* AnxietyCellViewModel.swift */,
-				1AF049082443AADB005AA516 /* BreatheViewModel.swift */,
-			);
-			path = Anxiety;
-			sourceTree = "<group>";
-		};
-		1AF0490A2443CC29005AA516 /* Teas */ = {
-			isa = PBXGroup;
-			children = (
-				1AF0490B2443CC35005AA516 /* TeaView.swift */,
-			);
-			path = Teas;
-			sourceTree = "<group>";
-		};
-		1AF0490F2443E5A9005AA516 /* Musics */ = {
-			isa = PBXGroup;
-			children = (
-				1AF049102443E5C6005AA516 /* MusicsView.swift */,
-			);
-			path = Musics;
 			sourceTree = "<group>";
 		};
 		1AF049142444015B005AA516 /* Routines */ = {
@@ -665,6 +584,7 @@
 			children = (
 				1AF3BD8C24F71B5D00CD43E7 /* KCCard.swift */,
 				1AF3BD8E24F71B7A00CD43E7 /* KCCard+Model.swift */,
+				1AA493B92506AA5100136278 /* KCCard+ViewModifier.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -761,48 +681,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA493C42506D8B000136278 /* KCVideoPlayer.swift in Sources */,
 				1AEF8BA6243D36F900DAAAC4 /* FoodView.swift in Sources */,
 				1A65339E244966C9003CFD17 /* SchuduleManager.swift in Sources */,
 				1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */,
 				1AEF8BAE243D444800DAAAC4 /* FoodCell.swift in Sources */,
 				1A92A4B424F85FC000AE8CE7 /* KCLoading.swift in Sources */,
-				1AD84F84243A815B008173BB /* AnxietyViewController.swift in Sources */,
 				1AD84F61243A7B93008173BB /* HomeViewController.swift in Sources */,
 				1A6533A02449734A003CFD17 /* Keep_Calm.xcdatamodeld in Sources */,
 				1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */,
-				1AD84F9E243AC285008173BB /* ExerciseCell.swift in Sources */,
-				1AF04902244398B9005AA516 /* BreatheView.swift in Sources */,
+				1AA493B82506995900136278 /* AnxietyView+Model.swift in Sources */,
 				1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */,
+				1AA493B22506935200136278 /* AnxietyView.swift in Sources */,
+				1AA493B6250698D200136278 /* RoutineViewTemp+Model.swift in Sources */,
 				1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */,
 				1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */,
 				1A653398244936DE003CFD17 /* NewRoutineCollectionViewCell.swift in Sources */,
 				1A674A36244680BA00E81057 /* Screen1ViewController.swift in Sources */,
 				1A65339324491321003CFD17 /* NewRoutineViewController.swift in Sources */,
 				1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */,
-				1AD84F99243ABF38008173BB /* ExercisesView.swift in Sources */,
 				1AD84F82243A8110008173BB /* ExercisesViewController.swift in Sources */,
 				1AD84F7D243A7F20008173BB /* RoutinesViewController.swift in Sources */,
 				1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */,
 				1AF0491C244416F7005AA516 /* ProfileView.swift in Sources */,
-				1A420DE7243EA71B0030250D /* AnxietyDetailsView.swift in Sources */,
 				1AF3BD7F24F6FE1000CD43E7 /* KCLabel.swift in Sources */,
 				1A92A4AC24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift in Sources */,
 				1A5A281524F9DF0E007DD4B3 /* FoodViewTemp.swift in Sources */,
 				1AF049182444084C005AA516 /* Routine.swift in Sources */,
-				1A420DED243EACF00030250D /* AnxietyCellViewModel.swift in Sources */,
 				1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */,
 				1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
 				1AF0491E24441B90005AA516 /* ProfileViewController.swift in Sources */,
-				1AF0490624439E70005AA516 /* BreatheViewController.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
+				1AA493BA2506AA5100136278 /* KCCard+ViewModifier.swift in Sources */,
 				1AF3BD8F24F71B7A00CD43E7 /* KCCard+Model.swift in Sources */,
 				1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */,
 				1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */,
 				1A3954462446B872009D1563 /* ScreenView3.swift in Sources */,
-				1AF049112443E5C6005AA516 /* MusicsView.swift in Sources */,
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
-				1AF0490C2443CC35005AA516 /* TeaView.swift in Sources */,
 				1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */,
 				1AD84F86243A82B4008173BB /* FoodViewController.swift in Sources */,
 				1AF3BD8724F706F800CD43E7 /* KCButton.swift in Sources */,
@@ -811,10 +727,9 @@
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A39544A2446D464009D1563 /* ScreenView4.swift in Sources */,
 				1A3954482446BFD3009D1563 /* Screen3ViewController.swift in Sources */,
-				1A4D8933243AE85F00746F53 /* ExerciseDetailsView.swift in Sources */,
 				1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */,
 				1AF0491624440169005AA516 /* RoutineView.swift in Sources */,
-				1AF049092443AADB005AA516 /* BreatheViewModel.swift in Sources */,
+				1AA493B42506947B00136278 /* RoutineViewTemp.swift in Sources */,
 				1A674A2F24467B4E00E81057 /* OnboardingViewController.swift in Sources */,
 				1AF3BD8124F6FE2800CD43E7 /* KCLabel+Model.swift in Sources */,
 				1A39544C2446D50F009D1563 /* Screen4ViewController.swift in Sources */,
@@ -823,10 +738,9 @@
 				1A674A312446807800E81057 /* ScreenView1.swift in Sources */,
 				1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */,
 				1A6533952449152B003CFD17 /* NewRoutineView.swift in Sources */,
-				1A420DE5243EA6F90030250D /* AnxietyView.swift in Sources */,
 				1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */,
 				1AD84F8A243A8379008173BB /* HomeView.swift in Sources */,
-				1A4D8935243AE89C00746F53 /* ExerciseDetailsViewController.swift in Sources */,
+				1AA493C02506B75000136278 /* KCWebView.swift in Sources */,
 				1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */,
 				1AF3BD8524F705A100CD43E7 /* KCLabel+Style.swift in Sources */,
 				1A674A332446808600E81057 /* ScreenView2.swift in Sources */,
@@ -836,11 +750,9 @@
 				1AF3BD8D24F71B5D00CD43E7 /* KCCard.swift in Sources */,
 				1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */,
 				1A92A4BA24F870F200AE8CE7 /* AppView.swift in Sources */,
+				1AA493BD2506B47A00136278 /* AnxietyDetail.swift in Sources */,
 				1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */,
-				1AF0490E2443DCF0005AA516 /* TeaViewController.swift in Sources */,
-				1AF049132443EF0D005AA516 /* MusicViewController.swift in Sources */,
 				1AEE968024FC26A30089F7ED /* ExercisesViewTemp.swift in Sources */,
-				1A420DE9243EA72A0030250D /* AnxietyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ struct AppView: View {
                     Text("Inicio")
                 }
 
-            HomeViewTemp(viewModel: .init(home: Home()))
+            RoutineViewTemp(model: .init(routine: Routine()))
                 .tabItem {
                     Image("routine.fill")
                     Text("Rotina")
@@ -27,7 +27,7 @@ struct AppView: View {
                     Text("Alimentação")
                 }
 
-            HomeViewTemp(viewModel: .init(home: Home()))
+            AnxietyView(model: .init(anxiety: Anxiety()))
             .tabItem {
                 Image("anxiety.fill")
                 Text("Ansiedade")

@@ -16,7 +16,7 @@ struct ExerciseDetail: View {
                     activity.map {
                         KCLabel(
                             .init(
-                                text: $0.activityName,
+                                text: $0.name,
                                 style: .title,
                                 color: .init("customBlack")
                             )

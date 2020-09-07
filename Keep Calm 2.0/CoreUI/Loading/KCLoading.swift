@@ -28,11 +28,12 @@ struct KCLoading<Content>: View where Content: View {
                     .blur(radius: self.isShowing ? 3 : 0)
 
                 VStack {
-                    Text("Carregando...")
                     ActivityIndicator(isAnimating: .constant(true), style: .large)
                 }
-                .frame(width: geometry.size.width / 2,
-                       height: geometry.size.height / 5)
+                .frame(
+                    width: 80,
+                    height: 80
+                )
                 .background(Color.secondary.colorInvert())
                 .foregroundColor(Color.primary)
                 .cornerRadius(20)

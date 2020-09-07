@@ -1,31 +1,32 @@
 import SwiftUI
 import Introspect
 
-struct ExercisesViewTemp: View {
-    let viewModel: ViewModel
-    @State private var isShowDetail: Bool = false
-    @State private var selectedDetail: Activity?
+struct AnxietyView: View {
+    var model: Model
+    @State var activity: [Anxiety.AnxietyMovie]?
+    @State var isShowDetail: Bool = false
 
-    init(viewModel: ViewModel) {
-        self.viewModel = viewModel
+    init(model: Model) {
+        self.model = model
     }
 
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     KCLabel(
                         .init(
-                            text: self.viewModel.exercise.exerciseMotivation,
+                            text: self.model.anxiety.anxietyMotivation,
                             style: .phrase,
                             color: .init("customBlack"),
                             textAlignment: .leading
                         )
-                    ).padding()
+                    )
+                        .padding()
 
                     ScrollView(.horizontal, showsIndicators: false) {
                         HStack {
-                            ForEach(self.viewModel.exercise.activities, id: \.name) { activity in
+                            ForEach(self.model.anxiety.activities, id: \.name) { activity in
                                 KCCard(
                                     model: .init(
                                         text: .init(
@@ -41,27 +42,27 @@ struct ExercisesViewTemp: View {
                                 )
                                 .onTapGesture {
                                     self.isShowDetail = true
-                                    self.selectedDetail = activity
+                                    self.activity = activity.anxietyMovie
                                 }
                                 .modifier(CardEffect())
-                                .frame(width: geometry.size.width / 1.27, height: 160)
+                                .frame(width: geometry.size.width / 2.2, height: geometry.size.height / 3)
                             }
-                            Spacer()
                         }
-                    .padding()
+                        .padding()
                     }
                 }
                 .sheet(isPresented: self.$isShowDetail) {
-                    ExerciseDetail(activity: self.$selectedDetail )
+                    AnxietyDetail(activity: self.$activity)
                 }
-                .navigationBarTitle("Exercícios")
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .navigationBarTitle("Ansiedade")
             }
         }
     }
 }
 
-struct ExercisesViewTemp_Previews: PreviewProvider {
+struct AnxietyView_Previews: PreviewProvider {
     static var previews: some View {
-        ExercisesViewTemp(viewModel: .init(exercise: .init()))
+        AnxietyView(model: .init(anxiety: Anxiety()))
     }
 }

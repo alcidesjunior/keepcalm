@@ -9,32 +9,55 @@ struct KCCard: View {
 
     var body: some View {
             VStack {
-                self.model.text.padding(12)
+                Image(self.model.image)
+                    .resizable()
+                    .scaledToFit()
+                self.model.text
+                    .padding(12)
+                    .shadow(radius: 10)
             }
-//            .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
             .frame(
                 minWidth: 0,
                 maxWidth: .infinity
             )
             .background(self.model.background)
             .cornerRadius(10)
-            .shadow(radius: 4)
+            .shadow(radius: 2)
     }
 }
 
 struct KCCard_Previews: PreviewProvider {
     static var previews: some View {
-        KCCard(
-            model: .init(
-                text: .init(
-                    .init(
-                        text: "Seja muito bem-vindo! hoje teremos uma bela frase do dia para você se motivar.",
-                        style: .phrase,
-                        color: .white
-                    )
-                ),
-                background: Color.init(UIColor.init(named: "customBlue")!)
+        Group {
+            KCCard(
+                model: .init(
+                    text: .init(
+                        .init(
+                            text: "Meditação",
+                            style: .title,
+                            color: .init("customWhite")
+                        )
+                    ),
+                    image: "breath",
+                    background: Color.init(UIColor.init(named: "customBlue")!)
+                )
             )
-        )
+                .colorScheme(.dark)
+
+            KCCard(
+                model: .init(
+                    text: .init(
+                        .init(
+                            text: "Música",
+                            style: .title,
+                            color: .init("customWhite")
+                        )
+                    ),
+                    image: "music",
+                    background: Color.init(UIColor.init(named: "customBlue")!)
+                )
+            )
+        }
     }
 }
