@@ -9,7 +9,6 @@ struct FoodViewTemp: View {
     }
 
     var body: some View {
-
         NavigationView {
             List {
                 Section {

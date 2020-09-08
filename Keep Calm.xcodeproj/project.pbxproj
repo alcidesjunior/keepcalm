@@ -42,6 +42,7 @@
 		1AA493BD2506B47A00136278 /* AnxietyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493BC2506B47A00136278 /* AnxietyDetail.swift */; };
 		1AA493C02506B75000136278 /* KCWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493BF2506B75000136278 /* KCWebView.swift */; };
 		1AA493C42506D8B000136278 /* KCVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493C32506D8B000136278 /* KCVideoPlayer.swift */; };
+		1AA493C72506FA7200136278 /* RoutineViewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493C62506FA7200136278 /* RoutineViewForm.swift */; };
 		1ABD0CEA2455DDFA00B22FF8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */; };
 		1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC2E26C2450F7AA00360018 /* NotificationTools.swift */; };
 		1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F5C243A7B93008173BB /* AppDelegate.swift */; };
@@ -116,6 +117,7 @@
 		1AA493BC2506B47A00136278 /* AnxietyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyDetail.swift; sourceTree = "<group>"; };
 		1AA493BF2506B75000136278 /* KCWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCWebView.swift; sourceTree = "<group>"; };
 		1AA493C32506D8B000136278 /* KCVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCVideoPlayer.swift; sourceTree = "<group>"; };
+		1AA493C62506FA7200136278 /* RoutineViewForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewForm.swift; sourceTree = "<group>"; };
 		1ABD0CE92455DDE400B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		1ABD0CEB2455DDFA00B22FF8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		1ABD0CEF2455DEC300B22FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -276,6 +278,14 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		1AA493C52506FA4600136278 /* RoutineForm */ = {
+			isa = PBXGroup;
+			children = (
+				1AA493C62506FA7200136278 /* RoutineViewForm.swift */,
+			);
+			path = RoutineForm;
+			sourceTree = "<group>";
+		};
 		1AC2E26B2450F79400360018 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +437,7 @@
 		1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */ = {
 			isa = PBXGroup;
 			children = (
+				1AA493C52506FA4600136278 /* RoutineForm */,
 				1AA493B32506947B00136278 /* RoutineViewTemp.swift */,
 				1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */,
 			);
@@ -666,6 +677,7 @@
 				1A3954462446B872009D1563 /* ScreenView3.swift in Sources */,
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
 				1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */,
+				1AA493C72506FA7200136278 /* RoutineViewForm.swift in Sources */,
 				1AF3BD8724F706F800CD43E7 /* KCButton.swift in Sources */,
 				1A5A281724F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift in Sources */,
 				1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */,

@@ -9,9 +9,11 @@ struct KCCard: View {
 
     var body: some View {
             VStack {
-                Image(self.model.image)
+                self.model.image.map {
+                    Image($0)
                     .resizable()
                     .scaledToFit()
+                }
                 self.model.text
                     .padding(12)
                     .shadow(radius: 10)
