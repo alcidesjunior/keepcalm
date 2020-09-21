@@ -81,8 +81,8 @@ struct FoodViewTemp: View {
                     }
                     .listRowInsets(EdgeInsets())
                 }
-                    .navigationBarTitle("Alimentação", displayMode: .automatic)
             }
+            .navigationBarTitle("Alimentação", displayMode: .automatic)
             .introspectTableView { tableView in
                 tableView.showsVerticalScrollIndicator = false
             }

@@ -34,11 +34,11 @@ struct HomeViewDetail: View {
                     }
                     .padding(.vertical, 40)
                     .frame(minWidth: 0, maxWidth: .infinity)
-                    .navigationBarTitle("Perfil", displayMode: .large)
-                    .onAppear(perform: {
-                        self.name = self.viewModel.home.fullName
-                    })
                 }
+                .navigationBarTitle("Perfil", displayMode: .large)
+                .onAppear(perform: {
+                    self.name = self.viewModel.home.fullName
+                })
                 .sheet(isPresented: self.$isShowPicker) {
                     KCImagePicker(image: self.$inputImage)
                 }

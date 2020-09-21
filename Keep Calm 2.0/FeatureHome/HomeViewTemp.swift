@@ -75,7 +75,17 @@ struct HomeViewTemp_Previews: PreviewProvider {
 //            .environment(\.colorScheme, .dark)
 
             HomeViewTemp(viewModel: .init(home: .init()))
-            .environment(\.colorScheme, .light)
+                .environment(\.colorScheme, .light)
+            HomeViewTemp(viewModel: .init(home: .init()))
+                .environment(\.colorScheme, .light)
+            HomeViewTemp(viewModel: .init(home: .init()))
+                .environment(\.colorScheme, .light)
+            HomeViewTemp(viewModel: .init(home: .init()))
+                .environment(\.colorScheme, .light)
+            HomeViewTemp(viewModel: .init(home: .init()))
+                .environment(\.colorScheme, .light)
+            HomeViewTemp(viewModel: .init(home: .init()))
+                .environment(\.colorScheme, .light)
         }
     }
 }

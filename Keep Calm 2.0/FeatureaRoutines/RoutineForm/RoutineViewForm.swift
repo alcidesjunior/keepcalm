@@ -1,50 +1,78 @@
 import Introspect
 import SwiftUI
+import Combine
 
 struct RoutineViewForm: View {
-    var weekDays = WeekDays()
-    @State var isDaySelected: Bool = false
+    @ObservedObject var weekDays = WeekDays()
+    @State var currentDate: Date = Date()
+    @State var activityTitle: String = ""
+    @State var activityDescription: String = ""
+    @StateObject private var keyboardHandler = KeyboardHandler()
 
     var body: some View {
         NavigationView {
-            List {
-                TextField("Atividade", text: .constant(""))
-                    .textFieldStyle(PlainTextFieldStyle())
+            Form {
+                HStack {
+                    Text("Atividade:")
+                        .foregroundColor(Color.gray)
+                    TextField("", text: $activityTitle)
+                        .textFieldStyle(PlainTextFieldStyle())
+                }
 
-                TextField("Hora", text: .constant(""))
-                    .textFieldStyle(PlainTextFieldStyle())
+                DatePicker(
+                    selection: $currentDate,
+                    displayedComponents: .hourAndMinute,
+                    label: {
+                        Text("Hora:")
+                            .foregroundColor(Color.gray)
+                    }
+                )
 
-                VStack(alignment: .leading) {
-                    Text("Dia:").foregroundColor(Color.secondary)
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack {
-                            ForEach(weekDays.days, id: \.id) { day in
-                                KCCard(
-                                    model: .init(
-                                        text: .init(
-                                            .init(
-                                                text: day.name,
-                                                style: .phrase,
-                                                color: .init("customWhite")
-                                            )
-                                        ),
-                                        image: nil,
-                                        background: .init(day.selected ? "customBlue" : "customBlack")
-                                    )
-                                )
-                                .onTapGesture {
-                                    day.selected = true
-                                    print(day)
-                                }
-                                .frame(width: 80)
+                Text("Dia:")
+                    .foregroundColor(Color.secondary)
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ForEach(weekDays.days, id: \.id) { day in
+                            self.weekDay(day: day)
+                            .onTapGesture {
+                                day.selected.toggle()
+                                self.weekDays.objectWillChange.send()
                             }
                         }
                     }
                 }
+
+                Text("Descreva:")
+                    .foregroundColor(Color.gray)
+                TextEditor(text: $activityDescription)
+                    .frame(height: 100)
             }
-            .listStyle(GroupedListStyle())
             .navigationBarTitle("Nova Rotina")
+            .navigationBarItems(trailing:
+                Button(action: {
+                // TODO: Some action here
+                }) {
+                    Text("Salvar")
+                }
+            )
         }
+    }
+
+    private func weekDay(day: WeekDays.Day) -> some View {
+        KCCard(
+            model: .init(
+                text: .init(
+                    .init(
+                        text: day.name,
+                        style: .phrase,
+                        color: .init("customWhite")
+                    )
+                ),
+                image: nil,
+                background: .init(day.selected ? "customBlue" : "customBlack")
+            )
+        )
+        .frame(width: 80)
     }
 }
 
@@ -55,22 +83,32 @@ struct RoutineViewForm_Previews: PreviewProvider {
 }
 
 extension RoutineViewForm {
-    struct WeekDays {
-        var days: [Day] {
+    class WeekDays: ObservableObject {
+        @Published var days = [Day]()
+
+        init() {
+            self.days =
             [
-                .init(name: "Seg"),
-                .init(name: "Ter"),
-                .init(name: "Qua"),
-                .init(name: "Qui"),
-                .init(name: "Sex"),
-                .init(name: "Sab"),
-                .init(name: "Dom")
+                .init(id: 1,name: "Seg"),
+                .init(id: 2,name: "Ter"),
+                .init(id: 3,name: "Qua"),
+                .init(id: 4,name: "Qui"),
+                .init(id: 5,name: "Sex"),
+                .init(id: 6,name: "Sab"),
+                .init(id: 7,name: "Dom")
             ]
         }
-        struct Day {
-            var id = UUID()
+
+        class Day: ObservableObject, Identifiable {
+            var id: Int
             var name: String
-            @State var selected: Bool = false
+            @Published var selected: Bool
+
+            init(id: Int, name: String, selected: Bool = false) {
+                self.id = id
+                self.name = name
+                self.selected = selected
+            }
         }
     }
 }

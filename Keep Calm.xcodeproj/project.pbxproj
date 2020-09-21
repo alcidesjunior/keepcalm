@@ -11,6 +11,9 @@
 		1A3954482446BFD3009D1563 /* Screen3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3954472446BFD3009D1563 /* Screen3ViewController.swift */; };
 		1A39544A2446D464009D1563 /* ScreenView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3954492446D464009D1563 /* ScreenView4.swift */; };
 		1A39544C2446D50F009D1563 /* Screen4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39544B2446D50F009D1563 /* Screen4ViewController.swift */; };
+		1A40928A25168E6F00F892E7 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40928925168E6F00F892E7 /* TextView.swift */; };
+		1A40928E2516919D00F892E7 /* KCTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A40928D2516919D00F892E7 /* KCTextView.swift */; };
+		1A409291251691C900F892E7 /* KCTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A409290251691C900F892E7 /* KCTextView+Model.swift */; };
 		1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */; };
 		1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */; };
 		1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */; };
@@ -27,6 +30,7 @@
 		1A674A332446808600E81057 /* ScreenView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A322446808600E81057 /* ScreenView2.swift */; };
 		1A674A36244680BA00E81057 /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A35244680BA00E81057 /* Screen1ViewController.swift */; };
 		1A674A38244680C700E81057 /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A674A37244680C700E81057 /* Screen2ViewController.swift */; };
+		1A6CD6402518182800FB7E0F /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6CD63F2518182800FB7E0F /* KeyboardHandler.swift */; };
 		1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */; };
 		1A92A4AC24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */; };
 		1A92A4B124F82D1500AE8CE7 /* profileImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A92A4B024F82D1500AE8CE7 /* profileImage.png */; };
@@ -86,6 +90,9 @@
 		1A3954472446BFD3009D1563 /* Screen3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3ViewController.swift; sourceTree = "<group>"; };
 		1A3954492446D464009D1563 /* ScreenView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView4.swift; sourceTree = "<group>"; };
 		1A39544B2446D50F009D1563 /* Screen4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4ViewController.swift; sourceTree = "<group>"; };
+		1A40928925168E6F00F892E7 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		1A40928D2516919D00F892E7 /* KCTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTextView.swift; sourceTree = "<group>"; };
+		1A409290251691C900F892E7 /* KCTextView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCTextView+Model.swift"; sourceTree = "<group>"; };
 		1A41E0C5244A856600C22D9E /* RoutineDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDayCollectionViewCell.swift; sourceTree = "<group>"; };
 		1A41E0C7244A9FA900C22D9E /* RoutineDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsView.swift; sourceTree = "<group>"; };
 		1A41E0C9244AA84500C22D9E /* RoutineDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineDetailsViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +109,7 @@
 		1A674A322446808600E81057 /* ScreenView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenView2.swift; sourceTree = "<group>"; };
 		1A674A35244680BA00E81057 /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
 		1A674A37244680C700E81057 /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
+		1A6CD63F2518182800FB7E0F /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
 		1A7E42BF24452C3C00B5933E /* SavedDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDataProtocol.swift; sourceTree = "<group>"; };
 		1A92A4AB24F7F86700AE8CE7 /* HomeViewDetail+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewDetail+ViewModel.swift"; sourceTree = "<group>"; };
 		1A92A4B024F82D1500AE8CE7 /* profileImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileImage.png; sourceTree = "<group>"; };
@@ -171,6 +179,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A40928825168E4700F892E7 /* TextArea */ = {
+			isa = PBXGroup;
+			children = (
+				1A40928925168E6F00F892E7 /* TextView.swift */,
+				1A40928D2516919D00F892E7 /* KCTextView.swift */,
+				1A409290251691C900F892E7 /* KCTextView+Model.swift */,
+			);
+			path = TextArea;
+			sourceTree = "<group>";
+		};
 		1A653391244911BA003CFD17 /* Routine */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +237,14 @@
 				1A39544B2446D50F009D1563 /* Screen4ViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1A6CD63E2518181500FB7E0F /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1A6CD63F2518182800FB7E0F /* KeyboardHandler.swift */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 		1A92A4AD24F81C5200AE8CE7 /* Images */ = {
@@ -493,6 +519,8 @@
 		1AE6ED5424F6E2E300E19E8B /* CoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				1A6CD63E2518181500FB7E0F /* Keyboard */,
+				1A40928825168E4700F892E7 /* TextArea */,
 				1AA493BE2506B72B00136278 /* WebView */,
 				1A92A4B524F86F8600AE8CE7 /* ImagePicker */,
 				1A92A4B224F85FAD00AE8CE7 /* Loading */,
@@ -647,6 +675,7 @@
 				1AA493C42506D8B000136278 /* KCVideoPlayer.swift in Sources */,
 				1A65339E244966C9003CFD17 /* SchuduleManager.swift in Sources */,
 				1A7E42C024452C3C00B5933E /* SavedDataProtocol.swift in Sources */,
+				1A6CD6402518182800FB7E0F /* KeyboardHandler.swift in Sources */,
 				1A92A4B424F85FC000AE8CE7 /* KCLoading.swift in Sources */,
 				1A6533A02449734A003CFD17 /* Keep_Calm.xcdatamodeld in Sources */,
 				1A41E0C6244A856600C22D9E /* RoutineDayCollectionViewCell.swift in Sources */,
@@ -654,6 +683,7 @@
 				1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */,
 				1AA493B22506935200136278 /* AnxietyView.swift in Sources */,
 				1AA493B6250698D200136278 /* RoutineViewTemp+Model.swift in Sources */,
+				1A40928E2516919D00F892E7 /* KCTextView.swift in Sources */,
 				1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */,
 				1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */,
 				1A653398244936DE003CFD17 /* NewRoutineCollectionViewCell.swift in Sources */,
@@ -670,6 +700,7 @@
 				1A41E0CA244AA84500C22D9E /* RoutineDetailsViewController.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
+				1A409291251691C900F892E7 /* KCTextView+Model.swift in Sources */,
 				1AA493BA2506AA5100136278 /* KCCard+ViewModifier.swift in Sources */,
 				1AF3BD8F24F71B7A00CD43E7 /* KCCard+Model.swift in Sources */,
 				1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */,
@@ -683,6 +714,7 @@
 				1A41E0C8244A9FA900C22D9E /* RoutineDetailsView.swift in Sources */,
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A39544A2446D464009D1563 /* ScreenView4.swift in Sources */,
+				1A40928A25168E6F00F892E7 /* TextView.swift in Sources */,
 				1A3954482446BFD3009D1563 /* Screen3ViewController.swift in Sources */,
 				1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */,
 				1AF0491624440169005AA516 /* RoutineView.swift in Sources */,
@@ -860,7 +892,7 @@
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = H5762RAVC8;
 				INFOPLIST_FILE = "Keep Calm/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -881,7 +913,7 @@
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = H5762RAVC8;
 				INFOPLIST_FILE = "Keep Calm/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
