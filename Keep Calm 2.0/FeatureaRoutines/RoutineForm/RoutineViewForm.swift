@@ -5,9 +5,14 @@ import Combine
 struct RoutineViewForm: View {
     @ObservedObject var weekDays = WeekDays()
     @State var currentDate: Date = Date()
-    @State var activityTitle: String = ""
+    @State var activityName: String = ""
     @State var activityDescription: String = ""
     @StateObject private var keyboardHandler = KeyboardHandler()
+    private var viewModel: ViewModel
+
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         NavigationView {
@@ -15,7 +20,7 @@ struct RoutineViewForm: View {
                 HStack {
                     Text("Atividade:")
                         .foregroundColor(Color.gray)
-                    TextField("", text: $activityTitle)
+                    TextField("", text: $activityName)
                         .textFieldStyle(PlainTextFieldStyle())
                 }
 
@@ -50,7 +55,17 @@ struct RoutineViewForm: View {
             .navigationBarTitle("Nova Rotina")
             .navigationBarItems(trailing:
                 Button(action: {
-                // TODO: Some action here
+                    self.viewModel.save(
+                        routine: .init(
+                            activity: activityName,
+                            hour: self.viewModel.dateToTime(from: currentDate),
+                            activityDescription: activityDescription,
+                            day: weekDays
+                                .days
+                                .filter { $0.selected == true }
+                                .map { .init(day: $0.id) }
+                        )
+                    )
                 }) {
                     Text("Salvar")
                 }
@@ -78,7 +93,7 @@ struct RoutineViewForm: View {
 
 struct RoutineViewForm_Previews: PreviewProvider {
     static var previews: some View {
-        RoutineViewForm()
+        RoutineViewForm(viewModel: .init())
     }
 }
 

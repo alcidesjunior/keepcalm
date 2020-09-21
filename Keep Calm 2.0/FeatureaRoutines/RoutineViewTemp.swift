@@ -45,7 +45,7 @@ struct RoutineViewTemp: View {
                     }
                 }
                 .sheet(isPresented: self.$isShowForm) {
-                    RoutineViewForm()
+                    RoutineViewForm(viewModel: .init())
                 }
                 .introspectTableView { tableView in
                     tableView.showsVerticalScrollIndicator = false
