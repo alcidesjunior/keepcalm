@@ -21,7 +21,7 @@ struct AppView: View {
                     Text("Exercícios")
                 }
 
-            FoodViewTemp(viewModel: .init(food: Food()))
+            FoodView(viewModel: .init(food: Food()))
                 .tabItem {
                     Image("food.fill")
                     Text("Alimentação")

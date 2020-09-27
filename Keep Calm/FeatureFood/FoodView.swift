@@ -1,7 +1,7 @@
 import Introspect
 import SwiftUI
 
-struct FoodViewTemp: View {
+struct FoodView: View {
     private var viewModel: ViewModel
 
     init(viewModel: ViewModel) {
@@ -91,8 +91,8 @@ struct FoodViewTemp: View {
     }
 }
 
-struct FoodViewTemp_Previews: PreviewProvider {
+struct FoodView_Previews: PreviewProvider {
     static var previews: some View {
-        FoodViewTemp(viewModel: .init(food: Food()))
+        FoodView(viewModel: .init(food: Food()))
     }
 }

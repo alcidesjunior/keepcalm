@@ -1,7 +1,7 @@
 import Combine
 import SwiftUI
 
-extension FoodViewTemp {
+extension FoodView {
     struct ViewModel {
         var food: Food
 
