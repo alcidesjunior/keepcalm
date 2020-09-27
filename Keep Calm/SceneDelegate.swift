@@ -21,10 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.rootViewController = rootView
 //        window?.makeKeyAndVisible()
 //
-//        self.notification = NotificationTools()
-//        self.notification?.requestAuthorization()
-//        let schedule = ScheduleManager()
-//        schedule.getAll()
+        self.notification = NotificationTools()
+        self.notification?.requestAuthorization()
+        let schedule = ScheduleManager()
+        schedule.getAll()
         // Get the managed object context from the shared persistent container.
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 

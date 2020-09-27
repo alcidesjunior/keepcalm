@@ -8,7 +8,11 @@ struct RoutineViewForm: View {
     @State var activityName: String = ""
     @State var activityDescription: String = ""
     @StateObject private var keyboardHandler = KeyboardHandler()
+    @State private var showAlert: Bool = false
     private var viewModel: ViewModel
+    private var validForm: Bool {
+        activityName.isEmpty || activityDescription.isEmpty || weekDays.hasSomeDaySelected
+    }
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -21,7 +25,6 @@ struct RoutineViewForm: View {
                     Text("Atividade:")
                         .foregroundColor(Color.gray)
                     TextField("", text: $activityName)
-                        .textFieldStyle(PlainTextFieldStyle())
                 }
 
                 DatePicker(
@@ -55,22 +58,44 @@ struct RoutineViewForm: View {
             .navigationBarTitle("Nova Rotina")
             .navigationBarItems(trailing:
                 Button(action: {
-                    self.viewModel.save(
-                        routine: .init(
-                            activity: activityName,
-                            hour: self.viewModel.dateToTime(from: currentDate),
-                            activityDescription: activityDescription,
-                            day: weekDays
-                                .days
-                                .filter { $0.selected == true }
-                                .map { .init(day: $0.id) }
-                        )
-                    )
+                    saveRoutine()
+                    showAlert.toggle()
                 }) {
                     Text("Salvar")
                 }
+                .alert(isPresented: $showAlert) {
+                    Alert(
+                        title: Text("Aviso de rotina"),
+                        message: Text("Rotina criada!"),
+                        dismissButton: .default(Text("Ok")) {
+                            resetFields()
+                        }
+                    )
+                }
+                .disabled(validForm)
             )
         }
+    }
+
+    private func saveRoutine() {
+        self.viewModel.save(
+            routine: .init(
+                activity: activityName,
+                hour: self.viewModel.dateToTime(from: currentDate),
+                activityDescription: activityDescription,
+                day: weekDays
+                    .days
+                    .filter { $0.selected == true }
+                    .map { .init(day: $0.id) }
+            )
+        )
+    }
+
+    private func resetFields() {
+        currentDate = Date()
+        activityName = ""
+        activityDescription = ""
+        weekDays.reset()
     }
 
     private func weekDay(day: WeekDays.Day) -> some View {
@@ -99,19 +124,28 @@ struct RoutineViewForm_Previews: PreviewProvider {
 
 extension RoutineViewForm {
     class WeekDays: ObservableObject {
-        @Published var days = [Day]()
-
-        init() {
-            self.days =
+        @Published var days =
             [
-                .init(id: 1,name: "Seg"),
-                .init(id: 2,name: "Ter"),
-                .init(id: 3,name: "Qua"),
-                .init(id: 4,name: "Qui"),
-                .init(id: 5,name: "Sex"),
-                .init(id: 6,name: "Sab"),
-                .init(id: 7,name: "Dom")
+                Day(id: 0,name: "Seg"),
+                Day(id: 1,name: "Ter"),
+                Day(id: 2,name: "Qua"),
+                Day(id: 3,name: "Qui"),
+                Day(id: 4,name: "Sex"),
+                Day(id: 5,name: "Sab"),
+                Day(id: 6,name: "Dom")
             ]
+
+        var hasSomeDaySelected: Bool {
+            self.days.filter { $0.selected == true }.isEmpty
+        }
+
+        func reset() {
+            self.days
+                .filter { $0.selected == true}
+                .map {
+                    $0.selected = false
+                    self.objectWillChange.send()
+                }
         }
 
         class Day: ObservableObject, Identifiable {
