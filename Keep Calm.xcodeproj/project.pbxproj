@@ -27,8 +27,8 @@
 		1A0BDC832520FFC6006AD7FB /* KCTextView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC702520FFC6006AD7FB /* KCTextView+Model.swift */; };
 		1A0BDC842520FFC6006AD7FB /* KCAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC722520FFC6006AD7FB /* KCAvatar.swift */; };
 		1A0BDC852520FFC6006AD7FB /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC742520FFC6006AD7FB /* KeyboardHandler.swift */; };
-		1A0BDC9E2520FFF1006AD7FB /* RoutineViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC882520FFF1006AD7FB /* RoutineViewTemp.swift */; };
-		1A0BDC9F2520FFF1006AD7FB /* RoutineViewTemp+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC892520FFF1006AD7FB /* RoutineViewTemp+Model.swift */; };
+		1A0BDC9E2520FFF1006AD7FB /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC882520FFF1006AD7FB /* RoutineView.swift */; };
+		1A0BDC9F2520FFF1006AD7FB /* RoutineView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC892520FFF1006AD7FB /* RoutineView+ViewModel.swift */; };
 		1A0BDCA02520FFF1006AD7FB /* RoutineViewForm+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC8B2520FFF1006AD7FB /* RoutineViewForm+ViewModel.swift */; };
 		1A0BDCA12520FFF1006AD7FB /* RoutineViewForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC8C2520FFF1006AD7FB /* RoutineViewForm.swift */; };
 		1A0BDCA22520FFF1006AD7FB /* ExercisesViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0BDC8E2520FFF1006AD7FB /* ExercisesViewTemp+ViewModel.swift */; };
@@ -85,8 +85,8 @@
 		1A0BDC702520FFC6006AD7FB /* KCTextView+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KCTextView+Model.swift"; sourceTree = "<group>"; };
 		1A0BDC722520FFC6006AD7FB /* KCAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCAvatar.swift; sourceTree = "<group>"; };
 		1A0BDC742520FFC6006AD7FB /* KeyboardHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
-		1A0BDC882520FFF1006AD7FB /* RoutineViewTemp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineViewTemp.swift; sourceTree = "<group>"; };
-		1A0BDC892520FFF1006AD7FB /* RoutineViewTemp+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutineViewTemp+Model.swift"; sourceTree = "<group>"; };
+		1A0BDC882520FFF1006AD7FB /* RoutineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		1A0BDC892520FFF1006AD7FB /* RoutineView+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutineView+ViewModel.swift"; sourceTree = "<group>"; };
 		1A0BDC8B2520FFF1006AD7FB /* RoutineViewForm+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RoutineViewForm+ViewModel.swift"; sourceTree = "<group>"; };
 		1A0BDC8C2520FFF1006AD7FB /* RoutineViewForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineViewForm.swift; sourceTree = "<group>"; };
 		1A0BDC8E2520FFF1006AD7FB /* ExercisesViewTemp+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExercisesViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
@@ -254,8 +254,8 @@
 		1A0BDC872520FFF1006AD7FB /* FeatureaRoutines */ = {
 			isa = PBXGroup;
 			children = (
-				1A0BDC882520FFF1006AD7FB /* RoutineViewTemp.swift */,
-				1A0BDC892520FFF1006AD7FB /* RoutineViewTemp+Model.swift */,
+				1A0BDC882520FFF1006AD7FB /* RoutineView.swift */,
+				1A0BDC892520FFF1006AD7FB /* RoutineView+ViewModel.swift */,
 				1A0BDC8A2520FFF1006AD7FB /* RoutineForm */,
 			);
 			path = FeatureaRoutines;
@@ -548,7 +548,7 @@
 				1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */,
 				1AD84F5D243A7B93008173BB /* AppDelegate.swift in Sources */,
 				1A0BDCA42520FFF1006AD7FB /* ExercisesViewTemp.swift in Sources */,
-				1A0BDC9E2520FFF1006AD7FB /* RoutineViewTemp.swift in Sources */,
+				1A0BDC9E2520FFF1006AD7FB /* RoutineView.swift in Sources */,
 				1A0BDC832520FFC6006AD7FB /* KCTextView+Model.swift in Sources */,
 				1A0BDC802520FFC6006AD7FB /* KCLabel+Style.swift in Sources */,
 				1A0BDC7C2520FFC6006AD7FB /* KCVideoPlayer.swift in Sources */,
@@ -557,7 +557,7 @@
 				1AC2E26D2450F7AA00360018 /* NotificationTools.swift in Sources */,
 				1A0BDCA02520FFF1006AD7FB /* RoutineViewForm+ViewModel.swift in Sources */,
 				1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */,
-				1A0BDC9F2520FFF1006AD7FB /* RoutineViewTemp+Model.swift in Sources */,
+				1A0BDC9F2520FFF1006AD7FB /* RoutineView+ViewModel.swift in Sources */,
 				1AD84F8F243A89E3008173BB /* Home.swift in Sources */,
 				1A0BDC752520FFC6006AD7FB /* KCCard.swift in Sources */,
 				1A0BDC842520FFC6006AD7FB /* KCAvatar.swift in Sources */,

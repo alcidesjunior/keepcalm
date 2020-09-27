@@ -9,7 +9,7 @@ struct AppView: View {
                     Text("Inicio")
                 }
 
-            RoutineViewTemp(model: .init(routine: Routine()))
+            RoutineView(viewModel: .init(routine: Routine()))
                 .tabItem {
                     Image("routine.fill")
                     Text("Rotina")
