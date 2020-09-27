@@ -1,7 +1,7 @@
 import SwiftUI
 import Introspect
 
-struct ExercisesViewTemp: View {
+struct ExercisesView: View {
     let viewModel: ViewModel
     @State private var isShowDetail: Bool = false
     @State private var selectedDetail: Activity?
@@ -60,8 +60,8 @@ struct ExercisesViewTemp: View {
     }
 }
 
-struct ExercisesViewTemp_Previews: PreviewProvider {
+struct ExercisesView_Previews: PreviewProvider {
     static var previews: some View {
-        ExercisesViewTemp(viewModel: .init(exercise: .init()))
+        ExercisesView(viewModel: .init(exercise: .init()))
     }
 }

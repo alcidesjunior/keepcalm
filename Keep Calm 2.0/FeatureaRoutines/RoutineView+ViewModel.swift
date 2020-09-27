@@ -1,7 +1,7 @@
 import Foundation
 
-extension RoutineViewTemp {
-    struct Model {
+extension RoutineView {
+    struct ViewModel {
         var routine: Routine
         let scheduleManager = ScheduleManager()
         var weekDays: [Days] {

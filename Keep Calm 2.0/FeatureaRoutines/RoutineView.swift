@@ -1,18 +1,18 @@
 import SwiftUI
 
-struct RoutineViewTemp: View {
-    var model: Model
+struct RoutineView: View {
+    var viewModel: ViewModel
     @State var isShowForm: Bool = false
 
-    init(model: Model) {
-        self.model = model
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
     }
     
     var body: some View {
         NavigationView {
             GeometryReader { geo in
                 List {
-                    ForEach(model.weekDays, id: \.name) { weekdays in
+                    ForEach(viewModel.weekDays, id: \.name) { weekdays in
                         Section(header:
                             KCLabel(
                                 .init(
@@ -69,8 +69,8 @@ struct RoutineViewTemp: View {
     }
 }
 
-struct RoutineViewTemp_Previews: PreviewProvider {
+struct RoutineView_Previews: PreviewProvider {
     static var previews: some View {
-        RoutineViewTemp(model: .init(routine: Routine()))
+        RoutineView(viewModel: .init(routine: Routine()))
     }
 }

@@ -25,8 +25,8 @@
 		1A92A4BA24F870F200AE8CE7 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92A4B924F870F200AE8CE7 /* AppView.swift */; };
 		1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493AF2506829800136278 /* ExerciseDetail.swift */; };
 		1AA493B22506935200136278 /* AnxietyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B12506935200136278 /* AnxietyView.swift */; };
-		1AA493B42506947B00136278 /* RoutineViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B32506947B00136278 /* RoutineViewTemp.swift */; };
-		1AA493B6250698D200136278 /* RoutineViewTemp+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */; };
+		1AA493B42506947B00136278 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B32506947B00136278 /* RoutineView.swift */; };
+		1AA493B6250698D200136278 /* RoutineView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B5250698D200136278 /* RoutineView+ViewModel.swift */; };
 		1AA493B82506995900136278 /* AnxietyView+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B72506995900136278 /* AnxietyView+Model.swift */; };
 		1AA493BA2506AA5100136278 /* KCCard+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493B92506AA5100136278 /* KCCard+ViewModifier.swift */; };
 		1AA493BD2506B47A00136278 /* AnxietyDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA493BC2506B47A00136278 /* AnxietyDetail.swift */; };
@@ -42,16 +42,16 @@
 		1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F7E243A7F4A008173BB /* ControllerProtocol.swift */; };
 		1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F87243A832C008173BB /* ViewCodeProtocol.swift */; };
 		1AD84F8F243A89E3008173BB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F8E243A89E3008173BB /* Home.swift */; };
-		1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */; };
+		1AD84F91243A8AF8008173BB /* HomeView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F90243A8AF8008173BB /* HomeView+ViewModel.swift */; };
 		1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F95243AA0D4008173BB /* +Fonts.swift */; };
 		1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD84F93243AA04D008173BB /* caligrafia.ttf */; };
 		1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84FA1243AC5E5008173BB /* Exercise.swift */; };
 		1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE559FC244CDDC000B10989 /* GlobalSettings.swift */; };
-		1AE6ED5324F6DFEB00E19E8B /* HomeViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */; };
+		1AE6ED5324F6DFEB00E19E8B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5224F6DFEB00E19E8B /* HomeView.swift */; };
 		1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */; };
 		1AEE967E24FC22CF0089F7ED /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 1AEE967D24FC22CF0089F7ED /* Introspect */; };
-		1AEE968024FC26A30089F7ED /* ExercisesViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */; };
-		1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */; };
+		1AEE968024FC26A30089F7ED /* ExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE967F24FC26A30089F7ED /* ExercisesView.swift */; };
+		1AEE968224FC2A2C0089F7ED /* ExercisesView+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE968124FC2A2C0089F7ED /* ExercisesView+ViewModel.swift */; };
 		1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA2243D255100DAAAC4 /* Food.swift */; };
 		1AF049182444084C005AA516 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049172444084C005AA516 /* Routine.swift */; };
 		1AF3BD7F24F6FE1000CD43E7 /* KCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */; };
@@ -83,8 +83,8 @@
 		1A92A4B924F870F200AE8CE7 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		1AA493AF2506829800136278 /* ExerciseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetail.swift; sourceTree = "<group>"; };
 		1AA493B12506935200136278 /* AnxietyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyView.swift; sourceTree = "<group>"; };
-		1AA493B32506947B00136278 /* RoutineViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewTemp.swift; sourceTree = "<group>"; };
-		1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineViewTemp+Model.swift"; sourceTree = "<group>"; };
+		1AA493B32506947B00136278 /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		1AA493B5250698D200136278 /* RoutineView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoutineView+ViewModel.swift"; sourceTree = "<group>"; };
 		1AA493B72506995900136278 /* AnxietyView+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnxietyView+Model.swift"; sourceTree = "<group>"; };
 		1AA493B92506AA5100136278 /* KCCard+ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCCard+ViewModifier.swift"; sourceTree = "<group>"; };
 		1AA493BC2506B47A00136278 /* AnxietyDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnxietyDetail.swift; sourceTree = "<group>"; };
@@ -104,15 +104,15 @@
 		1AD84F7E243A7F4A008173BB /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 		1AD84F87243A832C008173BB /* ViewCodeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeProtocol.swift; sourceTree = "<group>"; };
 		1AD84F8E243A89E3008173BB /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
-		1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
+		1AD84F90243A8AF8008173BB /* HomeView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeView+ViewModel.swift"; sourceTree = "<group>"; };
 		1AD84F93243AA04D008173BB /* caligrafia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caligrafia.ttf; sourceTree = "<group>"; };
 		1AD84F95243AA0D4008173BB /* +Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Fonts.swift"; sourceTree = "<group>"; };
 		1AD84FA1243AC5E5008173BB /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		1AE559FC244CDDC000B10989 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
-		1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTemp.swift; sourceTree = "<group>"; };
+		1AE6ED5224F6DFEB00E19E8B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1AE6ED5724F6EB4B00E19E8B /* KCAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCAvatar.swift; sourceTree = "<group>"; };
-		1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewTemp.swift; sourceTree = "<group>"; };
-		1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercisesViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
+		1AEE967F24FC26A30089F7ED /* ExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesView.swift; sourceTree = "<group>"; };
+		1AEE968124FC2A2C0089F7ED /* ExercisesView+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercisesView+ViewModel.swift"; sourceTree = "<group>"; };
 		1AEF8BA2243D255100DAAAC4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		1AF049172444084C005AA516 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
 		1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCLabel.swift; sourceTree = "<group>"; };
@@ -334,8 +334,8 @@
 			isa = PBXGroup;
 			children = (
 				1AA493C52506FA4600136278 /* RoutineForm */,
-				1AA493B32506947B00136278 /* RoutineViewTemp.swift */,
-				1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */,
+				1AA493B32506947B00136278 /* RoutineView.swift */,
+				1AA493B5250698D200136278 /* RoutineView+ViewModel.swift */,
 			);
 			name = FeatureaRoutines;
 			path = "Keep Calm 2.0/FeatureaRoutines";
@@ -366,8 +366,8 @@
 			isa = PBXGroup;
 			children = (
 				1AA493AE2506827F00136278 /* ExerciseDetail */,
-				1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */,
-				1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */,
+				1AEE967F24FC26A30089F7ED /* ExercisesView.swift */,
+				1AEE968124FC2A2C0089F7ED /* ExercisesView+ViewModel.swift */,
 			);
 			name = FeatureExercises;
 			path = "Keep Calm 2.0/FeatureExercises";
@@ -377,8 +377,8 @@
 			isa = PBXGroup;
 			children = (
 				1AF3BD9024F728ED00CD43E7 /* Details */,
-				1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */,
-				1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */,
+				1AE6ED5224F6DFEB00E19E8B /* HomeView.swift */,
+				1AD84F90243A8AF8008173BB /* HomeView+ViewModel.swift */,
 			);
 			name = FeatureHome;
 			path = "Keep Calm 2.0/FeatureHome";
@@ -545,7 +545,7 @@
 				1AA493B82506995900136278 /* AnxietyView+Model.swift in Sources */,
 				1A92A4B724F86F9400AE8CE7 /* KCImagePicker.swift in Sources */,
 				1AA493B22506935200136278 /* AnxietyView.swift in Sources */,
-				1AA493B6250698D200136278 /* RoutineViewTemp+Model.swift in Sources */,
+				1AA493B6250698D200136278 /* RoutineView+ViewModel.swift in Sources */,
 				1A40928E2516919D00F892E7 /* KCTextView.swift in Sources */,
 				1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */,
 				1A6CD6432518367C00FB7E0F /* RoutineViewForm+ViewModel.swift in Sources */,
@@ -561,7 +561,7 @@
 				1A409291251691C900F892E7 /* KCTextView+Model.swift in Sources */,
 				1AA493BA2506AA5100136278 /* KCCard+ViewModifier.swift in Sources */,
 				1AF3BD8F24F71B7A00CD43E7 /* KCCard+Model.swift in Sources */,
-				1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */,
+				1AEE968224FC2A2C0089F7ED /* ExercisesView+ViewModel.swift in Sources */,
 				1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */,
 				1AA493B02506829800136278 /* ExerciseDetail.swift in Sources */,
 				1AA493C72506FA7200136278 /* RoutineViewForm.swift in Sources */,
@@ -569,10 +569,10 @@
 				1A5A281724F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift in Sources */,
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A40928A25168E6F00F892E7 /* TextView.swift in Sources */,
-				1AA493B42506947B00136278 /* RoutineViewTemp.swift in Sources */,
+				1AA493B42506947B00136278 /* RoutineView.swift in Sources */,
 				1AF3BD8124F6FE2800CD43E7 /* KCLabel+Model.swift in Sources */,
-				1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */,
-				1AE6ED5324F6DFEB00E19E8B /* HomeViewTemp.swift in Sources */,
+				1AD84F91243A8AF8008173BB /* HomeView+ViewModel.swift in Sources */,
+				1AE6ED5324F6DFEB00E19E8B /* HomeView.swift in Sources */,
 				1AD84F88243A832C008173BB /* ViewCodeProtocol.swift in Sources */,
 				1A420DEB243EA7B60030250D /* Anxiety.swift in Sources */,
 				1AA493C02506B75000136278 /* KCWebView.swift in Sources */,
@@ -584,7 +584,7 @@
 				1A92A4BA24F870F200AE8CE7 /* AppView.swift in Sources */,
 				1AA493BD2506B47A00136278 /* AnxietyDetail.swift in Sources */,
 				1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */,
-				1AEE968024FC26A30089F7ED /* ExercisesViewTemp.swift in Sources */,
+				1AEE968024FC26A30089F7ED /* ExercisesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,7 +782,7 @@
 				1AD84F6F243A7B97008173BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		1AD84F70243A7B97008173BB /* Build configuration list for PBXNativeTarget "Keep Calm" */ = {
 			isa = XCConfigurationList;
@@ -791,7 +791,7 @@
 				1AD84F72243A7B97008173BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

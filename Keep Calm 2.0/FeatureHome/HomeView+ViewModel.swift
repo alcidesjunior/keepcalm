@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension HomeViewTemp {
+extension HomeView {
     final class ViewModel: ObservableObject {
         var home: Home
 

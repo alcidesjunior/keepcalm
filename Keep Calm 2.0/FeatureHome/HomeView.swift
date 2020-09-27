@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeViewTemp: View {
+struct HomeView: View {
     @ObservedObject private(set) var viewModel: ViewModel
     @State private var showDetails: Bool = false
     @Environment(\.presentationMode) private var presentationMode
@@ -74,17 +74,17 @@ struct HomeViewTemp_Previews: PreviewProvider {
 //            HomeViewTemp(viewModel: .init(home: .init()))
 //            .environment(\.colorScheme, .dark)
 
-            HomeViewTemp(viewModel: .init(home: .init()))
+            HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
-            HomeViewTemp(viewModel: .init(home: .init()))
+            HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
-            HomeViewTemp(viewModel: .init(home: .init()))
+            HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
-            HomeViewTemp(viewModel: .init(home: .init()))
+            HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
-            HomeViewTemp(viewModel: .init(home: .init()))
+            HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
-            HomeViewTemp(viewModel: .init(home: .init()))
+            HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
         }
     }
