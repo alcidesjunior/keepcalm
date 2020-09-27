@@ -291,8 +291,8 @@
 		1A0BDC922520FFF1006AD7FB /* FeatureHome */ = {
 			isa = PBXGroup;
 			children = (
-				1A0BDC932520FFF1006AD7FB /* HomeView.swift */,
 				1A0BDC942520FFF1006AD7FB /* Details */,
+				1A0BDC932520FFF1006AD7FB /* HomeView.swift */,
 				1A0BDC972520FFF1006AD7FB /* HomeView+ViewModel.swift */,
 			);
 			path = FeatureHome;
@@ -774,7 +774,7 @@
 				1AD84F6F243A7B97008173BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 		1AD84F70243A7B97008173BB /* Build configuration list for PBXNativeTarget "Keep Calm" */ = {
 			isa = XCConfigurationList;
@@ -783,7 +783,7 @@
 				1AD84F72243A7B97008173BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

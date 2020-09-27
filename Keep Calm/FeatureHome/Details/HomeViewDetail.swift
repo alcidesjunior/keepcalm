@@ -7,18 +7,18 @@ struct HomeViewDetail: View {
     @State var isLoading: Bool = false
     @State var image: Image? = nil
     @State var inputImage: UIImage? = nil
-    @ObservedObject private var viewModel: ViewModel
+    private var viewModel: ViewModel = ViewModel(model: Home())
     @Environment(\.presentationMode) var presentationMode
-
-    init(viewModel: ViewModel) {
-        self.viewModel = viewModel
-    }
+ 
+//    init(viewModel: ViewModel = Home()) {
+//        self.viewModel = viewModel
+//    }
 
     func loadImage() -> Image {
         if let image = inputImage {
             return Image(uiImage: image)
         }
-        return Image(uiImage: UIImage(contentsOfFile: self.viewModel.home.profileImage) ?? UIImage(named: "profileDefault")!)
+        return Image(uiImage: UIImage(contentsOfFile: self.viewModel.profileImage) ?? UIImage(named: "profileDefault")!)
     }
 
     var body: some View {
@@ -37,7 +37,7 @@ struct HomeViewDetail: View {
                 }
                 .navigationBarTitle("Perfil", displayMode: .large)
                 .onAppear(perform: {
-                    self.name = self.viewModel.home.fullName
+                    self.name = self.viewModel.fullName
                 })
                 .sheet(isPresented: self.$isShowPicker) {
                     KCImagePicker(image: self.$inputImage)
@@ -97,8 +97,8 @@ struct HomeViewDetail: View {
     }
 }
 
-struct HomeViewDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeViewDetail(viewModel: .init(home: Home())).colorScheme(.light)
-    }
-}
+//struct HomeViewDetail_Previews: PreviewProvider {
+//    static var previews: some View {
+//        HomeViewDetail(viewModel: .init(home: Home())).colorScheme(.light)
+//    }
+//}

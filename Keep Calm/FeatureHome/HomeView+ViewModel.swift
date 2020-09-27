@@ -1,14 +1,25 @@
 import SwiftUI
+import Combine
 
 extension HomeView {
     final class ViewModel: ObservableObject {
-        var home: Home
+        private var home: Home
+        @Published var userData: UserData?
 
         init(home: Home) {
             self.home = home
         }
 
-        var getProfileImage: String {
+        func loadData() {
+            self.userData = UserData(
+                profileImage: getProfileImage,
+                greeting: self.getGreeting,
+                phraseOfTheDay: self.getPhraseOfTheDay,
+                fullName: self.fullName
+            )
+        }
+
+        private var getProfileImage: String {
             return self.home.profileImage
         }
 
@@ -31,21 +42,27 @@ extension HomeView {
             return greeting
         }
 
-        var getGreeting: String {
-            if getFirstName == "" {
+        private var getGreeting: String {
+            if fullName == "" {
                 return greetingString+"!"
             }
-            return greetingString+",\n"+getFirstName+"!"
+            return greetingString+",\n"+fullName+"!"
         }
 
-        var getPhraseOfTheDay: String {
-            let qtd = self.home.phraseOfTheDay.count-1
-            let today = Int.random(in: 0...qtd)
+        private var getPhraseOfTheDay: String {
+            let today = Int.random(in: 0...(self.home.phraseOfTheDay.count-1))
             return self.home.phraseOfTheDay[today]
         }
 
-        var getFirstName: String {
-            return self.home.firstName
+        private var fullName: String {
+            return self.home.fullName
+        }
+
+        struct UserData {
+            var profileImage: String
+            var greeting: String
+            var phraseOfTheDay: String
+            var fullName: String
         }
     }
 

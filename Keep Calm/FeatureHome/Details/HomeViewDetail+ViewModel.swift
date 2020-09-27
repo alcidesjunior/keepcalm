@@ -2,11 +2,11 @@ import Combine
 import SwiftUI
 
 extension HomeViewDetail {
-    final class ViewModel: ObservableObject {
-        @Published var home: Home
+    struct ViewModel {
+        private var model: Home
 
-        init(home: Home) {
-            self.home = home
+        init(model: Home) {
+            self.model = model
         }
 
         func saveData(_ userData: UserData) {
@@ -26,6 +26,19 @@ extension HomeViewDetail {
             }
 
             UserDefaults.standard.set(userData.firstName, forKey: "firstName")
+        }
+
+        var profileImage: String {
+            model.profileImage
+        }
+
+        var fullName: String {
+            model.fullName
+        }
+
+        struct Model {
+            let fullName: String
+            let profileImage: String
         }
 
         struct UserData {

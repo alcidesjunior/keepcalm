@@ -3,7 +3,6 @@ import SwiftUI
 struct HomeView: View {
     @ObservedObject private(set) var viewModel: ViewModel
     @State private var showDetails: Bool = false
-    @Environment(\.presentationMode) private var presentationMode
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -11,29 +10,30 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            GeometryReader { geometry in
-                ScrollView {
+            ScrollView {
+                VStack {
                     VStack {
-                        VStack {
-                            self.profileHeader
-                        }
-                        .frame(height: geometry.size.height / 1.9)
-
-                        self.greeting.padding(.bottom, 2)
-                        self.cardPhrase.padding(.horizontal, 20)
-
+                        self.profileHeader
                     }
+                    .frame(height: 250)
+
+                    self.greeting.padding(.bottom, 2)
+                    self.cardPhrase.padding(.horizontal, 20)
+
                 }
             }
             .navigationBarTitle("Inicio")
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear {
+            self.viewModel.loadData()
+        }
     }
 
     @ViewBuilder
     private var profileHeader: some View {
         KCAvatar(
-            profileImage: Image(uiImage: UIImage(contentsOfFile: self.viewModel.getProfileImage) ?? UIImage(named: "profileDefault")!)
+            profileImage: Image(uiImage: UIImage(contentsOfFile: self.viewModel.userData?.profileImage ?? "") ?? UIImage(named: "profileDefault")!)
         )
 
         KCButton(
@@ -44,14 +44,21 @@ struct HomeView: View {
             options: .init(text: .phrase, color: .init("customBlack"))
         )
         .sheet(isPresented: $showDetails) {
-            HomeViewDetail(viewModel: .init(home: self.viewModel.home))
+            HomeViewDetail()
+//                viewModel: .init(
+//                            model: .init(
+//                                fullName: self.viewModel.userData?.fullName ?? "",
+//                                profileImage: self.viewModel.userData?.profileImage ?? ""
+//                            )
+//                    )
+//            )
         }
     }
 
     private var greeting: some View {
         KCLabel(
             .init(
-                text: viewModel.getGreeting,
+                text: viewModel.userData?.greeting ?? "",
                 style: .greeting,
                 color: .init("customBlack")
             )
@@ -61,7 +68,7 @@ struct HomeView: View {
     private var cardPhrase: some View {
         KCLabel(
             .init(
-                text: viewModel.getPhraseOfTheDay,
+                text: viewModel.userData?.phraseOfTheDay ?? "",
                 style: .phrase,
                 color: .init("customBlack")
             )
@@ -72,8 +79,8 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-//            HomeViewTemp(viewModel: .init(home: .init()))
-//            .environment(\.colorScheme, .dark)
+            HomeView(viewModel: .init(home: .init()))
+            .environment(\.colorScheme, .dark)
 
             HomeView(viewModel: .init(home: .init()))
                 .environment(\.colorScheme, .light)
