@@ -27,6 +27,7 @@ struct HomeView: View {
             }
             .navigationBarTitle("Inicio")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 
     @ViewBuilder

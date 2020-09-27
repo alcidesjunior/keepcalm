@@ -88,6 +88,7 @@ struct FoodView: View {
             }
             .listStyle(GroupedListStyle())
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

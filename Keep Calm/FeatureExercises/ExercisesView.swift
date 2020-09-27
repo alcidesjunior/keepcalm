@@ -57,6 +57,7 @@ struct ExercisesView: View {
                 .navigationBarTitle("Exercícios")
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

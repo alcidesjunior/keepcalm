@@ -66,6 +66,7 @@ struct RoutineView: View {
                 .listStyle(GroupedListStyle())
             }
        }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

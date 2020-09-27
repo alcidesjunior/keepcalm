@@ -58,6 +58,7 @@ struct AnxietyView: View {
                 .navigationBarTitle("Ansiedade")
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
