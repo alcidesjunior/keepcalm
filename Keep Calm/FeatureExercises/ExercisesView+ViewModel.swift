@@ -1,6 +1,6 @@
 import SwiftUI
 
-extension ExercisesViewTemp {
+extension ExercisesView {
     struct ViewModel {
         var exercise: Exercise
 
