@@ -45,7 +45,6 @@
 		1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */; };
 		1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F95243AA0D4008173BB /* +Fonts.swift */; };
 		1AD84F97243AA26E008173BB /* caligrafia.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1AD84F93243AA04D008173BB /* caligrafia.ttf */; };
-		1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */; };
 		1AD84FA2243AC5E5008173BB /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD84FA1243AC5E5008173BB /* Exercise.swift */; };
 		1AE559FD244CDDC000B10989 /* GlobalSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE559FC244CDDC000B10989 /* GlobalSettings.swift */; };
 		1AE6ED5324F6DFEB00E19E8B /* HomeViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */; };
@@ -54,9 +53,7 @@
 		1AEE968024FC26A30089F7ED /* ExercisesViewTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */; };
 		1AEE968224FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */; };
 		1AEF8BA3243D255200DAAAC4 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BA2243D255100DAAAC4 /* Food.swift */; };
-		1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */; };
 		1AF049182444084C005AA516 /* Routine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF049172444084C005AA516 /* Routine.swift */; };
-		1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF04919244408DF005AA516 /* RoutineViewModel.swift */; };
 		1AF3BD7F24F6FE1000CD43E7 /* KCLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */; };
 		1AF3BD8124F6FE2800CD43E7 /* KCLabel+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8024F6FE2800CD43E7 /* KCLabel+Model.swift */; };
 		1AF3BD8524F705A100CD43E7 /* KCLabel+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF3BD8424F705A100CD43E7 /* KCLabel+Style.swift */; };
@@ -110,7 +107,6 @@
 		1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
 		1AD84F93243AA04D008173BB /* caligrafia.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = caligrafia.ttf; sourceTree = "<group>"; };
 		1AD84F95243AA0D4008173BB /* +Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+Fonts.swift"; sourceTree = "<group>"; };
-		1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellViewModel.swift; sourceTree = "<group>"; };
 		1AD84FA1243AC5E5008173BB /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		1AE559FC244CDDC000B10989 /* GlobalSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalSettings.swift; sourceTree = "<group>"; };
 		1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTemp.swift; sourceTree = "<group>"; };
@@ -118,9 +114,7 @@
 		1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewTemp.swift; sourceTree = "<group>"; };
 		1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExercisesViewTemp+ViewModel.swift"; sourceTree = "<group>"; };
 		1AEF8BA2243D255100DAAAC4 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		1AF049172444084C005AA516 /* Routine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routine.swift; sourceTree = "<group>"; };
-		1AF04919244408DF005AA516 /* RoutineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineViewModel.swift; sourceTree = "<group>"; };
 		1AF3BD7E24F6FE1000CD43E7 /* KCLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCLabel.swift; sourceTree = "<group>"; };
 		1AF3BD8024F6FE2800CD43E7 /* KCLabel+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCLabel+Model.swift"; sourceTree = "<group>"; };
 		1AF3BD8424F705A100CD43E7 /* KCLabel+Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KCLabel+Style.swift"; sourceTree = "<group>"; };
@@ -198,8 +192,9 @@
 			children = (
 				1A92A4B924F870F200AE8CE7 /* AppView.swift */,
 			);
-			path = FeatureTabBar;
-			sourceTree = "<group>";
+			name = FeatureTabBar;
+			path = "Keep Calm 2.0/FeatureTabBar";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AA493AE2506827F00136278 /* ExerciseDetail */ = {
 			isa = PBXGroup;
@@ -248,7 +243,6 @@
 			children = (
 				1ABD0CEC2455DDFA00B22FF8 /* Localizable.strings */,
 				1A65339924495D78003CFD17 /* Keep_Calm.xcdatamodeld */,
-				1AE6ED4B24F6DF0200E19E8B /* Keep Calm 2.0 */,
 				1AD84F5B243A7B93008173BB /* Keep Calm */,
 				1AD84F5A243A7B93008173BB /* Products */,
 			);
@@ -265,6 +259,14 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
+				1A92A4B824F870D400AE8CE7 /* FeatureTabBar */,
+				1AE6ED5424F6E2E300E19E8B /* CoreUI */,
+				1AE6ED5124F6DFB100E19E8B /* FeatureOnboarding */,
+				1AE6ED5024F6DFAA00E19E8B /* FeatureHome */,
+				1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */,
+				1AE6ED4E24F6DF9500E19E8B /* FeatureFood */,
+				1AE6ED4D24F6DF8C00E19E8B /* FeatureAnxiety */,
+				1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */,
 				1A92A4AD24F81C5200AE8CE7 /* Images */,
 				1AC2E26B2450F79400360018 /* Tools */,
 				1AE559FB244CDDAE00B10989 /* Settings */,
@@ -272,10 +274,7 @@
 				1AD84F94243AA0C8008173BB /* Extensions */,
 				1AD84F92243AA03D008173BB /* External Fonts */,
 				1AD84F77243A7D4D008173BB /* Protocols */,
-				1AD84F76243A7D43008173BB /* Controller */,
 				1AD84F73243A7D30008173BB /* Model */,
-				1AD84F74243A7D35008173BB /* View */,
-				1AD84F75243A7D3B008173BB /* ViewModel */,
 				1AD84F5C243A7B93008173BB /* AppDelegate.swift */,
 				1AD84F5E243A7B93008173BB /* SceneDelegate.swift */,
 				1AD84F68243A7B97008173BB /* Assets.xcassets */,
@@ -295,30 +294,6 @@
 				1AF049172444084C005AA516 /* Routine.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		1AD84F74243A7D35008173BB /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1AD84F75243A7D3B008173BB /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1AD84F9F243AC5BC008173BB /* ExerciseCellViewModel.swift */,
-				1AEF8BB1243D579D00DAAAC4 /* FoodViewModel.swift */,
-				1AF04919244408DF005AA516 /* RoutineViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		1AD84F76243A7D43008173BB /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		1AD84F77243A7D4D008173BB /* Protocols */ = {
@@ -355,21 +330,6 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		1AE6ED4B24F6DF0200E19E8B /* Keep Calm 2.0 */ = {
-			isa = PBXGroup;
-			children = (
-				1A92A4B824F870D400AE8CE7 /* FeatureTabBar */,
-				1AE6ED5424F6E2E300E19E8B /* CoreUI */,
-				1AE6ED5124F6DFB100E19E8B /* FeatureOnboarding */,
-				1AE6ED5024F6DFAA00E19E8B /* FeatureHome */,
-				1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */,
-				1AE6ED4E24F6DF9500E19E8B /* FeatureFood */,
-				1AE6ED4D24F6DF8C00E19E8B /* FeatureAnxiety */,
-				1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */,
-			);
-			path = "Keep Calm 2.0";
-			sourceTree = "<group>";
-		};
 		1AE6ED4C24F6DF8200E19E8B /* FeatureaRoutines */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,8 +337,9 @@
 				1AA493B32506947B00136278 /* RoutineViewTemp.swift */,
 				1AA493B5250698D200136278 /* RoutineViewTemp+Model.swift */,
 			);
-			path = FeatureaRoutines;
-			sourceTree = "<group>";
+			name = FeatureaRoutines;
+			path = "Keep Calm 2.0/FeatureaRoutines";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED4D24F6DF8C00E19E8B /* FeatureAnxiety */ = {
 			isa = PBXGroup;
@@ -387,8 +348,9 @@
 				1AA493B12506935200136278 /* AnxietyView.swift */,
 				1AA493B72506995900136278 /* AnxietyView+Model.swift */,
 			);
-			path = FeatureAnxiety;
-			sourceTree = "<group>";
+			name = FeatureAnxiety;
+			path = "Keep Calm 2.0/FeatureAnxiety";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED4E24F6DF9500E19E8B /* FeatureFood */ = {
 			isa = PBXGroup;
@@ -396,8 +358,9 @@
 				1A5A281424F9DF0E007DD4B3 /* FoodViewTemp.swift */,
 				1A5A281624F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift */,
 			);
-			path = FeatureFood;
-			sourceTree = "<group>";
+			name = FeatureFood;
+			path = "Keep Calm 2.0/FeatureFood";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED4F24F6DF9D00E19E8B /* FeatureExercises */ = {
 			isa = PBXGroup;
@@ -406,8 +369,9 @@
 				1AEE967F24FC26A30089F7ED /* ExercisesViewTemp.swift */,
 				1AEE968124FC2A2C0089F7ED /* ExercisesViewTemp+ViewModel.swift */,
 			);
-			path = FeatureExercises;
-			sourceTree = "<group>";
+			name = FeatureExercises;
+			path = "Keep Calm 2.0/FeatureExercises";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED5024F6DFAA00E19E8B /* FeatureHome */ = {
 			isa = PBXGroup;
@@ -416,15 +380,17 @@
 				1AE6ED5224F6DFEB00E19E8B /* HomeViewTemp.swift */,
 				1AD84F90243A8AF8008173BB /* HomeViewTemp+ViewModel.swift */,
 			);
-			path = FeatureHome;
-			sourceTree = "<group>";
+			name = FeatureHome;
+			path = "Keep Calm 2.0/FeatureHome";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED5124F6DFB100E19E8B /* FeatureOnboarding */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = FeatureOnboarding;
-			sourceTree = "<group>";
+			name = FeatureOnboarding;
+			path = "Keep Calm 2.0/FeatureOnboarding";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED5424F6E2E300E19E8B /* CoreUI */ = {
 			isa = PBXGroup;
@@ -439,8 +405,9 @@
 				1AF3BD7D24F6FDD900CD43E7 /* Labels */,
 				1AE6ED5624F6EB1A00E19E8B /* Profile */,
 			);
-			path = CoreUI;
-			sourceTree = "<group>";
+			name = CoreUI;
+			path = "Keep Calm 2.0/CoreUI";
+			sourceTree = SOURCE_ROOT;
 		};
 		1AE6ED5624F6EB1A00E19E8B /* Profile */ = {
 			isa = PBXGroup;
@@ -580,7 +547,6 @@
 				1AA493B22506935200136278 /* AnxietyView.swift in Sources */,
 				1AA493B6250698D200136278 /* RoutineViewTemp+Model.swift in Sources */,
 				1A40928E2516919D00F892E7 /* KCTextView.swift in Sources */,
-				1AEF8BB2243D579D00DAAAC4 /* FoodViewModel.swift in Sources */,
 				1AD84F7F243A7F4A008173BB /* ControllerProtocol.swift in Sources */,
 				1A6CD6432518367C00FB7E0F /* RoutineViewForm+ViewModel.swift in Sources */,
 				1AD84F96243AA0D4008173BB /* +Fonts.swift in Sources */,
@@ -603,7 +569,6 @@
 				1A5A281724F9E340007DD4B3 /* FoodViewTemp+ViewModel.swift in Sources */,
 				1AD84F5F243A7B93008173BB /* SceneDelegate.swift in Sources */,
 				1A40928A25168E6F00F892E7 /* TextView.swift in Sources */,
-				1AD84FA0243AC5BC008173BB /* ExerciseCellViewModel.swift in Sources */,
 				1AA493B42506947B00136278 /* RoutineViewTemp.swift in Sources */,
 				1AF3BD8124F6FE2800CD43E7 /* KCLabel+Model.swift in Sources */,
 				1AD84F91243A8AF8008173BB /* HomeViewTemp+ViewModel.swift in Sources */,
@@ -616,7 +581,6 @@
 				1AF3BD8A24F710C900CD43E7 /* KCButton+Style.swift in Sources */,
 				1AF3BD9224F728FE00CD43E7 /* HomeViewDetail.swift in Sources */,
 				1AF3BD8D24F71B5D00CD43E7 /* KCCard.swift in Sources */,
-				1AF0491A244408DF005AA516 /* RoutineViewModel.swift in Sources */,
 				1A92A4BA24F870F200AE8CE7 /* AppView.swift in Sources */,
 				1AA493BD2506B47A00136278 /* AnxietyDetail.swift in Sources */,
 				1AE6ED5824F6EB4B00E19E8B /* KCAvatar.swift in Sources */,

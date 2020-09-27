@@ -12,43 +12,42 @@ struct RoutineViewTemp: View {
         NavigationView {
             GeometryReader { geo in
                 List {
-                    Text("")
-//                    ForEach(model.weekDays, id: \.name) { weekdays in
-//                        Section(header:
-//                            KCLabel(
-//                                .init(
-//                                    text: weekdays.name,
-//                                    style: .phrase,
-//                                    color: .init("customBlack")
-//                                )
-//                            )
-//                        ) {
-//                            ScrollView(.horizontal, showsIndicators: false) {
-//                                HStack {
-//                                    ForEach(weekdays.days, id: \.activity) { routine in
-//                                        KCCard(
-//                                            model: .init(
-//                                                text: .init(
-//                                                    .init(
-//                                                        text: "\(routine.activity)\n\(routine.hour)",
-//                                                        style: .phrase,
-//                                                        color: .init("customWhite")
-//                                                    )
-//                                                ),
-//                                                image: nil,
-//                                                background: .init("customBlue")
-//                                            )
-//                                        )
-//                                        .modifier(CardEffect())
-//                                        .frame(width: geo.size.width / 3, height: 70)
-//                                    }
-//
-//                                }
-//                                .padding()
-//                            }
-//                            .listRowInsets(EdgeInsets())
-//                        }
-//                    }
+                    ForEach(model.weekDays, id: \.name) { weekdays in
+                        Section(header:
+                            KCLabel(
+                                .init(
+                                    text: weekdays.name,
+                                    style: .phrase,
+                                    color: .init("customBlack")
+                                )
+                            )
+                        ) {
+                            ScrollView(.horizontal, showsIndicators: false) {
+                                HStack {
+                                    ForEach(weekdays.days, id: \.activity) { routine in
+                                        KCCard(
+                                            model: .init(
+                                                text: .init(
+                                                    .init(
+                                                        text: "\(routine.activity)\n\(routine.hour)",
+                                                        style: .phrase,
+                                                        color: .init("customWhite")
+                                                    )
+                                                ),
+                                                image: nil,
+                                                background: .init("customBlue")
+                                            )
+                                        )
+                                        .modifier(CardEffect())
+                                        .frame(width: geo.size.width / 3, height: 70)
+                                    }
+
+                                }
+                                .padding()
+                            }
+                            .listRowInsets(EdgeInsets())
+                        }
+                    }
                 }
                 .sheet(isPresented: self.$isShowForm) {
                     RoutineViewForm(viewModel: .init())

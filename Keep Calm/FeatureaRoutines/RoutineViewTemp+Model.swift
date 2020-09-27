@@ -4,23 +4,23 @@ extension RoutineViewTemp {
     struct Model {
         var routine: Routine
         let scheduleManager = ScheduleManager()
-        var weekDays: [Days] {
-            var weekdays:[Days] = []
-            for number in 0...6 {
-                weekdays.append(
-                    Days(
-                    name: getDayName(number),
-                    days: scheduleManager.getData(byDay: number)?.map { item in
-                        Days.Day(
-                            activity: item.value(forKey: "activity") as! String,
-                            hour: item.value(forKey: "hour") as! String
-                        )
-                    } ?? []
-                    )
-                )
-            }
-            return weekdays
-        }
+//        var weekDays: [Days] {
+//            var weekdays:[Days] = []
+//            for number in 0...6 {
+//                weekdays.append(
+//                    Days(
+//                    name: getDayName(number),
+//                    days: scheduleManager.getData(byDay: number)?.map { item in
+//                        Days.Day(
+//                            activity: item.value(forKey: "activity") as! String,
+//                            hour: item.value(forKey: "hour") as! String
+//                        )
+//                    } ?? []
+//                    )
+//                )
+//            }
+//            return weekdays
+//        }
 
         init(routine: Routine) {
             self.routine = routine
