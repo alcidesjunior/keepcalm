@@ -3,7 +3,7 @@ import SwiftUI
 struct AppView: View {
     var body: some View {
         TabView {
-            HomeViewTemp(viewModel: .init(home: Home()))
+            HomeView(viewModel: .init(home: Home()))
                 .tabItem {
                     Image("home.fill")
                     Text("Inicio")
