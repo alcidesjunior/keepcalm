@@ -251,14 +251,14 @@
 			path = Keyboard;
 			sourceTree = "<group>";
 		};
-		1A0BDC872520FFF1006AD7FB /* FeatureaRoutines */ = {
+		1A0BDC872520FFF1006AD7FB /* FeatureRoutines */ = {
 			isa = PBXGroup;
 			children = (
 				1A0BDC882520FFF1006AD7FB /* RoutineView.swift */,
 				1A0BDC892520FFF1006AD7FB /* RoutineView+ViewModel.swift */,
 				1A0BDC8A2520FFF1006AD7FB /* RoutineForm */,
 			);
-			path = FeatureaRoutines;
+			path = FeatureRoutines;
 			sourceTree = "<group>";
 		};
 		1A0BDC8A2520FFF1006AD7FB /* RoutineForm */ = {
@@ -376,7 +376,7 @@
 		1AD84F5B243A7B93008173BB /* Keep Calm */ = {
 			isa = PBXGroup;
 			children = (
-				1A0BDC872520FFF1006AD7FB /* FeatureaRoutines */,
+				1A0BDC872520FFF1006AD7FB /* FeatureRoutines */,
 				1A0BDC8D2520FFF1006AD7FB /* FeatureExercises */,
 				1A0BDC992520FFF1006AD7FB /* FeatureFood */,
 				1A0BDC922520FFF1006AD7FB /* FeatureHome */,
