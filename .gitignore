@@ -105,3 +105,4 @@ iOSInjectionProject/
 
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode
 .DS_Store
+/Keep Calm.xcodeproj/project.xcworkspace/xcuserdata/alcidesjunior.xcuserdatad/UserInterfaceState.xcuserstate
