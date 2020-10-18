@@ -1,5 +1,6 @@
 import Combine
 import SwiftUI
+import Introspect
 
 struct HomeViewDetail: View {
     @State var name: String = ""
@@ -7,42 +8,54 @@ struct HomeViewDetail: View {
     @State var isLoading: Bool = false
     @State var image: Image? = nil
     @State var inputImage: UIImage? = nil
-    private var viewModel: ViewModel = ViewModel(model: Home())
+    @State var showAlert: Bool = false
+    @ObservedObject private var viewModel: HomeView.ViewModel
     @Environment(\.presentationMode) var presentationMode
- 
-//    init(viewModel: ViewModel = Home()) {
-//        self.viewModel = viewModel
-//    }
+
+    init(viewModel: HomeView.ViewModel) {
+        self.viewModel = viewModel
+    }
 
     func loadImage() -> Image {
         if let image = inputImage {
             return Image(uiImage: image)
         }
-        return Image(uiImage: UIImage(contentsOfFile: self.viewModel.profileImage) ?? UIImage(named: "profileDefault")!)
+        return Image(uiImage:
+                        UIImage(contentsOfFile: self.viewModel.userData?.profileImage ?? "") ?? UIImage(named: "profileDefault")!
+        )
     }
 
     var body: some View {
-        KCLoading(isShowing: $isLoading) {
-            NavigationView {
-                Form {
-                    VStack(alignment: .center) {
-                        self.profileHeader
-                    }
+        NavigationView {
+            Form {
+                VStack(alignment: .center) {
+                    self.profileHeader
+                }
 
-                    HStack(alignment: .center) {
-                        self.buttons
-                    }
-                    .padding(.vertical, 40)
-                    .frame(minWidth: 0, maxWidth: .infinity)
+                HStack(alignment: .center) {
+                    self.buttons
                 }
-                .navigationBarTitle("Perfil", displayMode: .large)
-                .onAppear(perform: {
-                    self.name = self.viewModel.fullName
-                })
-                .sheet(isPresented: self.$isShowPicker) {
-                    KCImagePicker(image: self.$inputImage)
-                }
+                .padding(.vertical, 40)
+                .frame(minWidth: 0, maxWidth: .infinity)
             }
+            .navigationBarTitle("Perfil", displayMode: .large)
+            .onAppear(perform: {
+                self.name = self.viewModel.userData?.fullName ?? ""
+            })
+            .sheet(isPresented: self.$isShowPicker) {
+                KCImagePicker(image: self.$inputImage)
+            }
+            .navigationBarItems(leading:
+                Button(action: {
+                    self.viewModel.loadData()
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Text("Fechar")
+                }
+            )
+        }
+        .introspectViewController { (viewController) in
+            viewController.isModalInPresentation = true
         }
     }
 
@@ -73,7 +86,7 @@ struct HomeViewDetail: View {
                             firstName: self.name
                         )
                     )
-                    self.presentationMode.wrappedValue.dismiss()
+                    showAlert.toggle()
                 },
                 label: Text("Salvar"),
                 options: .init(
@@ -82,6 +95,12 @@ struct HomeViewDetail: View {
                     color: .init("customWhite")
                 )
             )
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Aviso de perfil"),
+                    message: Text("Dados atualizados!")
+                )
+            }
             .frame(minWidth: 0, maxWidth: .infinity)
 
             KCButton(

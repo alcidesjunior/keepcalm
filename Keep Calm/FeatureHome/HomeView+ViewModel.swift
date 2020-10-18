@@ -3,11 +3,12 @@ import Combine
 
 extension HomeView {
     final class ViewModel: ObservableObject {
-        private var home: Home
-        @Published var userData: UserData?
+        @Published private var home: Home
+        @Published var userData: UserData? = nil
 
         init(home: Home) {
             self.home = home
+            loadData()
         }
 
         func loadData() {
@@ -17,6 +18,26 @@ extension HomeView {
                 phraseOfTheDay: self.getPhraseOfTheDay,
                 fullName: self.fullName
             )
+        }
+
+        func saveData(_ userData: saveData) {
+            if let imageData = userData.image?.pngData() {
+                let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+                let url = documents.appendingPathComponent("profileImage.png")
+
+                do {
+                    try imageData.write(to: url)
+                    UserDefaults.standard.set(url.relativePath, forKey: "userProfileImage")
+                } catch {
+                    print("Unable to Write Data to Disk (\(error))")
+                }
+            }
+            UserDefaults.standard.set(userData.firstName, forKey: "firstName")
+        }
+
+        struct saveData {
+            @Binding var image: UIImage?
+            let firstName: String
         }
 
         private var getProfileImage: String {

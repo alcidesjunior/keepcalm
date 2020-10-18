@@ -3,6 +3,7 @@ import SwiftUI
 struct RoutineView: View {
     var viewModel: ViewModel
     @State var isShowForm: Bool = false
+    @Environment(\.presentationMode) var presentationMode
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel

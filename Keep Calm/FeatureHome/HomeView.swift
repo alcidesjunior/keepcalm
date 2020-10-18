@@ -1,8 +1,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    @ObservedObject private(set) var viewModel: ViewModel
+    @ObservedObject var viewModel: ViewModel
     @State private var showDetails: Bool = false
+    @Environment(\.presentationMode) var presentationMode
 
     init(viewModel: ViewModel) {
         self.viewModel = viewModel
@@ -44,14 +45,7 @@ struct HomeView: View {
             options: .init(text: .phrase, color: .init("customBlack"))
         )
         .sheet(isPresented: $showDetails) {
-            HomeViewDetail()
-//                viewModel: .init(
-//                            model: .init(
-//                                fullName: self.viewModel.userData?.fullName ?? "",
-//                                profileImage: self.viewModel.userData?.profileImage ?? ""
-//                            )
-//                    )
-//            )
+            HomeViewDetail(viewModel: self.viewModel)
         }
     }
 

@@ -9,6 +9,7 @@ struct RoutineViewForm: View {
     @State var activityDescription: String = ""
     @StateObject private var keyboardHandler = KeyboardHandler()
     @State private var showAlert: Bool = false
+    @Environment(\.presentationMode) var presentationMode
     private var viewModel: ViewModel
     private var validForm: Bool {
         activityName.isEmpty || activityDescription.isEmpty || weekDays.hasSomeDaySelected
@@ -56,7 +57,12 @@ struct RoutineViewForm: View {
                     .frame(height: 100)
             }
             .navigationBarTitle("Nova Rotina")
-            .navigationBarItems(trailing:
+            .navigationBarItems(leading: Button(action: {
+                self.presentationMode.wrappedValue.dismiss()
+            }){
+                Text("Fechar")
+            },
+            trailing:
                 Button(action: {
                     saveRoutine()
                     showAlert.toggle()
@@ -74,6 +80,9 @@ struct RoutineViewForm: View {
                 }
                 .disabled(validForm)
             )
+        }
+        .introspectViewController { (viewController) in
+            viewController.isModalInPresentation = true
         }
     }
 
