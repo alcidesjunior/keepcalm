@@ -13,7 +13,6 @@ public class ScheduleManager {
     
     var data: [NSManagedObject] = []
     
-    
     func create(scheduleElement: RoutineData) {
         scheduleElement.day.forEach { (element) in
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
@@ -39,14 +38,9 @@ public class ScheduleManager {
             
             notification.createNotification(title: "Rotina diária",subtitle: completeHour, body: activity, hour: hour, minute: minute, day: day)
             do {
-                
                 try managedContext.save()
-                print("salvou")
-                
             } catch let error as NSError {
-                
                 print(error)
-                
             }
         }
         
@@ -54,7 +48,7 @@ public class ScheduleManager {
         
     }
     
-    func getAll()->[NSManagedObject]?{
+    func getAll() -> [NSManagedObject]? {
             let notification = NotificationTools()
             guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return nil}
             let managedContext = appDelegate.persistentContainer.viewContext
@@ -63,10 +57,8 @@ public class ScheduleManager {
             let sortDescriptor = NSSortDescriptor(key: "hour", ascending: true)
             let sortDescriptors = [sortDescriptor]
             fetchRequest.sortDescriptors = sortDescriptors
-    //        fetchRequest.predicate = NSPredicate(format: "day == \(byDay)")
             
             do {
-                
                 let results = try managedContext.fetch(fetchRequest)
                 self.data.removeAll()
 //                notification.removeNotifications()
@@ -88,7 +80,6 @@ public class ScheduleManager {
         }
     
     func deleteAll() {
-        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         let managedContext = appDelegate.persistentContainer.viewContext
         
@@ -96,9 +87,7 @@ public class ScheduleManager {
         let request = NSBatchDeleteRequest(fetchRequest: fetch)
         
         do {
-            
             try managedContext.execute(request)
-            
         } catch let error as NSError {
             
             print(error)
@@ -107,9 +96,8 @@ public class ScheduleManager {
         
     }
     
-    func getData(byDay: Int = 0)->[NSManagedObject]? {
-        
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return nil}
+    func getData(byDay: Int = 0) -> [NSManagedObject]? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return nil }
         let managedContext = appDelegate.persistentContainer.viewContext
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Schedule")
@@ -119,13 +107,11 @@ public class ScheduleManager {
         fetchRequest.sortDescriptors = sortDescriptors
         
         do {
-            
             let results = try managedContext.fetch(fetchRequest)
             self.data.removeAll()
             for result in results as! [NSManagedObject]{
                 self.data.append(result)
             }
-            
         } catch {
             print("erro")
         }
@@ -141,43 +127,45 @@ public class ScheduleManager {
         fetchRequest.predicate = NSPredicate(format: "id == \(id)")
         
         do {
-            
             let request = try managerContext.fetch(fetchRequest)
             let objectToDelete = request
             
             if objectToDelete.first != nil {
-                
                 return true
-                
             } else {
-                
                 return false
-                
             }
-            
-        }catch{
+        } catch {
             return false
         }
     }
     
-    func delete(id: String, completion: @escaping (Result<Bool, Error>)->Void){
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{return}
+    func delete(id: String, completion: @escaping (Result<Bool, Error>)->Void) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let managerContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Schedule")
         fetchRequest.predicate = NSPredicate(format: "id == '\(id)'")
 
-        do{
+        do {
             let request = try managerContext.fetch(fetchRequest)
             let objectToDelete = request.first as! NSManagedObject
+            let activity = objectToDelete.value(forKey: "activity") as! String
+            let time = (objectToDelete.value(forKey: "hour") as! String).split(separator: ":")
+            let day = objectToDelete.value(forKey: "day") as! Int
+            let hour = time[0]
+            let minute = time[1]
+            let notificationId = "\(activity)\(hour)\(minute)\(day)"
+            let notificationTools = NotificationTools()
+            notificationTools.removeNotification(id: [notificationId])
             managerContext.delete(objectToDelete)
 
-            do{
+            do {
                 try managerContext.save()
                 completion(.success(true))
-            }catch{
+            } catch {
                 completion(.failure(error))
             }
-        }catch{
+        } catch {
             completion(.failure(error))
         }
 

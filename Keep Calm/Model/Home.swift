@@ -1,32 +1,18 @@
-//
-//  Home.swift
-//  Keep Calm
-//
-//  Created by Alcides Junior on 05/04/20.
-//  Copyright © 2020 all seeds labs. All rights reserved.
-//
-
 import UIKit
- 
-class Home {
-    
-    var profileImage: String
-    var phraseOfTheDay: [String]
-    var firstName: String = ""
-    var lastName: String = ""
-    var fullName: String
-    
-    init() {
-        
-        if (UserDefaults.standard.value(forKey: "userProfileImage") != nil) {
-            let imageData = UserDefaults.standard.value(forKey: "userProfileImage") as! String
-            self.profileImage = imageData
-        }else{
-            
-            self.profileImage = "profileDefault"
+
+struct Home {
+    var profileImage: String {
+        guard
+            let image = UserDefaults.standard.value(forKey: "userProfileImage")
+        else {
+            return Bundle.main.url(forResource: "profileImage", withExtension: "png")!.path
         }
-        
-        self.phraseOfTheDay = [
+
+        return image as! String
+    }
+
+    var phraseOfTheDay: [String] {
+        return [
             "\"Quando está suficientemente escuro, você consegue ver as estrelas.\"\n- Charles Beard",
             "\"Pratique a esperança. À medida que a esperança se torna um hábito, você consegue alcançar um espírito permanentemente feliz.\"\n-Norman Vincent Peale",
             "\"Você consegue realizar muito se você não se importa com quem ganha o crédito.\n-Ronald Reagan\"",
@@ -39,12 +25,20 @@ class Home {
             "\"Encontra ânimo na dor e no desafio. Nesta vida só nos são colocados à frente os obstáculos que somos capazes de ultrapassar.\n-Augusto Branco\"",
             "\"Força de ânimo e coragem na adversidade servem para conquistar o êxito, mais do que um exército.\n-John Dryden\""
         ]
-        if UserDefaults.standard.value(forKey: "firstName") != nil {
-            
-            self.firstName = UserDefaults.standard.value(forKey: "firstName") as! String
-        }
-        
-        self.fullName = self.firstName+" "+self.lastName
     }
-    
+
+    var firstName: String {
+        guard
+            let name = UserDefaults.standard.value(forKey: "firstName")
+        else {
+            return ""
+        }
+
+        return name as! String
+    }
+
+    var fullName: String {
+        return firstName
+    }
+
 }

@@ -79,7 +79,7 @@ class NotificationTools {
         self.notificationCenter.removeAllDeliveredNotifications()
     }
     
-    func removeNotification(id: String) {
-        self.notificationCenter.removePendingNotificationRequests(withIdentifiers: [id])
+    func removeNotification(id: [String]) {
+       self.notificationCenter.removePendingNotificationRequests(withIdentifiers: id)
     }
 }
